@@ -1,0 +1,430 @@
+https://www.javatpoint.com/job-interview-questions
+
+Q:what is mongodb?
+
+ANS::mysql                           vs                noSQL_mongodb
+
+1:RDBMS is relational database                       it's a non-relational,docement-oriented database 
+managment system and works on                        management system and works on docemnet-based database
+relational database
+
+2:create database  ------same
+
+
+3:it stores data in form of entity as tables.        mongoDB stores data in form of documents
+
+
+
+
+4:it uses SQL to query database                              .MongoDB uses Bson's  	Binary file format
+
+
+
+
+Qwhat is Json and Bson
+
+::Jsons
+
+1.JavaScript Object Notation (JSON) is a standard text-based format for 
+representing structured data based on JavaScript object syntax. It is commonly used for 
+transmitting data
+
+
+2.JSON is a text-based format, and text parsing is very slow
+
+3.JSON’s readable format is far from space-efficient, another database concern
+
+4.JSON only supports a limited number of basic data types
+
+
+5.Data Support--UTF-8 String--String, Boolean, Number, Array
+
+6.Human and Machine
+
+
+::Bson
+
+1.BSON simply stands for “Binary JSON,” and that’s exactly what it was invented to
+ be. BSON’s binary structure encodes type and length
+ information, which allows it to be parsed much more quickly
+
+
+2.Data Support--Binary---String, Boolean, Number (Integer, Float, Long, Decimal128...), Array, Date, Raw Binary
+
+3.Machine Only
+
+
+
+ANS::Schema Flexibility and Data Governance
+
+
+
+
+Q::what is mongooseDB?
+
+ANS::it frame work is mongodb 
+
+..mongoose is an object data modeling (ODM)library for Mongodb and Node.js,it
+manages relationships between data provides Schema validation and is used to
+translate between object object in code and the representation of those object in mongodb
+
+
+1.mongoose.js provider an abstraction layer on top of mongoDB that eliminates the need
+to used named collections
+
+
+
+Q::what is Schema and Models?
+
+ANS::A mongoose Schema define the structure of the documnet,
+default values , validators
+
+
+
+
+
+3:::What is Mongoose?
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a higher-level abstraction over MongoDB, allowing developers to define schemas, models, and perform database operations in a more structured and efficient manner.
+What is MongoDB?
+||||What is MongoDB?
+MongoDB is a popular NoSQL database that provides a flexible, scalable, and document-oriented data storage solution. It stores data in a JSON-like format called BSON (Binary JSON) and supports dynamic schemas.
+What are the advantages of using Mongoose with MongoDB?
+||||What are the advantages of using Mongoose with MongoDB?
+Mongoose simplifies MongoDB integration and provides additional features such as schema validation, middleware, data modeling, and query building. It enforces structure and consistency in data interactions, making development easier and more organized.
+How do you define a schema in Mongoose?
+
+
+||||||||||///How do you define a schema in Mongoose?
+In Mongoose, a schema defines the structure of documents within a collection. Here's an example:
+
+
+
+1::What is MongoDB?
+
+MongoDB is a popular NoSQL database that provides a flexible, scalable, and document-oriented data storage solution. It stores data in a JSON-like format called BSON (Binary JSON) and supports dynamic schemas.
+
+
+2::What are the key features of MongoDB?
+
+MongoDB offers several key features, including document-based data model, dynamic schemas, scalability and horizontal scaling, flexible querying and indexing, high availability through replica sets, automatic sharding for data 
+distribution, and support for geospatial queries.
+
+3::SQL databases are relational databases that use structured query language (SQL) for defining and manipulating data. NoSQL databases, including MongoDB, use a variety of data models and have flexible schemas. They typically provide high scalability,
+ performance, and horizontal scaling capabilities.
+
+
+4::What is a document in MongoDB?
+
+In MongoDB, a document is the basic unit of data storage. It is similar to a row in a traditional relational database. A document is represented in BSON format (Binary JSON) and can 
+contain nested structures and arrays.
+
+
+5::What is a collection in MongoDB?
+||Schema-less: Unlike relational databases, MongoDB collections do not enforce a predefined schema. Each document within a collection can have different fields and
+ structures. This flexibility allows for easy evolution of data models.
+
+
+||Dynamic Documents: Documents within a collection can have varying structures, allowing for easy addition or removal of fields as needed. This dynamic nature 
+enables easy storage and retrieval of complex and heterogeneous data.
+
+
+||Storage of Documents: MongoDB stores documents within collections in BSON (Binary JSON) format. BSON is a binary representation of 
+JSON-like documents, providing efficient storage and retrieval of data.
+
+
+A collection in MongoDB is a group of related documents. It is similar to a table in a relational database. Collections do not enforce a schema, so each document within
+ a collection can have different fields and structures.\
+
+
+ 6:::How do you perform CRUD operations (Create, Read, Update, Delete) in MongoDB?
+
+
+ MongoDB provides CRUD operations through methods like insertOne, find, updateOne, and deleteOne. These methods allow you to create, read, update, and delete documents in a MongoDB collection.
+
+
+7::What is sharding in MongoDB?
+
+Sharding is the process of distributing data across 
+multiple servers or machines in MongoDB. It enables horizontal scaling by splitting a collection's data across shards based on a shard key. Sharding helps handle large amounts of data and
+ provides high availability and scalability.
+
+
+ :::Documnet  Update and Check Your 
+
+1::show dbs
+2::use Ones
+3::db.alldata.find()
+db.users.countDocuments()
+db.createCollection("newUser")
+db.url.renameCollection("fuckOf")
+db.users.deleteMany({}) //  all uses deletes 
+//Delete collection
+
+db.dataall.drop()
+db.users.getFullName()
+ones.users
+
+|||||||collection||||||||
+db.dataall.drop()
+db.users.getFullName()
+db.users.countDocuments()
+db.createCollection("newUser")
+db.url.renameCollection("Of")
+db.newUser.remove({ name: "John" })
+
+
+
+
+1:::Find all Method in Mongodb :::::::::::::::::::
+
+
+DataTypes in Mongoes ::DB:::::::::::::::::::::::::::::::::::::::::::::::::
+
+....String: Stores textual data. Example: "Hello, MongoDB!"
+
+I...nteger: Represents whole numbers. Example: 42
+
+..Double: Stores floating-point numbers. Example: 3.14
+
+...Boolean: Represents true or false values.
+
+...ObjectId: A unique identifier for each document, typically created automatically by MongoDB when a document is inserted.
+
+...Date: Stores dates and timestamps. Example: ISODate("2023-11-27T08:30:00Z")
+
+...Array: Holds an ordered list of values. Example: ["apple", "banana", "orange"]
+
+...Object: Stores embedded documents. Example: {"name": "John", "age": 30}
+
+...Null: Represents a null value.
+
+....Binary data: Stores binary data.
+
+....Regular Expression: Stores regular expression patterns
+
+
+
+
+|||||||||||||||||Comparison opeartion MongodDb|||||||| MongoDB Query Operators
+$eq
+$gt
+$lt
+$lte
+$in
+$nin
+$gte
+$ne
+
+
+
+// Find documents where the "age" field is equal to 30.
+{ age: { $eq: 30 } }
+
+// Find documents where the "price" field is greater than 10.
+{ price: { $gt: 10 } }
+
+// Find documents where the "quantity" field is less than or equal to 100.
+{ quantity: { $lte: 100 } }
+
+// Find documents where the "score" field is greater than or equal to 90.
+{ score: { $gte: 90 } }
+
+
+// Find documents where the "category" field is neither "A" nor "B".
+{ category: { $nin: ["A", "B"] } }
+
+// Find documents where the "color" field is not equal to "red".
+{ color: { $ne: "red" } }
+
+/ Find documents where the "category" field is neither "A" nor "B".
+{ category: { $nin: ["A", "B"] } }
+
+
+
+///Logical opeartion |||||| :::::::::::::::::::::::::::::::::::::::::::::::::::::::
+..not
+..or
+..and
+..nor
+
+db.dataall.find({
+  $or: [
+    { qty: { $lte: 36 } },
+    { qty: { $gte: 69 } }
+  ]
+})
+
+
+db.dataall.find({
+  $nor: [
+    { qty: { $lte: 36 } },
+    { qty: { $gte: 69 } }
+  ]
+})
+
+
+db.dataall.find({
+  $and: [
+    { qty: { $lte: 69 } },
+    { item: "mousepad" }
+  ]
+})
+
+||||||||||||||||||Query array in mongose|||||||||||
+
+db.dataall.findOne({"experience.company":"Amazon"}
+db.dataall.findOne({experience:{$size:3}}) // how user experience work in company and check size
+
+...$all
+db.students.find({hobbies: {$all:['jugal','sharma']}}) // all meaning is jugal sharma both is true
+
+..$in 
+db.students.find({hobbies: {$in:['jugal','sharma']}}) // all meaning is jugal sharma both is not  true
+
+
+
+|||||||||||||||||||||Insert One And Insert Many :::::::::::::::::::::::::
+
+ db.dataall.insertOne({
+  item: 'canvas',
+  qty: 100,
+  tags: ['cotton'],
+  size: { h: 28, w: 35.5, uom: 'cm' }
+});
+
+
+db.clloectyy.insertMany([{_id:"A" , name:"jugal"},{_id:"b" , name:"kinka"}] , {ordered:false}) ///!SECTION
+
+ db.collection.insertMany([
+  {
+    item: 'canvas',
+    qty: 100,
+    size: { h: 28, w: 35.5, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'journal',
+    qty: 25,
+    size: { h: 14, w: 21, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'mat',
+    qty: 85,
+    size: { h: 27.9, w: 35.5, uom: 'cm' },
+    status: 'A'
+  },
+
+]);
+
+
+////Delete MEthods In MongodDb:::::::::::::::::::::::::::::::::::::::::::::
+
+..DeleteOne
+
+db.dataall.deleteOne({item:"canvas"})
+
+
+...DeleteMany
+
+db.dataall.deleteMany({qty:10})
+
+
+....DeleteAll 
+
+db.dataall.deleteMany({}) // delteAllUser
+
+
+
+
+|||||||||Update Advance ||||||||||::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+$inc
+db.dataall.updateMany({} , {$inc:{qty:2}}) //$inc inment your age --> 20 $inc 22
+db.dataall.updateMany({} , {$inc:{qty:2}}) //$inc inment your age --> 20 $inc 18
+
+
+$min::db.dataall.updateMany({item:"jugal"} , {$min:{qty:30}})
+$max::db.dataall.updateMany({item:"karan"} , {$max:{qty:30}})
+
+...$mul //multiply
+db.dataall.updateOne({item:"mouspad"} , {$mul:{qty:2}}) // 2 is multiply 
+
+...$unset
+db.dataall.updateOne({item:"mouspad"} , {$mul:{qty:2}}) ///remover qty 
+
+...rename
+db.dataall.updateOne({qty:87} , {$rename:{item:"jugtalsharma"}})
+qty
+87
+jugtalsharma
+"mat"
+db.dataall.updateOne({} , {$rename:{item:"jugtalsharma"}}) // all user chaing
+
+...$upset
+db.dataall.updateOne({name:"coulu"} , {$set:{age:100}} , {upsert:true}) // name "coulu"in show and 
+
+add upsert insert data 
+
+
+|||||||||||Array  Update ||||||||
+db.users.updateMany(
+   { name: "amit" },
+   { $push: { hobbies: ["youtuber" , "movies"] } }  //add new array  in name amit
+)
+
+
+db.users.updateMany(
+   { name: "amit" },
+   { $addToSet: { hobbies: ["youtuber" , "movies"] } }
+) ///// same value not Push 
+
+
+db.users.updateMany(
+   { name: "amit" },
+   { $pull: { hobbies: ["youtuber" , "movies"] } }
+) ////Remove this array
+
+db.users.updateMany(
+   { name: "amit" },
+   { $pop: { hobbies: 1 } } // last arrays delete  -1 first array delete
+) ////Remove this array
+
+
+
+:::::Aggregation Framework: MongoDB's Aggregation Framework allows for complex data processing
+tasks, including filtering, grouping, sorting, and transforming data within the database.
+
+::::Indexes: Understanding and optimizing indexes is crucial for improving query performance in MongoDB. Covering,
+compound, text, geospatial, and hashed indexes are some types used for different purposes.
+
+::::-Transactions: MongoDB introduced multi-document ACID transactions in version 4.0,
+enabling developers to perform complex operations across multiple documents in a consistent manner.
+
+:::::Replication: Configuring replica sets for high availability and fault tolerance is an advanced
+concept. It involves maintaining multiple copies of data across different servers to ensure data redundancy and availability.
+
+:::::::Sharding: MongoDB allows horizontal scaling through sharding, splitting large datasets 
+across multiple servers or shards. Understanding sharding keys, distribution, and configurations is crucial for scalability.
+
+::::Geospatial Queries: MongoDB provides robust support for geospatial data and allows for executing queries
+based on geographical coordinates and shapes.
+
+::::Change Streams: These enable real-time data change notifications, allowing applications to react to
+changes happening in the database in near real-time.
+
+::::Aggregation Pipeline Optimization: Optimizing complex aggregation pipelines by using appropriate
+stages and operators to improve performance is an advanced skill.
+
+::::Security Features: Implementing authentication, authorization, encryption, and proper access controls 
+to secure the MongoDB instance is crucial for production environments.
+
+:::Schema Design Best Practices: Designing schemas that align with your application's requirements and performance 
+goals is essential. Understanding embedding vs. referencing and data modeling strategies is important.
+
+:::MongoDB Atlas: Understanding how to utilize MongoDB's cloud-based service, Atlas, including its features
+for automation, scaling, backups, and security.
+
+::::Change Tracking and Auditing: Tracking changes in the database and implementing auditing mechanisms to monitor 
+and record data modifications for compliance or debugging purposes.

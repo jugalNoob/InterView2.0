@@ -1,0 +1,630 @@
+Q What is useState?
+Ans:: cont [count , setCount]=useState("jugal");
+
+-->count is StateVarible
+
+-->setUpdate is UpdateFunction
+
+-->useState(0) initalValue
+
+
+Q what is UseEffect ?
+Ans:useEffect is a hook in React that allows you to perform side effects in functional components.
+Side effects can include things like data fetching, manually changing the DOM, 
+
+Q  what is UseReducer?`
+
+useReducer is a hook in React that provides a way to manage and update state in functional
+components using a more controlled and predictable approac
+
+
+Q what is useContext?
+Ans::
+
+
+Q what is UseMemo
+useMemo is a hook in React that allows you to optimize the performance of your 
+functional components by memoizing the results of expensive calculations. It 
+
+
+Q what is useCallBack
+
+
+Qwhat dom --
+
+D -- Html
+Object -- oops <html> <title> element <h2/> 
+models -- complete html code
+
+Q Framework vs Library: Full
+1::It comprises of lot of APIs , compilers , support programs , libraries etc.
+
+Its example are AngularJS , Spring , NodeJS , etc.
+
+
+|||||||||||Library 
+tr = "Geeks.ForGeeks"
+var pos = str.lastIndexOf("."); // simply calling function of string librar
+Its example are JQuery , React JS , etc. 
+///Coockies  
+///Crypto /
+
+QWhat is React?
+ANS:|/|React is a front-end JavaScript library that allows you to build user interfaces from reusable UI 
+components. React uses server-side rendering to provide a flexible and performance-based solution.
+It allows developers to create seamless UX and complex UI.
+
+|/|_|\|Advantages of React JS
+
+||React offers an easy debugging process. The code is reusable.
+||It’s easy to learn because of its easy and simple design.
+||It allows developers to migrate an app in React very easily.
+||It supports both Android and iOS platforms.
+||ReactJS is view-oriented.
+||It has faster updates with both server-side and front-end support.
+||It supports a React Native library that offers efficient performance.
+
+
+3. What are the limitations of React?
+
+The few limitations of React are as given below:
+
+React is not a full-blown framework as it is only a library.
+The components of React are numerous and will take time to fully grasp the benefits of all.
+It might be difficult for beginner programmers to understand React.
+Coding might become complex as it will make use of inline templating and JSX.
+
+
+
+
+5. What are keys in React?
+
+A key is a special string attribute that needs to be included when using lists of elements.
+
+use array.map
+
+not loop
+
+Keys help react identify which elements were added, changed or removed.
+
+Keys should be given to array elements for providing a unique identity for each element.
+
+Without keys, React does not understand the order or uniqueness of each element.
+
+6. What is JSX?
+
+JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+
+As stated in the official docs of React, JSX provides syntactic sugar for React.createElement( ) function.
+
+Note- We can create react applications without using JSX as well.
+
+7. What are the differences between functional and class components?
+
+State and Lifecycle: Functional components were originally stateless and could not handle lifecycle methods. However, 
+
+Component Structure: Functional components are typically simpler and more concise. They are focused on rendering UI based on the provided p
+
+Code Organization: Functional components promote a more functional programming style and make it easier to separate concerns and reuse logic
+
+
+8. What is the virtual DOM? How does react use the virtual DOM to render the UI?
+
+As stated by the react team, virtual DOM is a concept where a virtual representation of the real DOM is kept inside the memory and is synced with the real DOM by a library such as ReactDOM.
+
+
+
+15. What is React Hooks?
+React Hooks are the built-in functions that permit developers for using the state and lifecycle methods within React components. These are newly added features made available in React 16.8 version. 
+
+
+16. Explain React Hooks.
+What are Hooks? Hooks are functions that let us “hook into” React state and lifecycle features from a functional component.
+
+React Hooks cannot be used in class components. They let us write components without class.
+
+19. Why do React Hooks make use of refs?
+
+Earlier, refs were only limited to class components but now it can also be accessible in function components through the useRef Hook in React.
+
+
+Managing focus, media playback, or text selection.
+Integrating with DOM libraries by third-party.
+Triggering the imperative animations.
+20. What are Custom Hooks?
+
+Qwhat is component?
+ANS:|/| A piece of code that can resue like function
+|/|but more powerfull than function
+|/|2 type
+|/|class and function component
+
+
+21. Explain Strict Mode in React.
+StrictMode is a tool added in version 16.3 of React to highlight potential problems in an application. It performs additional checks on the application.
+
+
+23. What are the different ways to style a React component?
+class RandomComponent extends React.Component {
+ render() {
+   return (
+     <div>
+       <h3 style={{ color: "Yellow" }}>This is a heading</h3>
+       <p style={{ fontSize: "32px" }}>This is a paragraph</p>
+     </div>
+   );
+ }
+}
+
+
+27. What are the different phases of the component lifecycle?
+
+28. What are the lifecycle methods of React?
+eact lifecycle hooks will have the methods that will be automatically called at different phases in the component lifecycle and thus it provides good control over what happens at the invoked point. It provides the power to effectively control and manipulate what goes on throughout the component lifecycle.
+
+31. Differentiate React Hooks vs Classes.
+
+It is used in functional components of React.
+
+It will not require a declaration of any kind of constructor.
+
+It does not require the use of this keyword in state declaration or modification.
+
+It is easier to use because of the useState functionality.
+
+React Hooks can be helpful in implementing Redux and context API.
+
+34. What is React Router?
+BrowserRouter: It is a router implementation that will make use of the HTML5 history API (pushState, popstate, and event replaceState) for keeping your UI to be in sync with the URL. It is the parent component useful in storing all other components.
+Routes: It is a newer component that has been introduced in the React v6 and an upgrade of the component.
+Route: It is considered to be a conditionally shown component and some UI will be rendered by this whenever there is a match between its path and the current URL.
+Link: It is useful in creating links to various routes and implementing navigation all over the application. It works similarly to the anchor tag in HTML.
+35. Can R
+
+
+36. Explain conditional rendering in React.
+
+Using if-else conditional logic which is suitable for smaller as well as for medium-sized applications
+Using ternary operators, which takes away some amount of complication from if-else statements
+Using element variables, which will enable us to write cleaner code
+
+
+
+
+
+Qwhat is class component?
+|/|A component that ES6 class
+
+
+Qwhat is profiler
+ANS:profiler check your  react react website proformance but not improve
+
+
+
+
+
+
+QWhat is differnece between framework VS libaray?
+ANS:
+
+
+Qwhat is hooks life cycle method?
+ANS:
+
+
+Qwhat is JSX?
+ANS|||JSX stands for JavaScript XML. It is simply a syntax extension of JavaScript. 
+It allows us to directly write HTML in React (within JavaScript code)It is easy to create a template using JSX in React, 
+
+
+
+What is “React Fiber”?
+ANS:/|Fiber is the new reconciliation engine in React 16. Its main goal is to
+ enable incremental rendering of the virtual DOM
+
+
+
+QWhat is UseID Hook?
+Ans:useId is a hook for generating unique IDs that are stable across the server and client,
+ while avoiding hydration mismatches.
+const id = useId();
+useId is a hook for generating unique IDs that are stable across the server and client, while
+ avoiding hydration mismatches.
+
+function Checkbox() {
+  const id = useId();
+  return (
+    <>
+      <label htmlFor={id}>Do you like React?</label>
+      <input id={id} type="checkbox" name="react"/>
+    </>
+  );
+};
+      <label htmlFor={id + '-firstName'}>First Name</label>
+      <div>
+        <input id={id + '-firstName'} type="text" />
+
+
+Qwhat is virtualDom?
+ANS:Virtual DOM is nothing but a strategy that React uses to optimize the performance of an 
+application. It provides a mechanism that compares two render trees to know what exactly 
+has changed and only updates what is necessary on the actual DOM.
+
+
+Qreact use MVc?
+ANS:models view controllReact isn't an MVC framework. React is a library for building composable
+ user interfaces. While this is true, the term MVC framework is more of a marketing term. The original 
+MVC concept is closer to a design pattern and has nothing to do with frameworks.
+
+
+
+4. What is useState() in React?
+ANS:|/|The useState() is a built-in React Hook that allows you for having state variables in functional
+ components. It should be used when the DOM has something that is dynamically manipulating/controlling.
+
+5. What are keys in React?
+
+
+A key is a special string attribute that needs to be included when using lists of elements.
+
+
+.|Use Array.Map
+
+.|Not a for Loop
+
+.|give each item a uniqyes key
+
+.|Aviod useing array index as the key
+
+|/|Keys help react identify which elements were added, changed or removed.
+|/|Keys are generally used for displaying a list of data coming from an API.
+
+
+
+30. Explain about types of Hooks in React.
+
+Basic Hooks:
+useState(): This functional component is used to set and retrieve the state.
+useEffect(): It enables for performing the side effects in the functional components.
+useContext(): It is used for creating common data that is to be accessed by the components hierarchy without having to pass the props down to each level.
+
+
+|/|Additional Hooks:
+
+..useReducer
+..useCallback
+..useMemo
+..useRef
+..useImperativeHandle
+..useLayoutEffect
+..useDebugValue
+..useDeferredValue
+..useTransition
+..useId
+
+
+. What is React Router?
+
+
+
+
+. Explain Strict Mode in React.
+StrictMode is a tool added in version 16.3 of React to highlight potential problems in an 
+application. It performs additional checks on the application.
+  <React.StrictMode>
+     <div classname="App">
+       <Header/>
+       <div>
+         Page Content
+       </div>
+       <Footer/>
+     </div>
+   </React.StrictMode>
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+<React.StrictMode>
+  <App />
+</React.StrictMode>,
+rootElement
+);
+Warning about the usage of legacy context API (because the API is error-prone).
+
+
+Qwhat is State?
+ANS:information holder inside component and it store any data like a variable
+||when we update state component will rerender again but not case of variable
+
+||We can not use state outside to component
+
+
+QWhat is Props?
+ANS|/|share data between component
+|/|We can send data parant to child  ,child to parant and in sibling component
+|/|we can not Change props in receiving component
+
+
+QWhat is life cycle method?
+|/|Some Method Will execute on the component mount , update and unmount  we call them life cycle method
+
+|""|example
+::componentDidMount,
+::ComponentDidUpdate,
+::ShouldComponentUpadte,
+
+Qwhat are the Hooks?
+ANS:|/|Function component do not have state and life cycle method
+|/|to use state and life cycle method we can import hooks in function component
+|/|we can not use Hooks inside function component
+|/|use in function component or but not use in class component
+
+Qwhat is NPM?
+ANS:this Is Node Package Manager which help us to install libaray in React js
+::Like Map from Validation
+
+QWhat is Packages.json?
+AND:This file application details such as version , node package , description etc
+
+Qwhat we need to develop React APP?
+ANS:For the Reacommended way we need NPM node and any code editor.
+|/|otherwise We can use CDN ALSO
+
+QCan we can jquery , angular and Bootstrap what React.js
+
+ANS:Yes we can
+|/|we can install packages for jquery and bootstrap
+|/|we can use react package inside angular with 
+|/|we can use react package inside angular with npm install
+
+ 
+Qcan we connect react with the database directly?
+ANS:|/|No we need API For DB data
+
+QWhat is SPA?
+ANS:it stands for single page application 
+::which means application look like single and no reload or refresh on
+jumping on other page and link
+::we can make single page application with  react , angular and Vue;
+
+Qwrite a simple component in react.js?
+ANS:import React from "react"
+
+function Apple(){
+
+returns(
+
+<h1>jugal</h1>
+
+)
+}
+exports ApPle;
+
+
+
+QCan use multiple Component in react:
+
+AND:function App(){
+return(
+<>h1<>
+<other/>
+)
+}
+////////
+function other(){
+return(
+<>h1<>
+
+)
+}
+export default App;
+
+
+What are the differences between class components and functional components? 
+ANS:Functional Components: Functional components are some of the more common components that will come 
+across while working in React. These are simply JavaScript functions. We can create a functional
+component to React by writing a JavaScript function.
+
+||function_Component
+
+
+import React, { useState } from "react";
+ 
+const FunctionalComponent=()=>{
+    const [count, setCount] = useState(0);
+
+
+    return (
+        <div style={{margin:'50px'}}>
+            <h1>Welcome to Geeks for Geeks </h1>
+            <h3>Counter App using Functional Component : </h3>
+          <h2>{count}</h2>
+            <button onClick={increase}>Add</button>
+        </div>
+    )
+} 
+ 
+export default FunctionalComponent;
+
+||||////||||
+Class Component: This is the bread and butter of most modern web apps built in ReactJS. These 
+components are simple classes(made up of multiple functions that add functionality to the application).
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+export default ClassComponent;
+
+
+
+
+
+QWhat is Hightorder component?
+ANS:A component is a function that takes a component
+as a parameter and returns a component as output
+
+
+
+QWhat is the controlled Components?
+ANS:A components that have a inputs form and these input
+field controlled by react state;
+
+QWhat is uncontrooled Component?
+ANS:A component that has an input form and these 
+input field controlled by ref or Dom
+
+
+QWhat is pureComponent?
+Ans:Pure Components in React are The Comonent which do not re-render when the values of 
+state and props hash been update with the same value;
+
+5. Why use React instead of other frameworks, like Angular?
+
+ |/|Easy creation of dynamic applications: React makes it easier to create dynamic web applications because
+ it provides less coding and provides more functionality,
+|/|Improved performance: React uses virtual DOM, which makes web applications perform faster. Virtual DOM compares
+
+|/|Dedicated tools for easy debugging: Facebook has released a chrome extension that we can use to debug React applications
+
+
+What is the difference between the ES6 and ES5 standards?
+
+exports vs export
+require vs import
+
+8. What is an event in React?
+An event is an action that a user or system may trigger, such as pressing a key, a mouse click, etc.
+
+35. What is React Router?
+
+React Router is a routing library built on top of React, which is used to create routes in a React application.
+Enables multiple views in a single application by defining multiple routes in the React application.
+
+|/|Single HTML page
+|/|The user navigates multiple views in the same file
+|/|The page does not refresh since it is a single file
+|/|Improved performance
+
+
+39. How do you style React components?
+
+There are several ways in which we can style React components:
+
+
+Inline Styling
+
+<h1 style={{color="red"}}>
+
+////////////////////////////////////////////////USEHook/////////////////////////////////
+Qwhat art the useState?
+ANS:this is a hook for use state in function component
+|/|Exanple is blow
+
+Qwhat is useEffect?
+ANS:this is hook for use lifecycle methods in function compoenets
+
+
+Q what is memoization ?
+import React from 'react';
+
+const MyComponent = React.memo(({ value }) => {
+  console.log('Rendering MyComponent');
+  return <div>{value}</div>;
+});
+
+export default MyComponent;
+
+
+
+Q what is the generator function?
+
+
+
+
+Q what is the high order function?
+
+const numbers = [1, 2, 3, 4, 5];
+
+const doubled = numbers.map(function (num) {
+  return num * 2;
+});
+
+const evenNumbers = numbers.filter(function (num) {
+  return num % 2 === 0;
+});
+
+const sum = numbers.reduce(function (acc, num) {
+  return acc + num;
+}, 0);
+
+console.log(doubled);     // Output: [2, 4, 6, 8, 
+
+
+Q what is reducer?
+
+Q What is default parameter?
+
+import React, { useState } from 'react';
+
+function MyComponent(props) {
+  // Define initial state values using useState
+  const [name, setName] = useState(props.name || "Default Name");
+  const [age, setAge] = useState(props.age || "Default Age");
+
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+    </div>
+  );
+}
+
+export default MyComponent;
+
+
+Q what is spread opeartion?
+
+Copying Arrays:
+const originalArray = [1, 2, 3];
+const newArray = [...originalArray]; // Creates a copy of originalArray
+
+
+Concatenating Arrays:
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const concatenatedArray = [...array1, ...array2]; // [1, 2, 3, 4, 5, 6]
+
+
+Merging Objects:
+
+const values = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+const result = sum(...values); // Equivalent to sum(1, 2, 3)
+
+
+Passing Function Arguments:
+
+const values = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+const result = sum(...values); // Equivalent to sum(1, 2, 3)
+
+Cloning Objects:
+const originalObj = { a: 1, b: 2 };
+const newObj = { ...originalObj, c: 3, b: 4 }; // { a: 1, b: 4, c: 3 }
+
+Q what is async and wait?
+
+Q what is pure components?
+
+Q what is clouser?
+
+Q what is hosting ?
+
+Q what  create a middle ware?

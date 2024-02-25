@@ -1,0 +1,143 @@
+Q what is ZKEVM?
+Ans:
+
+
+Q How Program is Executed?
+
+Program 
+
+Compiler/Interpreter
+
+Low-Level Instruction
+
+Computer
+(Machine)
+
+Q how contract Program is Executed?
+
+Ans: solcCompiler  -- bytcode  and ABI  
+
+solcCompiler  -- bytcode  (Low level Instruction) -->EVM
+
+
+Q Ethereum Virtual Machione ?
+
+The Ethereum Virtual Machine (EVM) is a 
+decentralized virtual machine that executes
+smartcontracts on the Ethereum blockchain.
+
+Smart contracts are written in high-level
+ programming languages such as Solidity and
+compiled into EVM bytecode. This bytecode can 
+then be deployed to the Ethereum network
+and executed by the EVM.
+
+
+Q Zero Knowledge Proof ?
+
+Ans:• A zero-knowledge protocol is a method by which one party 
+(the prover) can prove to another party 
+(the verifier) that something is true, without  revealing any
+information apart from the fact that this specific statement is true.
+
+
+
+Q zkEVM in one slide ?
+
+Ans:: zkEVM  --- >Virtual Machine --->  zero Knowledge Proof and  EVM Compatible
+
+ZKEVM -- > Privacy and Scalabity  
+
+this zkEVM is Layer 2 Solution
+
+
+
+Q Virtual Machine ?
+
+In computing, a virtual machine (VM) is a software-based
+ emulation of a physical computer that can run an operating system
+ and execute applications as if it were a real
+machine.
+
+
+Q  EVM compatibility
+
+• The EVM (Ethereum Virtual Machine) is the
+ runtime environment in which smart contracts
+deployed on the Ethereum network are executed.
+
+• A virtual machine creates a virtual environment
+ that behaves like a real computer system, including a virtual CPU, memory, storage, and other components.
+
+
+Q Use Cases of zkEVM ?
+
+Ans::DeFi Applications
+
+NFT Marketplace
+
+Gaming Industry
+
+
+
+Q  What is Polygon zkEVM? 
+
+Ans::Polygon zkEVM is the first zero-knowledge scaling solution 
+that is fully equivalent to an EVM. All
+existing smart contracts, developer tooling,
+ and wallets work seamlessly. Polygon zkEVM
+harnesses the power of zero-knowledge proofs in
+ order to reduce transaction costs and massively
+increase throughput, all while inheriting the 
+security of Ethereum.
+
+
+
+
+Q zkEVM working Example
+
+Ans Jugal  -->  smartContract deployed your -->ZKEVM 
+
+https://drive.google.com/drive/folders/1JRM3RMytZp2ek0k4WB5X_qbi9_BKXo2-
+
+https://drive.google.com/drive/folders/1JRM3RMytZp2ek0k4WB5X_qbi9_BKXo2-
+
+Q zkEVM working Example
+Ans::: Smart Contract ---> Zk Proofs + Cryptographic Techniques -------> Validation
+
+how is work ZKEVM  -->
+
+
+Q zkEVM architecture ?
+Ans::zkEVM architecture
+
+The zkEVM is divided into three parts: an execution environment, proving circuit, and verifier
+contract. Each component contributes to the zkEVM’s program execution, proof generation, and
+proof verification.
+
+
+• 1. The execution environment - As the name suggests, the execution environment is where
+programs (smart contracts) are run in the zkEVM. The zkEVM’s execution environment
+functions much like the EVM: it takes the initial state and current transaction to output a new
+(final) state.
+
+
+• 2. The proving circuit - The proving circuit produces zero-knowledge proofs verifying the
+validity of transactions computed in the execution environment.
+
+
+• 3. The verifier contract - ZK-rollups submit validity proofs to a smart contract deployed on the
+L1 chain (Ethereum) for verification. The input (pre-states and transaction information) and
+output (final states) are also submitted to the verifier contract. Then the verifier runs
+computation on the provided proof
+
+
+The smart contract is deployed on ZkEVM or EVM?
+
+Ans::  The smart contract casn be deployed on both ZkEVM and EVM
+ (Ethereum Virtual Machine), but there's a distinction between 
+ the two.
+
+1::EVM (Ethereum Virtual Machine) is the original virtual machine that processes smart contracts and runs decentralized applications (dApps) on the Ethereum blockchain. It's the runtime environment for Ethereum-based smart contracts.
+
+2:::On the other hand, ZkEVM (Zero-Knowledge Ethereum Virtual Machine) is an extension of Ethereum that incorporates zero-knowledge proofs to enhance privacy and scalability. ZkEVM allows for confidential transactions and computations while preserving the security and decentralization features of Ethereum.

@@ -1,0 +1,8 @@
+1::BBC
+2::ANI 
+3::Nikka asia
+4::Time Now
+5::NBC News
+8::CNN 
+9::Sky news
+10::ABC

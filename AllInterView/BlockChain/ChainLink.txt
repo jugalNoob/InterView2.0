@@ -1,0 +1,64 @@
+Q what is ChainClick?
+Ans::ChainLink is a decentralized blockChain oracle network Built on Ethereum
+
+::The network is intended to be used to facilitate the tranfer of tamper-proof 
+data from off-chain source to on-Chain smart contract
+
+
+
+
+Q what is an Oracle?
+Ans0:: Smart contract is called on-Chain data
+
+
+2::any way to store data is called off-Chain data  -->>Weather Report --> Kucoin Exchanges  --> RandomNumber
+
+
+3:: On-Chain data brighe off-Chain Data
+
+
+4::oracles which are Systems that can provide external data sources to Ethereum Smart Contract
+
+
+5::Ideally oracless are  system that are trusless meaning that they do not need to be trusted because 
+they operate on Decentralized principles
+
+
+6::All oracle provide a few key function, by definition these include the ability to:
+
+
+
+..collect data from an off-chain source
+
+
+..Transfer the data on-Chain with a signed message
+
+
+..Make the Data available by putting it in a smart contract  storage
+
+
+
+Q what Ether Price?
+
+Ans:: Defi Application || Frontend + Smart Contract 
+
+
+
+:::Centralized oracle 
+
+Oraclize  -->  Authenticity of proof  --> TLSNotary  Proof
+
+
+
+:::Decentraclize Oracle 
+
+Defi Application
+
+Frontend  -- > Smart Contract and data fetech to Decentraclize Oracle is Called
+
+
+
+Q ChainLink Working?
+https://data.chain.link/ethereum/mainnet/crypto-usd/eth-usd -->this link  fetech data
+
+https://app.ens.domains/jugal.eth

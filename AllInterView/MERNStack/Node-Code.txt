@@ -1,0 +1,350 @@
+
+Q what Operating System -------------->
+
+const os = require('os');
+// End of Line marker
+console.log('End of Line marker:', JSON.stringify(os.EOL));
+// CPU architecture
+console.log('CPU architecture:', os.arch());
+
+// Available constants
+console.log('OS Constants:', os.constants);
+
+// CPU information
+console.log('CPU Information:', os.cpus());
+
+// Path to the null device
+console.log('Path to Null Device:', os.devNull);
+
+// Endianness
+console.log('Endianness:', os.endianness());
+
+// Free system memory
+console.log('Free System Memory:', os.freemem());
+
+// Get priority of the current process
+console.log('Priority of Current Process:', os.getPriority());
+
+// Home directory of the current user
+console.log('Home Directory:', os.homedir());
+
+// Hostname of the operating system
+console.log('Hostname:', os.hostname());
+
+// System load average
+console.log('System Load Average:', os.loadavg());
+
+// Machine hardware name
+console.log('Machine Hardware Name:', os.machine());
+
+// Network interfaces
+console.log('Network Interfaces:', os.networkInterfaces());
+
+// Operating system platform
+console.log('Platform:', os.platform());
+
+// Operating system release
+console.log('OS Release:', os.release());
+
+// Default directory for temporary files
+console.log('Temporary Directory:', os.tmpdir());
+
+// Total system memory
+console.log('Total System Memory:', os.totalmem());
+
+// Operating system type
+console.log('OS Type:', os.type());
+
+// System uptime
+console.log('System Uptime (seconds):', os.uptime());
+
+// Information about the current user
+console.log('User Information:', os.userInfo());
+
+// Operating system version
+console.log('OS Version:', os.version());
+
+
+
+
+
+
+|||||||||||||||||| Request Type with code
+---------------->
+
+app.get('/json-response', (req, res) => {
+  res.type('json');
+  res.json({ message: 'JSON response' });
+});
+
+
+app.get('/status-message', (req, res) => {
+  res.status(404);
+  res.send(`Status Message: ${res.statusMessage}`);
+});
+
+
+
+app.get('/locals-example', (req, res) => {
+  res.locals.variable = 'Local variable';
+  res.render('template');
+});
+
+
+app.get('/end-example', (req, res) => {
+  res.end('Response ended');
+});
+
+
+
+app.get('/download', (req, res) => {
+  res.sendFile('/path/to/file.txt');
+});
+
+
+
+app.get('/clear-cookie', (req, res) => {
+  res.clearCookie('user');
+  res.send('Cookie cleared!');
+});
+
+
+app.get('/set-cookie', (req, res) => {
+  res.cookie('user', 'john', { maxAge: 900000, httpOnly: true });
+  res.send('Cookie set!');
+});
+
+
+app.get('/custom-header', (req, res) => {
+  res.setHeader('X-Custom-Header', 'Custom Value');
+  res.send('Response with a custom header.');
+});
+
+
+app.get('/redirect-example', (req, res) => {
+  res.redirect('/new-location');
+});
+
+app.get('/new-location', (req, res) => {
+  res.send('Redirected to a new location.');
+});
+
+
+
+
+
+app.get('/not-found', (req, res) => {
+  res.status(404).send('Not Found');
+});
+
+
+app.get('/text', (req, res) => {
+  res.send('Hello, text response!');
+});
+
+app.get('/html', (req, res) => {
+  res.send('<h1>Hello, HTML response!</h1>');
+});
+
+app.get('/json', (req, res) => {
+  res.send({ message: 'Hello, JSON response!' });
+});
+
+
+
+
+||||||||||||| status Code  ------------------>
+res.sendStatus(200); // equivalent to res.status(200).send('OK')
+201 created user //!SECTION
+202 //accped //!SECTION
+204 //no content//!SECTION // whatapp send and not return message
+
+400 --> bad request data messages 
+
+401 --> jwt authort
+
+402 -- > payemnt required
+res.sendStatus(403); // equivalent to res.status(403).send('Forbidden') // not loggoing
+res.sendStatus(404); // equivalent to res.status(404).send('Not Found') // 
+res.sendStatus(500); // equivalent to res.status(500).send('Internal Server Error')
+
+
+
+1xx Informational:
+
+100 Continue: The server acknowledges the request and expects the client to continue sending the remainder of the request.
+101 Switching Protocols: The server agrees to switch protocols as requested by the client.
+2xx Success:
+
+200 OK: The request was successful.
+201 Created: The request resulted in the creation of a new resource.
+204 No Content: The server successfully processed the request but there's no content to send in the response.
+3xx Redirection:
+
+301 Moved Permanently: The requested resource has been permanently moved to a new location.
+302 Found (or 303 See Other): The requested resource has been temporarily moved to a new location.
+304 Not Modified: The client's cached copy of the resource is still valid.
+4xx Client Errors:
+
+400 Bad Request: The server cannot understand the request due to a client error.
+401 Unauthorized: Authentication is required and has failed or has not been provided.
+403 Forbidden: The server understood the request, but the client doesn't have permission.
+404 Not Found: The requested resource could not be found on the server.
+5xx Server Errors:
+
+500 Internal Server Error: The server encountered an error and cannot fulfill the request.
+502 Bad Gateway: The server, while acting as a gateway, received an invalid response from the upstream server.
+503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance of the server.
+504 Gateway Timeout: The server, while acting as a gateway, did not receive a timely response from the upstream server.
+
+
+
+
+:::::::::::::: Express   Alll iNformation With code
+
+// Types  middleware in Express
+
+
+//CORS Middleware:
+const cors = require('cors');
+app.use(cors());
+
+
+
+//Third-Party Middleware:
+
+const morgan = require('morgan');
+app.use(morgan('dev')); // Request logging middleware
+
+
+
+//Error Handling Middleware:
+const express = require('express');
+const router = express.Router();
+
+router.use((req, res, next) => {
+  console.log('This middleware is only for routes under this router.');
+  next();
+});
+
+
+//Application-level Middleware:
+
+const express = require('express');
+const app = express();
+
+app.use(express.json()); // JSON parsing middleware
+app.use(express.urlencoded({ extended: true })); // URL-encoded data parsing middleware
+
+
+
+//Authenticate middle ware
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Sample user data (in a real application, this should be stored securely)
+const users = [
+  { username: 'user1', password: 'password1' },
+  { username: 'user2', password: 'password2' },
+];
+
+// Middleware to parse JSON request bodies
+app.use(express.json());
+
+// Authentication middleware
+function authenticate(req, res, next) {
+  const { username, password } = req.body;
+
+  // Check if a user with the provided credentials exists
+  const user = users.find((u) => u.username === username && u.password === password);
+
+  if (!user) {
+    return res.status(401).json({ message: 'Authentication failed' });
+  }
+
+  // Attach the user to the request object for later use
+  req.user = user;
+
+  // Continue to the next middleware or route
+  next();
+}
+
+// Protected route
+app.get('/profile', authenticate, (req, res) => {
+  res.json({ message: 'Welcome to your profile, ' + req.user.username + '!' });
+});
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+
+
+//JWT Simples Line
+
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const app = express();
+const port = 3000;
+
+// Secret key for signing and verifying JWTs (replace with your secret)
+const secretKey = 'your-secret-key';
+
+// Middleware to parse JSON request bodies
+app.use(express.json());
+
+// Sample user data (in a real application, this should be stored securely)
+const users = [
+  { id: 1, username: 'user1', password: 'password1' },
+  { id: 2, username: 'user2', password: 'password2' },
+];
+
+// Generate and return a JWT token for a valid user
+function generateToken(user) {
+  const payload = { id: user.id, username: user.username };
+  const options = { expiresIn: '1h' }; // Token expires in 1 hour
+  return jwt.sign(payload, secretKey, options);
+}
+
+// Authentication route to generate a JWT token
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+
+  // Check if a user with the provided credentials exists
+  const user = users.find((u) => u.username === username && u.password === password);
+
+  if (!user) {
+    return res.status(401).json({ message: 'Authentication failed' });
+  }
+
+  // Generate a JWT token and send it in the response
+  const token = generateToken(user);
+  res.json({ token });
+});
+
+// Protected route that requires a valid JWT token
+app.get('/profile', (req, res) => {
+  // Verify the JWT token from the request
+  const token = req.headers.authorization;
+
+  if (!token) {
+    return res.status(401).json({ message: 'Authentication required' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, secretKey);
+    res.json({ message: 'Welcome to your profile, ' + decoded.username + '!' });
+  } catch (error) {
+    res.status(401).json({ message: 'Invalid token' });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+
+
+
+||||||||||||

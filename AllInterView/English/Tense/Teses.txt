@@ -1,0 +1,22 @@
+sentence --> subject + verb + object 
+
+//Verb is important
+
+
+:: base form  --> verb 1st  --> go , play
+
+::post form --> verb 2nd -->  went , played
+
+::past participle --> verb 3nd  --> gone , played
+
+::present participle --> verb 4nd --> going , playing
+
+::s/esle --> verb 5nd --> goes , plays
+
+
+
+/////////////////Subjects 
+
+he she it 
+
+

@@ -1,0 +1,66 @@
+Q room for monthy ?
+Ans::https://www.airbnb.co.in/s/novo~mesto~region~slovenia/homes?flexible_trip_lengths%5B%5D=one_month&date_picker_type=flexible_dates&refinement_paths%5B%5D=%2Fhomes&tab_id=home_tab&query=Novo%20Mesto%2C%20Slovenia&place_id=ChIJzYO6OhFVZEcRZrK0SPkCGhw&monthly_start_date=2024-03-01&monthly_length=3&monthly_end_date=2024-06-01&price_filter_input_type=1&price_filter_num_nights=28&channel=EXPLORE&price_max=100000&search_type=user_map_move&min_bedrooms=1&min_beds=1&min_bathrooms=1&l2_property_type_ids%5B%5D=1&l2_property_type_ids%5B%5D=2&l2_property_type_ids%5B%5D=3&languages%5B%5D=1&ne_lat=45.90158719141539&ne_lng=15.276958646094386&sw_lat=45.65962222362901&sw_lng=14.95449311092105&zoom=10.976736482542645&zoom_level=10.976736482542645&search_by_map=true
+
+
+
+
+Q full state in information ?
+AnS:https://www.citypopulation.de/en/slovenia/admin/jugovzhodna_slovenija/085__novo_mesto/
+
+
+Q best place to search for the first in novo mesto?
+
+1::1. Novo Mesto Cathedral
+
+4. Kandijski most
+
+2. Grajski Park Otocec
+
+3:: Museum of Dolenjska
+
+5::Breg
+
+6::Trška gora Hill
+
+7::Lower Carniola Museum in Novo Mesto
+d
+8::Grm Castle
+
+9::Kandijski most
+
+10::Grad Grm S Parkom
+
+
+
+ Q mobile shope in novo Mesto ?
+ 1::-A1 Novo mesto
+ 2::-Big Bang
+ Revoz Novo Mesto Belokranjska Cesta 4
+
+
+ Q mall in novo mesto?
+ Ans:--BTC City Novo mesto
+Ans:--Supernova Qlandia Novo mesto
+Ans:--Ljubljanska cesta 
+
+
+Q club in Novo mesto?
+Ans::Lokalpatriot mladinski klub Dnš
+Ans::-Plesni klub Novo mesto
+Ans::-Novo Mesto Bar Boter
+Ans::-Brblarna
+
+
+Q Win shop in novo mesto?
+An:VINARNA Rotovž
+2::Šturm
+
+
+Q food store in novo mesto?
+Ans:Stari most, delikatesa in čajarna
+2::HOFER
+3::Cafe Verona
+4::Tuš Supermarket Novo mesto Drska
+5::Hipermarket SPAR
+6::Tuš Market Maja
+

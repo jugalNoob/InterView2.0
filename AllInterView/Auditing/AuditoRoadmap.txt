@@ -1,0 +1,84 @@
+Q what is smart contract hacks history?
+
+    Ans: The Dao hacks
+
+    2: The  Parity Wallet hacks
+
+    3:Yam Finance Protocol
+
+    
+Q smart contract Auditor work?
+
+1::--Specialization 
+
+    Reviewing
+
+    Testing 
+
+    Analyzing
+
+    2::- Responsibilities
+
+    Secure
+
+    Reliable
+
+
+
+    RoadMap of SCA --------------------->
+
+    BlockChain   Insfrastruction
+
+    Programming Language
+
+    Smart Contract Reading
+
+    Smart Contract  Testing
+
+    Cyber Security
+
+
+
+    1::: --> BlockChain Insfrastruction
+
+    Architecture    --------   CryptoGraphy  // Example Consensus
+
+    example --> EVM
+
+
+
+2:::: Programing Language 
+
+Smart  Contract Reading
+
+Example  --> Erc20 , Uniswap , upgradeable smart contract 
+
+
+proxy smart Contract
+
+3::::: Smart Contract  Testing
+
+..Manual
+
+..Unit
+
+..Integrating
+
+..Tool 
+
+exmaple  <----------|||----------->
+
+
+Mythril
+
+Echidna
+
+Slither
+
+
+5:::Cyber Security 
+
+Attack --  exmaple || Injection , Reentrancy , Integer
+
+
+

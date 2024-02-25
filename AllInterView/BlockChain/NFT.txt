@@ -1,0 +1,89 @@
+Q what Fungible vs Non Fungible 
+
+Ans::the quality of an asset that can be ecchanged with another asset of the same type
+
+...Examples of fungible assets include currencies , commodities , and precious stones
+
+
+Non-Fungible
+car 
+House not same  is non-fungible
+..real estate , art , and ,sport , cards
+
+
+Value--/> The amount that an open market is prepared to pay for smoething
+
+feel while purchasing
+
+Demand and supply
+
+Quality good or bad
+
+useFulness
+
+Q why NFT is need?
+
+1::Trading of Physical Item
+
+...supply and Demand is maintained
+
+...OwnerShip
+
+2::Trading of digital item
+
+..make a copy your Image like Photo
+
+Q What is the Issue with Copying of Digital Item?
+
+ANS::Supply --> Demand --> Price less
+
+Loss oF ownership
+
+
+Q what is Nft?
+
+Ans:: in Layman Term NFT is a Kind of collection similar to a Pokemon Card or Painting
+
+..The Procedure of converting Youtr Work in an Nft is Called Minting
+
+..The tech Behind NFT which is parallel to the cryptocurrencies such as Ethereum and Biticoin as it depends on BlockChain
+
+..Feeling of ownerShip Since ervery transaction is recorded on BlockChain
+..These Cannot be segmented into smaller Parts
+..Supply limited
+
+Q work of NFT
+
+Painting + ID_1 --> NFT 
+Painting + ID_2 --> NFT 
+
+This two are not equal because ID are Not same this NFT
+
+...The image get Stored at IPFS or Server
+
+
+Q why NFT are So Popular?
+ANS:: The component that make NFT so Popular it Provide validation of authenticity
+
+Features of NFT
+
+Indivisible 
+
+indestruction
+
+Verifiable
+
+Non -Intererchangable
+
+Buying of Digital Items
+
+Selling of Digital Items
+
+Verifying OwnerShip of Digital Items
+
+Ensurce Copyright
+
+
+
+
+

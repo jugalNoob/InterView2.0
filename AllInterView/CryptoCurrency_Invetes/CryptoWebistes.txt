@@ -1,0 +1,23 @@
+1:: https://defillama.com/ //total locked value user
+
+2::https://coinmarketcap.com/currencies/multiversx-egld/ 
+
+3::https://www.coingecko.com/
+
+4::https://cryptopanic.com/ //news
+
+5::https://tokenterminal.com/terminal //revenue growth in cryptopanic
+
+6::https://dune.com/browse/dashboards //how many user use to cryptopanic
+
+7::https://token.unlocks.app/ 
+
+
+
+8::https://www.cryptomiso.com/ // projects activites
+
+9::https://www.cointree.com/portfolios/ //which crypto user buy most
+
+10::https://thecoinperspective.com/?vs=bitcoin // crypto market cap
+
+11::https://coindar.org/ //usecae of crypto 

@@ -1,0 +1,100 @@
+|||||||||||Bridges The future interoperability|||||||||||||||||||||||||||
+
+
+Bitcoin  ---> Ether
+
+
+1::Dapp intercommunication
+
+solana isolated environment   ----> Ethereum Isolated environment
+
+
+|||||Benefits|||||
+
+ANS::inscreased liquied
+
+2::greater accessibility
+
+3::Enhanced functionality
+
+4::improved scalability
+
+5::low trancation
+
+
+
+|||||||||||Currency exchanges
+
+
+
+|||||||||||Bridge crosee -Chain Token Transfer||||||||||
+
+
+1::Lockand Mint Model 
+
+
+bridge wbtc
+
+
+1:What Bridge in BloackChain?
+ 
+Dapp solana- Isalated Environment   --> ethereum dapp Enviroment 
+
+Instgram connect  faceBook
+
+
+..Bridges are a type of technology that is being used  to solve the interoperability issue in blockChain
+
+..Interoperability refers to the ability of different blockChains to communication and transfer value with each other
+
+..blockChain Bridges work juct like the  bridges we kniw in the physical world juct as a physical connect two physical location
+
+a blockChain bridge connect two blockChain ecosystem
+
+
+
+::::::::Data transfer to techonlogy
+
+Bitcoin isolated enviroment
+
+ethereum isolated enviroment
+
+Sharing information tow blockChain  
+
+Like  --> Token  --> Nft
+
+
+::::::::Benefits 
+
+..Increased Liguidity
+Nft solana  -- > transfer  Eth NFT
+
+..Greator accessibality --> Eth token convert to Btc Token
+..Enhanced Functionally --> defi 
+..improve Scalabity --> 
+..Low transcation  
+https://wallet.polygon.technology/zkEVM-Bridge/bridge
+
+
+
+||||||||BlockChain Cross Chain Token Transfer
+
+1::LOck and Mint Models
+
+exmaple --> 
+
+transfer btc--> |LOck Chain| bridge makes  ..wbtc is the mint --> transfer to eth  
+ 
+
+
+2::Federared Bridge model
+
+3::ThreeHold signatures models
+
+4::Sidechain Mode
+
+5::Atomic Swap Models
+
+
+
+ 
