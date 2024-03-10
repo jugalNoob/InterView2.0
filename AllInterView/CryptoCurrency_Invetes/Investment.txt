@@ -22,4 +22,6 @@
 22::RO
 23::Flux
 24::ondo
+25::clore.ai
+26::NF Prompt
 
