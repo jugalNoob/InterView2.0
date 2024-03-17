@@ -1,0 +1,604 @@
+1::sum of natural number
+2::sum of digits of a number
+3::count the number of digits of a number 
+4::Palindrome Number
+5::Fibonacci number
+6::missing Number
+7::Vaild Anagram
+8::Merge string alternately
+9::length of last word
+10::first firstOccurrence in string is called sort 
+11::bubble sort
+12::selection sort
+13::insertion sort
+14::merge sort
+15::qucick sort
+16::map in JavaScript
+17::weakMap
+18::Link list
+19::reverse Linked list
+
+///Random  String Create 
+let str = "khjdscjhblcsfdjlhb";
+let word = "";
+let length = 8; // Define the length of the random word
+for (let i = 0; i < length; i++) {
+  let random = Math.floor(Math.random() * str.length);
+  word += str[random];
+}
+console.log(word);
+let append = [];
+for (let i = 0; i < word.length; i++) {
+  append.push(word[i]); // Push each character into the array
+}
+console.log(append); // Output: Array containing individual characters of the word
+
+
+||||||||||||||||||||||||||::::::::::::::::::::::::::::::::::Scendom Function |||||||||||||||||||||||||||||||
+function generateRandomWord(length) {
+  const characters = 'abcdefghijklmnopqrstuvwxyz'; // Pool of characters
+  let randomWord = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    randomWord += characters[randomIndex];
+  }
+
+  return randomWord;
+}
+
+// Generate a random word of length 6
+const randomWord = generateRandomWord(6);
+console.log(randomWord);
+
+// Create an array and push the random word into it
+let append = [];
+append.push(randomWord);
+console.log(append); // Output: ["randomWord"]
+
+
+
+1:::Sum of natural number
+
+function sumofnatural(num){
+    // let sum=0;
+    // for(let i=0; i<=num; i++){
+    //     sum=sum+i
+    // }
+    // return sum
+console.log(sumofnatural(5)) will output 15 (sum of natural numbers up to 5: 1 + 2 + 3 + 4 + 5 = 15).
+    return  num*(num+1)/2
+}
+console.log(sumofnatural(5))
+console.log(sumofnatural(10))
+console.log(sumofnatural(8))
+
+
+2:::sum of digits of a number ||||||||  //////////////////////////////////////////////////////////////////
+function sumofDigits(num){
+let sum=0;
+while(num > 0){
+    sum+=num%10;
+    num= Math.floor(num/10);
+}
+return sum
+}
+console.log(sumofDigits(1287))
+
+
+3:::count the number of digits of a number  //////////////////////////////////////////////////////////////////
+
+function ones(sum){
+   let count= sum.toString().length;
+   let num=3
+   if(count == num){
+    console.log(true)
+   console.log(count)
+   }else{
+    console.log(false)
+   }
+}
+ones(123)
+
+function countDigits(num) {
+    // Convert the number to a string and get its length
+    return num.toString().length;
+}
+// Example usage:
+console.log(countDigits(123)); // Output will be 3 (as there are 3 digits in the number 123)
+console.log(countDigits(9876543210)); // Output will be 10 (as there are 10 digits in the number 9876543210)
+
+
+function countDigits(num) {
+    let count = 0;
+    // Keep dividing the number by 10 until it becomes 0, and count each division
+    while (num !== 0) {
+        num = Math.floor(num / 10);
+        count++;
+    }
+    return count;
+}
+// Example usage:
+console.log(countDigits(123)); // Output will be 3 (as there are 3 digits in the number 123)
+console.log(countDigits(9876543210)); // Output will be 10 (as there are 10 digits in the number 9876543210)
+
+
+:::::::Palindrome Nummber ::::::::::::::::::
+function isPalindrome(str) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    const formattedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+    // Reverse the string
+    const reversedStr = formattedStr.split('').reverse().join('');
+    // Check if the reversed string is equal to the original formatted string
+    return formattedStr === reversedStr;
+}
+// Example usage:
+console.log(isPalindrome("level")); // Output will be true
+console.log(isPalindrome("Hello")); // Output will be false
+console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output will be true
+
+
+:::::::Fibonacci Number |||||||||||||||||
+
+
+
+
+
+
+::::::::Missing Number ||||||||||||||||||||||
+
+1 , 2 , 4 , 5 , 6
+
+
+function findMissingNumber(num) {
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+        sum += num[i];
+    }
+    return num.length * (num.length + 1) / 2 - sum;
+}
+console.log(findMissingNumber([0,1,2,4])); // Output will be 3 (as 3 is the missing number in the array)
+
+
+:::::Valid Anagram ||||||||||||||||
+
+
+
+
+:::::: Longest Common Prefix
+write a function to find the largest
+common prefix string amongst an array string
+
+function longestCommonPrefix(word1, word2) {
+    let prefix = "";
+    const minLength = Math.min(word1.length, word2.length);
+
+    for (let i = 0; i < minLength; i++) {
+        if (word1[i] === word2[i]) {
+            prefix += word1[i]; // Add character to prefix if they match
+        } else {
+            break; // Break the loop if characters don't match
+        }
+    }
+
+    return prefix;
+}
+
+// Example usage:
+console.log(longestCommonPrefix('hello', 'world')); // Output will be an empty string as there's no common prefix
+console.log(longestCommonPrefix('cat', 'cattle')); // Output will be "cat" as "cat" is the common prefix
+
+
+
+||||||||| length of lat word :::::::::::
+function lengthOfLastWord(s) {
+    return s.trim().split(" ").slice(-1)[0].length;
+}
+console.log(lengthOfLastWord("jugal sharma")); // Output will be 6 (length of the last word "sharma")
+
+
+|||||||||Merge string alternately |||||||||
+
+
+
+|||||||||first ocd=curance in  string ::::::::::
+
+function firstOccurrence(str, subStr) {
+    return str.indexOf(subStr);
+}
+
+// Example usage:
+console.log(firstOccurrence("Hello, this is a sample text", "is")); // Output will be 10
+console.log(firstOccurrence("JavaScript is fun", "Java")); // Output will be -1 (as "Java" is not present in "JavaScript is fun")
+
+
+function firstOccurrence(str, subStr) {
+    for (let i = 0; i <= str.length - subStr.length; i++) {
+        let found = true;
+        for (let j = 0; j < subStr.length; j++) {
+            if (str[i + j] !== subStr[j]) {
+                found = false;
+                break;
+            }
+        }
+        if (found) {
+            return i;
+        }
+    }
+    return -1; // If the substring is not found
+}
+
+// Example usage:
+console.log(firstOccurrence("Hello, this is a sample text", "is")); // Output will be 10
+console.log(firstOccurrence("JavaScript is fun", "Java")); // Output will be -1 (as "Java" is not present in "JavaScript is fun")
+
+
+
+
+||||||||  intersection of two array"""""""""|||||
+function intersection(arr1, arr2) {
+    const intersectionArr = [];
+    const map = {};
+    for (let element of arr1) {
+        map[element] = true; // Create a map of elements from arr1
+    }
+    for (let element of arr2) {
+        if (map[element]) {
+            intersectionArr.push(element); // Add common elements to the intersectionArr
+            map[element] = false; // Mark the element as processed
+        }
+    }
+    return intersectionArr;
+// Example usage:
+console.log(intersection([1, 2, 3, 4], [3, 4, 5, 6])); // Output will be [3, 4]
+console.log(intersection(['apple', 'orange', 'banana'], ['banana', 'kiwi', 'apple'])); // Output will be ['apple', 'banana']
+
+
+function intersection(arr1, arr2) {
+    const set1 = new Set(arr1);
+    const set2 = new Set(arr2);
+    const intersectionSet = new Set([...set1].filter(element => set2.has(element)));
+    return Array.from(intersectionSet); // Convert set back to an array
+}
+// Example usage:
+console.log(intersection([1, 2, 3, 4], [3, 4, 5, 6])); // Output will be [3, 4]
+console.log(intersection(['apple', 'orange', 'banana'], ['banana', 'kiwi', 'apple'])); // Output will be ['apple', 'banana']
+
+
+
+
+|||||||||||Sort character by Frequency ::::::::::::::::
+
+
+function frequencySort(s) {
+    const charMap = Array.from(s).reduce((map, char) => {
+        map[char] = (map[char] || 0) + 1;
+        return map;
+    }, {});
+
+    const sortedChars = Object.keys(charMap).sort((a, b) => charMap[b] - charMap[a]);
+
+    let result = '';
+    for (let char of sortedChars) {
+        result += char.repeat(charMap[char]);
+    }
+
+    return result;
+}
+
+// Example usage:
+console.log(frequencySort("tree")); // Output will be "eert" or "eetr" (both have characters sorted by frequency)
+console.log(frequencySort("cccaaa")); // Output will be "aaaccc" or "cccaaa" (both have characters sorted by frequency)
+
+
+function frequencySort(s) {
+    const charMap = {};
+
+    // Create a map with character frequencies
+    for (let char of s) {
+        charMap[char] = (charMap[char] || 0) + 1;
+    }
+
+    // Sort characters by frequency
+    const sortedChars = Object.keys(charMap).sort((a, b) => charMap[b] - charMap[a]);
+
+    // Construct the resulting string based on sorted characters and their frequencies
+    let result = '';
+    for (let char of sortedChars) {
+        result += char.repeat(charMap[char]);
+    }
+
+    return result;
+}
+
+// Example usage:
+console.log(frequencySort("tree")); // Output will be "eert" or "eetr" (both have characters sorted by frequency)
+console.log(frequencySort("cccaaa")); // Output will be "aaaccc" or "cccaaa" (both have characters sorted by frequency)
+
+
+
+|||||||Sum of array |||||||||||||||||
+
+function maxSubArray(nums) {
+  let sum = 0;
+  let max = nums[0];
+
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+    if (sum > max) {
+      max = sum;
+    }
+    if (sum < 0) {
+      sum = 0;
+    }
+  }
+  return max;
+}
+// Time Complexity - O(n)
+// Space Complexity - O(1)
+
+console.log(maxSubArray([5, 4, -1, 7, 8]));
+
+
+
+|||||||||| Remove duplicates array||||||||
+function removeDuplicatesNew(nums) {
+  if (nums.length === 0) return 0;
+  let i = 0;
+
+  for (let j = 1; j < nums.length; j++) {
+    if (nums[i] !== nums[j]) {
+      i++;
+      nums[i] = nums[j];
+    }
+  }
+
+  return i + 1;
+}
+// Time Complexity - O(n)
+// Space Complexity - O(1)
+console.log(removeDuplicatesNew([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+
+
+
+||||||||| Cartesian product :::::
+function cartesianProduct(arr1, arr2) {
+  const result = []
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      result.push([arr1[i], arr2[j]])
+    }
+  }
+  return result
+}
+const arr1 = [1, 2]
+const arr2 = [3, 4, 5]
+console.log(cartesianProduct(arr1, arr2)) // [[1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]]
+
+
+||||||||qucik sort |||||||||||||||||
+function quickSort(arr) {
+  if (arr.length < 2) return arr
+  let pivot = arr[arr.length - 1]
+  let left = []
+  let right = []
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] < pivot) {
+      left.push(arr[i])
+    } else {
+      right.push(arr[i])
+    }
+  }
+  return [...quickSort(left), pivot, ...quickSort(right)]
+}
+const arr = [8, 20, -2, 4, -6]
+console.log(quickSort(arr)) // [-6, -2, 4, 8, 20]
+
+
+
+
+Types New Loop |||||||||||||||
+|||||||||||||
+
+// let count = 0;
+
+// do {
+//     console.log(`Count: ${count}`);
+//     count++;
+// } while (count < 5);
+
+function customLoop(iterations, current = 0) {
+    if (current < iterations) {
+      console.log(`Iteration ${current}`);
+      customLoop(iterations, current + 1);
+    }
+  }
+  
+  customLoop(5); // This will simulate a loop and print Iteration 0 to Iteration 4.
+
+function* customLoop(iterations) {
+    for (let i = 0; i < iterations; i++) {
+      yield i;
+    }
+  }
+  
+  const loopGenerator = customLoop(5);
+  
+  for (let iteration of loopGenerator) {
+    console.log(`Custom Loop - Iteration ${iteration}`);
+  }
+  
+
+
+
+
+JavaScript Insert  |||||||||||||||||||||||||||||||||||||||||||
+
+// Create an array
+var myArray = ["Element 1", "Element 2", "Element 3"];
+
+// Define elements to insert and their corresponding indexes
+var elementsToInsert = ["New Element 1", "New Element 2"];
+var insertionIndexes = [1, 3];
+
+// Insert elements into the array using a loop with indexes
+for (var i = 0; i < elementsToInsert.length; i++) {
+  var index = insertionIndexes[i];
+  myArray.splice(index, 0, elementsToInsert[i]);
+}
+
+console.log(myArray);
+
+
+// Create an array
+// Use Destructuring in for...of Loops:
+const pairs = [[1, 'one'], [2, 'two'], [3, 'three']];
+for (const [number, name] of pairs) {
+  console.log(`${name} is ${number}`);
+}
+
+
+
+// Use Object.keys(), Object.values(), or Object.entries():
+const obj = { a: 1, b: 2, c: 3 };
+for (const key of Object.keys(obj)) {
+  console.log(`Key: ${key}, Value: ${obj[key]}`);
+}
+
+
+2::Loop Over Arrays Efficiently:
+Use for and while loops when you need to 
+iterate through an array by index, but
+ consider using for...of for simpler 
+ iteration over array elements.
+
+
+3::Loop Control Statements:
+
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break; // Exit the loop when i is 5
+  }
+  console.log(i);
+}
+
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    continue; // Skip the current iteration when i is 5
+  }
+  console.log(i);
+}
+
+
+5::Two Pointers with a Single Loop:
+
+function twoSum(nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left < right) {
+    const sum = nums[left] + nums[right];
+
+    if (sum === target) {
+      return [left, right]; // Indices of the pair
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return null; // If no pair is found
+}
+
+const nums = [2, 7, 11, 15];
+const target = 9;
+console.log(twoSum(nums, target)); // Output: [0, 1]
+
+
+
+  5. Sliding Window Technique:
+  For problems where you need to find a subarray or substring w
+
+
+
+Example: Finding the Maximum Element in an Array
+
+function findMaxElement(arr) {
+  if (arr.length === 0) {
+    return undefined; // No maximum in an empty array
+  }
+
+  let max = arr[0]; // Initialize max with the first element
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i]; // Update max if a larger element is found
+    }
+    // Loop Invariant: At this point, max is the maximum element in arr[0...i].
+  }
+
+  return max;
+}
+
+
+ 15. Time Complexity Visualization:
+
+
+ Visualize the time complexity of your 
+ loops and algorithms. Tools like Big
+  O Cheat Sheet can be helpful for
+  understanding algorithm complexities.
+
+
+  13. Be Mindful of Edge Cases:
+
+if (myVar === null || myVar === undefined) {
+  // Handle null or undefined case
+}
+
+
+const myArray = [];
+if (myArray.length === 0) {
+  // Handle the empty array case
+}
+
+
+if (myVar <= 0) {
+  // Handle zero or negative case
+}
+
+if (typeof userInput !== 'string' || userInput.length === 0) {
+  // Handle invalid input
+}
+
+
+if (typeof myVar !== 'number') {
+  // Handle unexpected data type
+}
+
+10::Iterating Over Matrices:  |||||||||||||||||||
+
+// Create a sample 2D matrix
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// Iterate through rows and columns using nested loops
+for (let row = 0; row < matrix.length; row++) {
+  for (let col = 0; col < matrix[row].length; col++) {
+    const element = matrix[row][col];
+    console.log(`Element at row ${row}, col ${col}: ${element}`);
+  }
+}
+
+
+
+
+
+
+
