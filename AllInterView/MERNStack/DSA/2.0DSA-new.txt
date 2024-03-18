@@ -18,6 +18,50 @@
 18::Link list
 19::reverse Linked list
 
+
+-----------------------------------/////////////////////////////// 10 weird algorithms ===================================
+
+1:: Wave function collapse  --> this algo use in gaming
+
+2::diffusion --> image generation openAI
+
+3::simulated annealing
+
+4::sleep sort 
+
+5::Shor 's
+
+6::marching cubes
+
+7::byzantine fault  tolerance 
+
+8::boids
+
+9::Convex Hull Algorithms: Algorithms like Graham's scan and Jarvis's march are used to compute the convex hull 
+of a set of points in a plane. Convex hull algorithms have applications in 
+computer graphics, geographic information systems, and pattern recognition.
+
+10::Merge Sort: 
+
+11::A Search Algorithm*: A* is a popular pathfinding algorithm used in artificial intelligence
+and robotics for finding the shortest path between nodes in a graph. It combines the advantages of 
+Dijkstra's algorithm and heuristic search techniques to improve efficiency.
+
+12::Fast Fourier Transform (FFT): The FFT is an algorithm for efficiently computing the discrete 
+
+
+13::Dijkstra's Algorithm: Dijkstra's algorithm is used for finding the shortest paths between nodes in a graph, 
+
+
+
+
+
+
+
+
+
+------------------------------- ++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------
+
 ///Random  String Create 
 let str = "khjdscjhblcsfdjlhb";
 let word = "";
