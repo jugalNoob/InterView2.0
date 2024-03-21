@@ -1,0 +1,25 @@
+Linear search --------------- >><<<
+
+
+let ar = ["jugal", "sharma", "karan", "karans"]; // 'karans' already added to ar
+let se = 'js'; // Corrected se to a string
+
+// Function to add a new element to the array
+function addNewElement(newElement) {
+    ar.push(newElement);
+}
+
+// User adds a new element
+addNewElement("newElement");
+
+let posit = undefined;
+for (let i = 0; i < ar.length; i++) {
+    if (ar[i] === se) {
+        posit = i;
+        break;
+    }
+}
+
+console.log(ar, 'hello');
+console.log(posit);
+
