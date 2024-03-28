@@ -146,6 +146,23 @@ Type Operators
 :::::::All Function In Jvaascript
 
 00::function CallBack
+function one(a, b) {
+    console.log(a + b);
+}
+
+function two(a, b) {
+    console.log(a * b);
+}
+
+function call(calls, a, b) {
+    calls(a, b);
+}
+
+call(one, 2, 3); // Outputs: 5
+
+call(two, 3, 3); // Outputs: 5
+
+
 1::JavaScript Async 
 1::Function highOrder 
 2::Function curring 
