@@ -39,6 +39,13 @@ typeof myCar                  // R*	Multiplication
 --	Decrement
 +=	Add and assign
 
+let x = 5;
+// x++; // Increment x by 1
+// x+=1
+
+console.log(x); // Output: 6
+
+
 |||||||||||||||||||||||
 Assignment Operators
 =	x = y	x = y
