@@ -1,0 +1,420 @@
+An ERC-20 token is a type of digital asset or cryptocurrency that is built on the Ethereum blockchain, 
+following a specific standard known as the ERC-20 standard. ERC stands for Ethereum Request for Comment, 
+and 20 is the unique identifier for this particular standard.
+
+
+
+
+1:what is ethereum
+2:smart contract
+3:dapps
+4:evm and gas
+5:Daos
+7:hard and soft Fork
+8:Doa attack
+9:ico
+9:alt coin
+
+
+1::what is ethereum 
+
+
+.ethereum is an open-sources blockchain platform
+
+
+Q types of node 
+
+.node-ethereum - peer to peer 
+It's a software client 
+
+type of node ->
+
+
+1::Full Nodes: Full nodes download and validate the entire Ethereum blockchain,
+
+2::Light Nodes (or Light Clients): Light nodes do not download the entire blockchain. Instead,  ||| use for tranaction ||stor black header index block number
+
+3::Archive Nodes: Archive nodes are a type of full node that not only store the current state of the blockchain but also maintain historical data,
+
+4::Parity Nodes: Parity is one of the Ethereum client implementations  , and Parity nodes refer to nodes running this specific software client.
+
+full node is minor ethereum -> locally stores  a  copy of entire blockchain 
+->verifies and validates all the block
+
+
+light node 
+-> and trnsition 
+->no ssd storgae
+
+stores only the block header&index.depends on full node
+
+for low capacity devies which cannot afford to store the gigabytes of data
+
+
+archive node
+
+stores everything kept in the full node and built an  archive of historical data
+
+
+
+2:::account in ethereum  |||||||
+
+.an ethereum account is an entity with an ether (ETH) balance
+that can send or receive transctions on ethereum
+
+
+
+ type of ethereum accoun 
+
+1:externally owned account (eoa)
+
+
+create a wallet 
+privat key --password
+
+public key --email
+
+send teanstion 
+
+receive transation 
+
+smart contract
+
+2:contract account (CA)
+
+
+contrat  account enter ethereum blockchain
+
+::controlled by contract code.
+
+::deploy smart contract in ethereum blockchain nad provider contract address
+
+
+
+EOA
+
+1:privated key is need
+
+2:controlled by human
+
+
+3:no gas is associated
+
+4:has a unique address
+
+5:holds eth balance
+
+CA
+
+1:no private or public key is need
+
+2:controlled by contract code
+
+3:gas is associated
+
+4:has a unique address
+
+5:holds ETH Balance
+
+Q what is samrt contract?
+
+ANS: Code-Based: Smart contracts are written in programming languages tha
+
+Immutable: Once deployed, smart contracts are generally immutable, meaning their code and terms cannot be
+altered unless specifically designed to allow upgrades or changes.
+
+Decentralized: Smart contracts are executed on a decentralized blockchain network, which ensures that there's no single point of failure or control.
+
+Token Sales (ICO/STO): Raising funds by selling tokens to investors.
+Supply Chain Management: Tracking the movement of goods and verifying their authenticity.
+Decentralized Finance (DeFi): Automated lending, borrowing, and trading of digital assets.
+Insurance: Automating the claims process based on predefined conditions.
+Real Estate: Facilitating the purchase and transfer of property.
+Voting: Secure and transparent voting systems.
+Gaming: Implementing in-game assets and rules.
+
+
+
+Qwhat etherum gas?
+ANS::10*3-6=45 --> required gas 
+-->update in smart smart contrat -- requira gas
+-->deploy smart contract --require gass  price
+
+/////////////////////
+Gas price 
+
+A ----->B
+car ----->car
+
+1gwei=10^9eth
+1 gas price =1000 gwei
+..The higher the gas price the faster the transaction will be  mined it
+just like the transaction in bitcoin
+
+
+2::Gas Limit 
+..it is the maximum gas the transaction tranaction can consume 
+
+transaction gas limit=21,000 uints 
+
+21,000*100=210,000 gwei or 0.0021ETH
+
+
+5::Etherem block Demo
+
+.block 
+.age -->block time 
+
+
+
+QDemo of eth block chain?
+
+QWhat is Daos ?
+
+ANS::decentralized autonomous organization
+
+::contract code is if and else
+
+
+:::DAO |||||||||||||||||||||||||||||||||||||||||||||||
+
+Decentralized autonomous organization (DAO)
+
+DAO is smart contract prgramming use a if else
+
+.fully democratized
+
+.voting required
+
+.no trusted intermediary to count vote.
+
+.services offered are handled automatically
+
+.all activity is transparant and fully public.
+
+
+:::A traditional organization
+
+.usually hierarchical
+
+.voting may or may not require
+
+.outcome odf voting must be handles manually
+
+.requires human handling , or centrally controlled automation.
+
+.activity is typically private and limited to public
+
+
+
+Qwhat is the DAO attack
+
+::30.04.2016.live 
+:: 15.05.2016.the dao raised over us100$ 
+:: 16.06.2016.the dao is attacked problem in contract not ethereum blockchain
+::17.06.2016.first proposal to counter the attack
+::20.07.2016 hard forf completed
+
+
+
+
+Qwhat is hard fork
+
+ANS:: ethereum  classes old 
+
+ethereum block  new blockchain block-no-1919999
+
+
+
+..hardfork ||||||||||||||||||||||
+
+
+
+.during a hard fork , software impplemnting a protocole and its mining
+procedures is upgraded;
+
+.once a user upgrade their software that version rejects all transations
+from older software , effectively creating a new branch f the blockchain
+
+
+.
+
+
+
+Qwhat is softfork;
+
+.soft forks are change to protocol , but the end product remains unchange
+
+.a soft fork is a backward-compatible upgrade meaning that the upgrade nodes
+can still communicate with non-upgrade ones;
+
+.upgrade the blockchain and use  best  function;
+
+.old nodes (not upgrade node)could still validate block and transaction (the
+
+formatting) diidnot braek the rules)but they just wouldn't understand them;
+
+
+
+
+
+Qwhat is pos and pow
+
+ANS::ETH 2.0
+
+.scalability  --> more tranaction 
+.security  -->
+.suntainibility  --> engary control 
+.sharding  --> 
+
+.POS  -->  validator  
+
+
+ETH 2 major upgrade
+
+.proof of stack
+.sharding
+
+::pos
+
+.it is validator --> system mini eth32
+.work properl 
+
+
+:::proof of work
+
+.miners
+
+.high performance hardware required
+
+.lots of electricity required
+
+.the more hashing power youe have the more
+
+block you can validate
+
+
+.competition
+
+:::proof of stack
+
+.validators
+
+.mobile or laptop are enough
+
+.not much electricity is required
+
+.the more ETH you stake the more block you
+can validate
+
+.remdom selection is there;
+
+
+
+
+
+Qwhat is sharding;
+
+
+::network 1  -- database
+
+::network 2  --> database 
+
+::network 3  --> dadtabase
+
+.23major benfits
+
+..transaction per second inerease
+..powerful and expensive computer will not be needed
+..more validators will join
+..energy consumption will reduce
+
+QBeacon + ethereum =>beacon chain + ethereum mainnet
+
+::beacon chain + ethereum mainnet + shard chain = beacon chain + ethereum mainnet  + shard chain
+
+
+
+
+
+
+QWhat is ico;
+ANS::initial coin offering (ico)
+
+
+Qwhat is ethereUm 2 ?
+ANs::Scalability 
+Security
+sustainibility
+
+upgrader|||||||||
+
+Proof os stacks 
+
+validator  --user become a stack a ether 32eth mini
+
++Transaction free refund 
+
+
+
+19. What is the difference between Bitcoin and Ethereum?
+
+P2P currency
+
+Proof of work
+
+SHA-256
+
+10 Minutes (approx.)
+
+12.5 BTC
+
+Optional
+
+1 BTC = 6934.34 USD
+
+||||||||||||||||||||||||||||||||||||||||||||
+
+Ethereum
+P2P currency and smart contract
+Proof of work/ Proof of stake
+Ethash
+12-15 seconds
+3 ETH
+1 ETH = 278.98 USD
+A fee is calculated in gas
+
+11. What Are the Real-World Use Cases of Ethereum?
+..Decentralized Finance
+..Digital Identity:
+..Health applications:
+..Supply Chain:
+..Payments: 
+
+13. What Is Wei? How Does It Differ from Ether?
+
+Answer: Wei is the smallest unit in the Ether cryptocurrency that is used in the Ethereum network.
+
+18. Tell Us About the Type of Ethereum Networks That Exist.
+
+Answer: There are three types:
+
+Private Network
+Test Network, e.g., Rinkeby and Ropsten
+Live Network, i.e., the main Network
+
+
+19. How to Mine Ethers?
+
+Answer: To mine ethers, one needs to have a wallet and tools such as Geth CLI. With it, you need to participate in the Network and help add transactions to the blocks.
+
+
+26. What Is Block Time and Average Block Size in Ethereum?
+Answer: The block time is  14 seconds., whereas the average block size is  2kb.
+
+
+27. Can A Transaction Be Kept Hidden?
+Answer: In the case of the public Ethereum network, no transactions can be kept hidden. All transactions are public.
+
+30.What Is Geth?
+Answer: Geth is a command-line interface used when running a full Ethereum node. It’s one of the best blockchain tools out there.

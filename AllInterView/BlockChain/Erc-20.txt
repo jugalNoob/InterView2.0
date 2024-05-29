@@ -1,0 +1,48 @@
+ERC-20 stands for Ethereum Request for Comment 20, which is a standard for creating fungible tokens on the Ethereum blockchain.
+
+
+ERC-20 defines a set of rules and functions that a token on the Ethereum network must implement in order to be considered ERC-20 compliant.
+
+
+
+Erc-20
+
+function all -6 useing
+
+1:total_supply() -Retruns the total supply of the token
+
+2:balacnecOf(address _owner) returns the account Balance with address "_owerns"
+
+3:transfer_receive (adddress _to , uint256 _value) transfer _value ammount of toekn from the function caller account to address _to and fire the transfer event
+
+4:transferFrom _ send(address _from , address _to , uint256 value)tranfer valuie ammount of tokens from by contracts 
+
+
+5:approve (address _spender, uint256 value) allows the owmer of the address _spender 
+to withdraw token  yoursa account up to the _value ammount succs
+
+6:allownace (address _owner , address _spender) returns the account that _spender is still
+
+Allowed to withdrawn from _owner
+
+Q Difference Betwwen a coin and Toke
+
+1::Technology --> BlockChain
+
+2::Protocol /COIN  --> Waves  Bitcoin   Ethereum  XRP
+
+3::Token  -->
+
+
+Q what are the these Rules?
+
+Ans:: How participants over the network will communicate
+..How authentication over the Network will take Place
+..How mining will happen and how reward will be given to the  minners
+
+
+|||Portocol -- > set of rules
+
+Bitcoin  coin name Bitcoin
+
+Ethereum name coin ether

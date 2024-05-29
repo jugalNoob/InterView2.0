@@ -1,0 +1,92 @@
+Zero-knowledge proofs ----> (ZKPs) are cryptographic protocols
+ that allow one party (the prover) to prove to another party 
+ (the verifier) that they possess certain knowledge without 
+ revealing the actual information.  There are several types of zero-knowledge proofs:
+
+
+Q::what is architecture 
+
+AND::1The  execution environment 
+
+2::The proving circuit
+
+3::the verifer contract
+
+
+Qwhat is zkEVM has a lyers 2 blockChain
+
+QWhat is Types zkEVM
+
+ANs::zkEVM community edition
+
+
+
+Qwhat is EVM?
+
+Ans:Thre ethereum virtual machine (evm) is a Decentralized virtual machine that executes smart contracts on the
+EthereUm BlockChain it is the runtime environment Ethereum smart contract and is responsible for processing
+ transaction and executing the code of smart contract
+
+
+
+Qwhat is ZK?
+ANS:• A zero-knowledge protocol is a method by which one party (the prover) can prove  to another party (the verifier) 
+that something is true, without revealing any  information apart from the fact that this specific statement is true.
+
+
+
+
+:::::: Zk--RollUp ------------------------->
+
+
+Zero-Knowledge Rollups (ZK Rollups) are a scaling solution 
+for blockchains that aim to improve transaction throughput and
+ reduce fees while maintaining a high level of security and
+ decentralization. They achieve this by leveraging zero-knowledge proofs.
+
+ Data Availability:---> Transaction data and state changes are 
+ stored off-chain but made available and accessible to anyone
+  who needs to verify the validity of the transactions.
+
+Zero-Knowledge Proofs:---> These proofs provide cryptographic 
+guarantees that the off-chain computations were done correctly
+ without revealing sensitive transaction details. They prove the
+  correctness of the computations while keeping the underlying data private.
+
+Smart Contracts:---> ZK Rollups support smart contract 
+functionality, enabling complex logic and interactions while 
+benefiting from the scalability provided by the rollup structure.
+
+
+
+::::::::::::::::::::::Zk-SNARK ------------------------>
+
+
+
+ZK-SNARK stands for "Zero-Knowledge Succinct Non-Interactive Argument of Knowledge." It's a specific type of zero-knowledge proof that allows one party to prove to another that a statement is true without revealing any additional information beyond the validity of the statement itself. These proofs are succinct, meaning they're short and easy to verify.
+
+The main features of ZK-SNARKs include:
+
+Zero-Knowledge: They allow a prover to demonstrate knowledge of certain information without revealing the content of that information, apart from its validity.
+
+Succinctness: ZK-SNARKs generate very short proofs, making them efficient for verification even with complex computations. This property is crucial for scalability.
+
+Non-Interactivity: Unlike some other zero-knowledge proofs that require interaction between the prover and verifier, ZK-SNARKs can generate proofs that the verifier can check independently without interaction.
+
+ZK-SNARKs have gained significant attention due to their potential applications in blockchain technology, particularly in privacy-preserving transactions, scalability solutions (such as ZK Rollups), and authentication protocols.
+
+
+
+::::::::::::::ZK-Stark -------- > 
+
+ZK-STARK stands for "Zero-Knowledge Scalable Transparent ARguments of Knowledge." It's a cryptographic construction that falls under the category of zero-knowledge proofs, like ZK-SNARKs, but with some differences in approach and properties.
+
+The main characteristics of ZK-STARKs include:
+
+Transparency: ZK-STARKs are designed to be transparent, meaning that they do not rely on a trusted setup phase. Unlike ZK-SNARKs, which typically require a trusted setup, ZK-STARKs eliminate this need, enhancing trust and security.
+
+Scalability: ZK-STARKs offer scalability by generating proofs that are scalable with respect to the complexity of computations being proven. This allows for larger computations to be efficiently proven in a succinct and verifiable manner.
+
+Post-Quantum Security: ZK-STARKs are designed to be resilient against attacks from quantum computers, providing a level of security even in a future where quantum computing may pose a threat to some current cryptographic schemes.
+
+Higher Degree of Transparency: ZK-STARKs offer greater transparency and auditability due to their elimination of the trusted setup phase, which can sometimes introduce concerns about the potential compromise of security.

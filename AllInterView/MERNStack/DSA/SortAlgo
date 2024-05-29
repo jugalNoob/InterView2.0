@@ -1,0 +1,91 @@
+Sort Bubble |||||||||||||||||||||||||||||||||||||||||||||||
+let data=[9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 1];
+for(let i=0; i<data.length; i++){
+
+    for(let j=0; j<data.length; j++){
+
+        if(data[j]>data[j+1]){
+
+            let temp=data[j];
+
+            data[j]=data[j+1]
+
+            data[j+1]=temp
+        }
+    }
+}
+console.log(data)
+
+
+||SleepSort ||||||||||||||||||||||||||||
+let data = [6, 5, 4 , 1 , 1];
+
+const sleepSort = () => {
+    data.forEach((num) => {
+        setTimeout(() => {
+            console.log(num);
+        }, num ); // multiplying by 1000 to convert seconds to milliseconds
+    });
+};
+
+sleepSort();
+
+
+|||||||||||||--------------------------------------Inserting///
+
+let data=[ 9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 1,0,100 ]
+console.log(data.length)
+let add=69;
+let post=0;
+for(let i=data.length-1; i>=0; i--){
+    if(i>=post){
+        data[i+1]=data[i]
+    }if(i==post){
+
+        data[i]=add;
+    }
+
+}
+console.log(data)
+
+
+||||||||||||Selection Sort ------------------------------------------------
+   let items = [20, 12, 53, 3,56,78,0,5,89,34];
+      function selectionSort(data) {
+        let minId;
+        for (let i = 0; i < data.length; i++) {
+          minId = i;
+          for (let j = i + 1; j < data.length; j++) {
+            if (data[j] < data[minId]) {
+              minId = j;
+            }
+          }
+          let temp = data[minId];
+          data[minId] = data[i];
+          data[i] = temp;
+        }
+      }
+
+      selectionSort(items);
+      console.warn(items)
+
+
+||||||||qucik sort ||||||||||||||||| --------------------------------------------
+function quickSort(arr) {
+  if (arr.length < 2) return arr
+  let pivot = arr[arr.length - 1]
+  let left = []
+  let right = []
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] < pivot) {
+      left.push(arr[i])
+    } else {
+      right.push(arr[i])
+    }
+  }
+  return [...quickSort(left), pivot, ...quickSort(right)]
+}
+const arr = [8, 20, -2, 4, -6]
+console.log(quickSort(arr)) // [-6, -2, 4, 8, 20]
+
+

@@ -1,0 +1,176 @@
+Q..InterNet Protocal Important ??
+
+Ans 1:: HTTP
+
+2:::HTTP/3 (QUIC)
+
+
+3:::HTTPS
+
+
+4::Web socket 
+
+5::TCP
+
+6::UDP
+
+7::SMTP
+
+8::FTP
+---------------------------------------------------------------------------
+Q waht is DNS ?
+
+AnS::
+
+
+
+
+1:: What is MAC address?
+
+MAC --> Media Access Control Address
+
+Mac Address Example 
+
+0A:22:84:D5:65:V4
+0A:22:84:                                    D5:65:V4
+Organization Unique Identifier   ----        Network interFace Controller
+0::manufactur
+1::Country  --> 0A                             1::is called devic Id
+2::State --> 22
+3::City and manufactur -->84
+
+
+Ans: address only use  hexadecimal number 0-9 A-F meaning is 0-15
+
+ANs::Command check  getmac
+
+website --> mac lookup -->check  mac address https://macaddress.io/mac-address-lookup/72jpGEZXkB
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -------------------------
+
+
+Q what is Ip Address ?
+
+
+
+Q types of Ip Address?
+
+.Public 
+:: Wan  --> Real name
+WAN stands for Wide Area Network. It is a computer network t -->world wide use 
+
+
+.Private
+::Lan  --> Nick Name
+LAN stands for Local Area Network.  ---> 
+
+
+.Static
+
+
+.Dynamic
+
+
+
+||||||||| Types of internet Protcol  ------------------------>>
+
+1::Ip4
+
+2::Ip6
+
+3::Transmission Control Protocol (TCP): TCP is a connection-oriented protocol that provides reliable and ordered delivery of data packets between devices on a network
+
+4::User Datagram Protocol (UDP): UDP is a connectionless protocol that provides a lightweight mechanism for data transmission.
+
+5::Hypertext Transfer Protocol (HTTP): HTTP is a protocol used for transferring hypertext documents (web pages) on the World Wide Web.
+
+6::Hypertext Transfer Protocol Secure (HTTPS):HTTPS is an extension of HTTP that adds a layer of security through encryption using SSL/TLS protocols.
+
+7::File Transfer Protocol (FTP): FTP  FTP is a protocol used for transferring files between a client and a server on a network
+7:::File Transfer Protocol Secure (FTPS): An extension of FTP that adds encryption for secure file transfer.
+
+8::Simple Mail Transfer Protocol (SMTP): SMTP is a protocol used for sending email messages between servers.
+
+
+9::Post Office Protocol version 3 (POP3): A protocol for retrieving email messages from a mail server.
+
+10::Internet Message Access Protocol (IMAP): A protocol for accessing email messages stored on a mail server.
+
+11::Domain Name System (DNS): A protocol that translates domain names into IP addresses, enabling users to access websites using human-readable names.
+
+12::Dynamic Host Configuration Protocol (DHCP): A protocol used to dynamically assign IP addresses and other network configuration parameters to devices on a network.
+
+13::Address Resolution Protocol (ARP): A protocol used to map IP addresses to physical MAC addresses on a local network.
+
+14::Border Gateway Protocol (BGP): A protocol used to exchange routing information between autonomous systems on the internet.
+
+15::Simple Network Management Protocol (SNMP): A protocol used for monitoring and managing network devices and their functions.
+
+17::Secure Shell (SSH): A protocol for secure remote login and command execution on networked devices.
+
+18::Telnet: A protocol for remote terminal access and control over a network.
+
+19::Internet Control Message Protocol (ICMP): A protocol used for error reporting and diagnostic functions in IP networks.
+
+20::Internet Group Management Protocol (IGMP): A protocol used for managing multicast group membership in IP networks.
+
+
+||||||||||||||||||||||||||||||||||||||   types of inter protcol all adavance  ------------------------<><><><><><><><>
+
+1::Multiprotocol Label Switching (MPLS): MPLS is a protocol-agnostic routing technique that directs data from one network node to the next based on short path labels rather than long 
+
+2::Virtual Extensible LAN (VXLAN): VXLAN is a tunneling protocol used to extend Layer 2 segments over Layer 3 networks, enabling the creation of large-scale virtualized networks in data centers.
+
+3::Open Shortest Path First version 3 (OSPFv3): OSPFv3 is an advanced version of the OSPF routing protocol that supports IPv6 and allows for the efficient routing of IPv6 traffic in large-scale networks.
+
+4::Border Gateway Protocol version 4 (BGPv4+): BGPv4+ is an enhanced version of the Border Gateway Protocol used for inter-domain routing on the internet. 
+
+5::Bidirectional Forwarding Detection (BFD): BFD is a network protocol used to quickly detect and report failures in bidirectional communication links
+
+6::Network Time Protocol (NTP): NTP is a protocol used to synchronize the clocks of computers and network devices over a network, ensuring accurate timekeeping and coordination of distributed systems.
+
+7::Secure Sockets Layer (SSL) / Transport Layer Security (TLS): SSL and TLS are cryptographic protocols used to secure communications over a computer network. They provide encryption, authentication, and data integrity for protocols like HTTPS, SMTPS, and FTPS.
+
+8::Internet Protocol Security (IPsec): IPsec is a suite of protocols used to secure IP communications by authenticating and encrypting each IP packet
+
+9::Session Initiation Protocol (SIP): SIP is a signaling protocol used for initiating, maintaining, and terminating real-time sessions, such as voice and video calls, over IP networks.\
+
+10::Quality of Service (QoS) protocols: Various QoS protocols, such as Differentiated Services (DiffServ) and Resource Reservation Protocol (RSVP), 
+
+11::irtual Private Network (VPN) protocols: VPN protocols like Point-to-Point Tunneling Protocol (PPTP), Layer 2 Tunneling Protocol (L2TP), and Internet Key Exchange version 2 (IKEv2) are used to create secure, encrypted tunnels over public networks, allowing remote users to access private networks securely.
+
+
+
+
+
+
+
+
+
+
+|||||||||||||||| --------------------------------- }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+
+IPv4 Address: This is the most widely used type of IP address. It consists of 32 bits and is expressed in the form
+of four decimal numbers separated by periods (e.g., 192.168.1.1).
+
+IPv6 Address: With the exhaustion of IPv4 addresses, IPv6 was introduced to provide a much larger address space.
+IPv6 addresses are 128 bits in length and are represented as eight groups of four hexadecimal digits separated by colons
+(e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+Public IP Address: A public IP address is assigned to a device by the Internet Service Provider (ISP) and is accessible over the
+internet. It uniquely identifies the device on the internet.
+
+Private IP Address: Private IP addresses are used within a private network, such as a home or office network. These addresses 
+are not directly accessible from the internet. They are used for communication within the local network and are typically
+assigned by a router using DHCP (Dynamic Host Configuration Protocol).
+
+
+Static IP Address: A static IP address is assigned to a device and remains constant over time. It does not change unless manually
+reconfigured. Static IP addresses are often used for servers or network devices that require consistent accessibility.
+
+
+Dynamic IP Address: A dynamic IP address is assigned to a device by a DHCP server and may change over time. Each time
+the device connects to the network, it may be assigned a different IP address from the available pool of addresses. 
+This is common in home networks and is more cost-effective for ISPs since they can allocate IP addresses dynamically as needed.

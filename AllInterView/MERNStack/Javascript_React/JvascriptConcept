@@ -1,0 +1,163 @@
+:::::: Important Password Validation Regex -------------------
+
+let are = "jugal1452";
+let pattern = /^(?=.*[a-z])[a-z\d]+$/;
+
+let str="jugal123"
+console.log(str.match(pattern))
+console.log(are.match(pattern));
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::check javscript  memory
+const v8 = require('v8');
+const memoryUsage = v8.getHeapStatistics();
+console.log(memoryUsage);
+
+
+:::::: ---------------<><><><><<
+Event Loop in javascript  
+????????????  https://www.jsv9000.app/
+
+function A(){
+   console.log('A')
+}
+function B(){
+   console.log('B')
+}
+function C(){
+   console.log('C')
+}
+function D(){
+   console.log('D')
+}
+A()
+B()
+Promise.resolve().then(C)
+D()
+
+
+
+
+
+
+::::: Function Call  bind apply -------<><><><>
+function greet(name) {
+   return `Hello, ${name}! I am ${this.role}.`;
+}
+const person = {
+   role: 'a developer'
+};
+console.log(greet.call(person, 'jugal sharma'));
+// Output: Hello, John! I am a developer.
+
+....Apply
+function greet(name) {
+   return `Hello, ${name}! I am ${this.role}.`;
+}
+const person = {
+   role: 'a developer'
+};
+console.log(greet.apply(person, ['John']));
+// Output: Hello, John! I am a developer.
+
+.................bind
+function greet(name) {
+   return `Hello, ${name}! I am ${this.role}.`;
+}
+const person = {
+   role: 'a developer'
+};
+const greetPerson = greet.bind(person);
+console.log(greetPerson('karan'));
+
+::::::::: Array Flat 
+// let data = [[1, 2, 3], [4, 5, 6]];
+// let foo = data.flat(); // Flatten by one level
+// console.log(foo); // Output: [1, 2, 3, 4, 5, 6]
+let data = [[1, [2, 3]], [4, [5, 6]]];
+let foo = data.flat(2); // Flatten by two levels
+console.log(foo); // Output: [1, 2, 3, 4, 5, 6]
+
+
+
+
+|||
+console.log(18==18 ? "true" : "false")
+
+
+|| Wait function::::::::::::::::::
+
+async function one(){
+
+let one = "one"
+console.log(one)
+
+let two=await "two"
+console.log(two)
+
+let four = "three"
+console.log(four)
+
+let five ="five"
+console.log(five)
+}
+
+one()
+console.log("jugal")
+
+::::---------------------<><><
+let data = [];
+
+let one = Array.isArray(data);
+
+console.log(one); // Output: true
+
+
+:::::::::::::::::::::::::::::::::::::::::
+let one=[7 , 3 , 5 , 6 , 8 , 10 , 2]
+
+console.log(one.toSorted())
+console.log(one.toReversed())
+console.log(one.with(3 , "jugal")) // 3 is index  "add "
+
+
+::Objects
+let obj = [
+   { name: "jugal", age: 20 },
+   { name: "kanika", age: "2300" }
+];
+
+// Grouping by the 'name' property
+let groupedObj = Object.groupBy(obj, person => person.name);
+console.log(groupedObj);
+
+
+
+
+
+::::::::::::::::::::::::|||||||||||||
+Shift Assignment Operators
+
+let x = 50;
+let y = 2;
+x <<= y; // Equivalent to: x = x << y;  2*10 =20 and 2 *20 =40
+console.log(x); // Output: 20
+
+
+let x = 20;
+let y = 2;
+x >>= y; // Equivalent to: x = x >> y;
+console.log(x); // Output: 5
+
+
+let x = -20;
+let y = 2;
+x >>>= y; // Equivalent to: x = x >>> y;
+console.log(x); // Output: 1073741829
+
+
+
+
+
+

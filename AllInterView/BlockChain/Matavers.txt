@@ -1,0 +1,227 @@
+0::Application layer -- > smart contract Dapps --> application cross 
+1::Consenusus layers --> transaction validation , pow , pos -->  ether.js
+2::Network layers --> P2P , inter node  communication --> polygun
+3::Data Layer --> Blocks , Ds , Immutable --> defi 
+4::HardWare Layers
+
+
+
+
+Q Consenus POs , pow , pob , poa , Proof of elapsed Time?
+
+Ansc POW 
+1::Miner
+2:Block Reward  --> 
+
+POS
+1::Validators
+2::Transaction Fees --> 
+3::
+
+
+WHat is proog burn?
+
+Aans::Burn 
+
+add the Block
+
+Q what is proof of activity?
+ANS::
+
+
+Q what is coinbase Transaction?
+
+Ans::
+
+
+0::Layer 0  projects
+
+Mainnet 
+
+Cross-Chain Operations
+
+Sidechains
+
+cryprto -->4. Polkadot   -->3. Avalanche
+
+
+1::Layer 1 proejct
+crypto --> ethereum --> Bnb Chain  --> Polkadot
+
+Consensus Mechanism:
+
+(PoW)
+(POS)
+
+Security: Layer 1 blockchains are designed to provide a high level of security through cryptographic techniques and decentralized distribution of data.
+
+Decentralization: 
+
+
+2:::layer 2
+
+crypto --> Polygon --> ARB  --> OPT
+
+Lightning Network (Bitcoin): 
+
+Rollups (Ethereum): Rollups are Layer 2 solutions for Ethereum that bundle multiple transactions into a single transaction, 
+
+Polygon (formerly Matic Network): Polygon is a Layer 2 scaling solution for Ethereum that offers a framework for building and connecting Ethereum-compatible blockchain networks.
+
+Arbitrum (Ethereum): Arbitrum is a Layer 2 scaling solution that uses an optimistic rollup approach. 
+
+
+
+3::Layer 3 
+
+crypto --> Mana Uniswap -- > Makers
+
+
+
+QWhat is layer?
+ANS::
+
+1:blockChain Trilema 
+
+::three plary 
+
+.scalable -->number transtion handle 
+
+.secure --> blockchain important
+
+
+.decentralize
+
+
+2::CAP Theorem
+
+.meaing of Cap use 2/3 only 
+
+.like bitcoin --> not scalable  -->yes secure  --> secure
+
+
+3:what is layers 
+yield-farming.sol
+
+
+
+
+::types of layer is 
+||layer3|||||||||||||||||||||||||||||
+.ui interface
+
+.ux interface
+Non-Fungible Token (NFT) Contracts: NFT
+yield-farming.sol
+
+
+
+
+
+||layer2<-->important||||||||||||||||||||||||||||||
+::Payment Channel Networks: Payment channel networks, such as the Lightning Network 
+::Layer 2 refers to scaling solutions built on top of Layer 1 blockchains. These solutions aim to address the scalability limitations of Layer 1 by moving a significant portion of transaction 
+.scalability <--> polygon faster transcation--
+.bitcoin lightning network
+.big size of bitcoin blockchain
+.onchain  and offchain
+
+::lottery.sol
+::staking.sol
+
+
+||layer1||||||||||||||||||||||||||
+
+:::Smart Contracts: Layer 1 provides the infrastructure for executing smart contracts, which are self-executing contracts with predefined rules and conditions. Smart contracts enable the creation of decentralized applications (DApps) and the execution of trustless transactions.
+
+::Token Contracts: ERC-20 ::ERC-721
+:: Identity Contracts: Identity contracts provide decentralized identity solutions on the blockchain. 
+::Governance Contracts: Governance contracts facilitate decentralized decision-making and voting within a blockchain ecosystem. 
+::crowdfund.sol
+.secuirty
+
+::Transaction Validation and Verification: Layer 1 validates and verifies transactions, ensuring that they adhere to the rules and conditions of the blockchain protocol.
+
+.example - pow.pos etc
+
+
+
+||layer0 fundcumation||||||||||||||||||||||||||||
+
+.it is a prgram code of layer0
+
+1 allow blockchain blackchains to interact with each other
+
+2:faster and cheaper transactions.
+
+3:infrasture for developer
+
+4:includes the internet , hardware and connection
+
+
+
+
+
+
+
+
+
+4:bitcoin Lightning Network
+
+.it is not blockchain
+
+.this is only code is called b-l-n
+
+
+:::Payment channel
+
+.multisignature 
+
+
+.time Lock
+
+
+example
+
+::Raju || create  funding of transction  :: 1BTC          ||::Pinki
+
+.second time not add block
+
+example
+
+
+0.99 BTC TO raju
+
+0.01 BTC  to Pinki
+
+.98 btc to raju
+
+.0.02 btc to pinki
+
+
+settle transction 
+
+.this transcation add code 
+
+0.6 btc to raju
+
+0.4 btc to pinki
+
+
+
+2:compatible wallet 
+
+3:costly 
+
+4:bugs transction 
+
+
+1:what is bitcoin?
+2:bitcoin monetary policy
+3:mining
+4:nonce
+5:CPU VS GPU VS ASICs
+6:Mempool
+7:transactions
+8:wallets
+9:public key and private kay

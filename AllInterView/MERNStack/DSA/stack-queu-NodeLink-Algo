@@ -1,0 +1,568 @@
+1::What is stack?
+
+// let data=[];
+// let cureent=data.length;
+// let max=5;
+// //
+// function push(newel){
+//     if(cureent > max){
+//         console.log("mother fucker" , newel)
+// }else{
+//     data[cureent]=newel;
+//     cureent+=1
+
+// }
+// }
+// //
+// function pop(){
+
+//     if(cureent >0){
+
+//         cureent-=1;
+
+//         data.length=cureent
+
+//     }else{
+
+//         alert("stack is arlready empty")
+//     }
+// }
+// push(20)
+// push(30)
+// push(40)
+// push(50)
+// push(60)
+// push(70)
+// push(80)
+// ///
+// pop()
+// ///
+// pop()
+// console.log(data)
+
+///Button use inpute and outpute
+
+
+let data=[];
+let cureent=data.length;
+let max=5;
+//
+function push(){
+
+    let newel= document.getElementById('newEl').value;
+    if(cureent > max){
+        console.log("mother fucker" , newel)
+}else{
+    data[cureent]=newel;
+    cureent+=1
+
+}
+}
+//
+function pop(){
+
+    if(cureent >0){
+
+        cureent-=1;
+
+        data.length=cureent
+
+    }else{
+
+        alert("stack is arlready empty")
+    }
+}
+
+push()
+
+// push(20)
+// push(30)
+// push(40)
+// push(50)
+// push(60)
+// push(70)
+// push(80)
+///
+pop()
+///
+pop()
+
+
+
+console.log(data)
+
+function display(){
+
+    for(let i=0; i<=cureent-1; i++){
+
+        console.log(data[i])
+
+    }
+}
+
+
+
+ 
+
+ //////////////Stack Use  class function
+ 
+
+      class Stack {
+        item = [];
+        currentSize;
+        maxSize;
+        constructor(size) {
+          this.maxSize = size;
+          this.currentSize = this.item.length;
+        }
+        push(newVal) {
+            if(this.currentSize>=this.maxSize){
+                alert("stack is full");
+            }else{
+                this.item[this.currentSize]=newVal;
+                this.currentSize++;
+            }
+        }
+        pop() {
+            if(this.currentSize>0){
+                this.currentSize--;
+                this.item.length=this.currentSize;
+            }else{
+                alert("stack is already empty")
+            }
+        }
+        display() {
+            console.warn(this.item)
+        }
+      }
+      st1 = new Stack(5);
+    //   st1.push(20)
+    //   st1.display();
+
+
+    ////////////NOTE - Revers String in stack //ANCHOR - 
+    
+//ANCHOR - //!SECTION
+let data =[];
+let currentSize=data.length;
+function push(newVal){
+   data[currentSize]=newVal;
+   currentSize+=1;
+}
+function pop(){
+   lastRemovedItem=data[currentSize-1];
+   currentSize-=1;
+   data.length=currentSize;
+   return lastRemovedItem;
+}
+
+function reverseStr(item){
+   for(let i=0;i<item.length;i++){
+       push(item[i])
+   }
+   for(let i=0;i<item.length;i++){
+   item[i]=pop();
+   }
+   
+}
+
+
+let str="jugal sharma";
+str=str.split("");
+reverseStr(str)
+console.warn(str.join(""))
+
+
+
+||||||||||||Real Stack Line/////////////!SECTION inpute and outpute
+
+
+let data = [];
+let currentSize = data.length;
+let max = 5;
+function push() {
+  let newVal= document.getElementById('newEl').value;
+  if (currentSize >= max) {
+    alert("Stack is full you can not add" + newVal);
+  }else{
+      data[currentSize] = newVal;
+  currentSize += 1;
+  document.getElementById('newEl').value="";
+  console.warn("element added")
+  }
+}
+
+function pop() {
+  if (currentSize > 0) {
+    currentSize -= 1;
+    data.length = currentSize;
+  } else {
+    alert("stack is already empty");
+  }
+}
+function display(){
+  for(let i=0;i<=currentSize-1;i++){
+      console.log("el. no",i, "and value is ",data[i])
+  }
+}
+
+
+
+<input type="text"  value="" placeholder="enetr stack element" id="newEl"/>
+
+    <button onclick="push()">add push element stack</button>
+<br>
+    <br>
+    <button onclick="pop()">remove elemnt in stack</button>
+<br>
+    <br>
+    <button onclick="display()">display element</button>
+
+
+//////////////////////////////////////////////////////////////////////////////  queu ALgo --------------------------------------------
+
+Q::what is queue?
+
+ANSA:Javascript 
+
+let queue = [];
+let currentSize = queue.length;
+let maxSize = 5;
+
+function enqueue(newVal) {
+  if (currentSize >= maxSize) {
+    alert("Queue is already full");
+  } else {
+    queue[currentSize] = newVal;
+    currentSize++;
+  }
+}
+
+function display() {
+  console.warn(queue);
+}
+function dequeue() {
+  if (currentSize > 0) {
+    for (let i = 0; i < queue.length; i++) {
+      queue[i] = queue[i + 1];
+    }
+    currentSize--;
+    queue.length = currentSize;
+  } else {
+    alert("queue is already empty");
+  }
+}
+
+enqueue(10);
+enqueue(20);
+enqueue(30);
+dequeue()
+dequeue()
+dequeue()
+dequeue()
+display();
+
+
+//Circular queause in Javascript
+
+   class Queue {
+        constructor(size) {
+          this.max = size;
+          this.items = new Array(size);
+          this.currentSize = 0;
+          this.rear = -1;
+          this.front = -1;
+        }
+        enqueue(val) {
+          if (this.currentSize != this.max) {
+            if (this.rear == this.max - 1) {
+              this.rear = 0;
+            } else {
+              this.rear++;
+            }
+            this.items[this.rear] = val;
+            this.currentSize++;
+            if ((this.front == -1)) {
+              this.front = this.rear;
+            }
+          }
+        }
+        dequeue(){
+            if(this.currentSize!=0){
+                this.items[this.front]=null;
+                if(this.front==this.max-1){
+                    this.front=0;
+                }else{
+                    this.front++;
+                }
+                this.currentSize--;
+                
+            }else{
+                this.front=-1;
+                this.rear=-1;
+                alert("queue is empty")
+            }
+        }
+      }
+
+      let queue = new Queue(5);
+
+
+        queue.enqueue(10)
+
+  queue.enqueue(20)
+  queue.enqueue(30)
+  queue.enqueue(40)
+  queue.enqueue(50)
+
+  queue.dequeue()
+  queue.dequeue()
+  console.log(queue)
+
+
+
+  ////////////////////FIXME - 
+
+
+  <html>
+  <head>
+    <title>Queue in JavaScript</title>
+    <script>
+      let queue = [];
+      let currentSize = queue.length;
+      let maxSize = 5;
+
+      // function enqueue(newVal) {
+      //   if (currentSize >= maxSize) {
+      //     alert("Queue is already full");
+      //   } else {
+      //     queue[currentSize] = newVal;
+      //     currentSize++;
+      //   }
+      // }
+
+      function enqueueWithBtn() {
+        let newVal = document.getElementById("qEl").value;
+        if (currentSize >= maxSize) {
+          alert("Queue is already full");
+        } else {
+          queue[currentSize] = newVal;
+          currentSize++;
+        }
+      }
+
+      function display() {
+        console.warn(queue);
+      }
+      function dequeue() {
+        if (!isEmpty()) {
+          for (let i = 0; i < queue.length; i++) {
+            queue[i] = queue[i + 1];
+          }
+          currentSize--;
+          queue.length = currentSize;
+        } else {
+          alert("queue is already empty");
+        }
+      }
+      function front() {
+        if (!isEmpty()) {
+          console.warn(queue[0]);
+        } else {
+          alert("queue is already empty");
+        }
+      }
+
+      function rear() {
+        if (!isEmpty()) {
+          console.warn(queue[currentSize - 1]);
+        } else {
+          alert("queue is already empty");
+        }
+      }
+      function isEmpty() {
+        if (currentSize <= 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      // enqueue(10);
+      // enqueue(20);
+      // enqueue(30);
+
+      // front();
+      // rear();
+
+      // display();
+    </script>
+  </head>
+  <body>
+    <h1>Queue with input elements in JavaScript</h1>
+    <input placeholder="enter element" id="qEl" />
+    <button onclick="enqueueWithBtn()">Add Element</button>
+    <br/><br/>
+    <button onclick="dequeue()">Remove Element</button>
+    <button onclick="display()">Display</button>
+    <button onclick="front()">Get Front Element</button>
+    <button onclick="rear()">Get Rear Element</button>
+
+
+  </body>
+</html>
+
+
+_________________________----------------------------------------------------_________________________  Linked List -----------------
+
+
+class Link{
+constructor(){
+
+    this.head={
+        value:10,
+        next:null
+    }
+
+    this.tail=this.head;
+
+    this.size=1;
+}
+
+appendNode(nodedata){
+let newnode={
+    value:nodedata,
+    next:null
+};
+
+this.tail.next=newnode
+this.tail=newnode;
+this.size++;
+// this.size+=1
+}
+//Travering linked list
+
+traversding(){
+let counter=0;
+let currentnode=this.head;
+while(counter<this.size){
+    console.log(currentnode)
+    currentnode=currentnode.next
+    counter++
+}
+}
+
+
+}
+
+let link=new Link()
+
+link.appendNode(20)
+link.appendNode(30)
+link.appendNode(40)
+link.traversding()
+console.log(link)
+
+// let x={namee:"data"}
+// let y=x
+// y.namee="peter"
+
+// console.log(y)
+
+
+
+
+
+class Link {
+    constructor(data) {
+      this.head = {
+        value: data,
+        next: null,
+      };
+      this.tail = this.head;
+      this.size = 1;
+    }
+  
+    appendnode(newData) {
+      let newNode = {
+        value: newData,
+        next: null,
+      };
+      this.tail.next = newNode;
+      this.tail = newNode;
+      this.size++;
+    }
+  
+    unshiftall(datas) {
+      const newNode = {
+        value: datas,
+        next: null,
+      };
+      newNode.next = this.head;
+      this.head = newNode;
+      this.size++;
+    }
+  
+    traversing(index) {
+      if (index < 0 || index >= this.size) {
+        return null;
+      }
+      let counterNode = this.head;
+      for (let i = 0; i < index; i++) {
+        counterNode = counterNode.next;
+      }
+      return counterNode;
+    }
+  
+    insert(index, data) {
+      const newNode = {
+        value: data,
+        next: null,
+      };
+      const leaderNode = this.traversing(index - 1);
+      const nextNode = leaderNode.next;
+      leaderNode.next = newNode;
+      newNode.next = nextNode;
+      this.size++;
+    }
+  
+    delete(index) {
+      const leaderNode = this.traversing(index - 1);
+      const unwantedNode = leaderNode.next;
+      const nextNode = unwantedNode.next;
+      leaderNode.next = nextNode;
+      this.size--;
+    }
+  }
+  
+  const link = new Link(10);
+  link.appendnode(16);
+  link.appendnode(20);
+  link.appendnode(2);
+//   link.appendnode(40);
+//   link.appendnode(50);
+//   link.unshiftall(5);
+//   link.unshiftall(4);
+ 
+//   link.insert(1, 89);
+// link.delete(2);
+  const one = link.traversing();
+  console.log(link);
+  
+  console.log(one);
+  
+
+
+// toArray() {
+//     const result = [];
+//     let current = this.head;
+//     while (current) {
+//       result.push(current.data);
+//       current = current.next;
+//     }
+//     return result;
+//   }
+
+// console.log(list.toArray()); /
+
+    

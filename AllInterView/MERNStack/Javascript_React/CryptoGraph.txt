@@ -1,0 +1,361 @@
+What is Cryptography?
+Difference Between Encoding,
+Hashing & Cryptography
+Types of Cryptography
+How it works?
+Cryptography tools
+Hashing Tools
+Encoding Tools
+
+
+
+
+Q What is Cryptography?
+
+Ans:: -->Cryptography is the practice and study of secure
+ communication techniques used to protect
+  information from unauthorized access. 
+  It involves creating and deciphering codes 
+  to ensure data confidentiality, integrity,
+  and authentication.
+
+
+  Difference Between Encoding, Hashing & Cryptography::::::::::::::::::::::::::::
+
+Encoding:--> Encoding involves transforming data into another format 
+using a scheme to ensure it's readable by a different system or application. 
+It's not meant for security but for facilitating data transmission. Examples
+ include Base64 and ASCII.
+
+Hashing:----> Hashing is a one-way function that converts input data into a 
+fixed-size string of characters, called a hash value or digest. It's used to 
+verify data integrity and is irreversible. Even a small change in input data
+ significantly alters the hash output.
+
+Cryptography:----> Cryptography is a broader concept involving techniques like 
+encryption and decryption to secure data during transmission or storage. Encryption
+ scrambles data into ciphertext using algorithms and keys, which can be decrypted back
+  to its original form by authorized parties.
+
+
+  Types of Cryptography:::::::::::::::::::::::::::::::::::::::::::
+
+Symmetric Cryptography:-----> Uses a single key for both encryption and decryption. 
+Examples include AES (Advanced Encryption Standard) and DES (Data Encryption Standard).
+
+
+Asymmetric Cryptography:---> Involves a pair of keys, public and private, where data
+ encrypted with one key can only be decrypted by the other. Examples include RSA 
+ and Elliptic Curve Cryptography.
+
+Hashing Algorithms:---> Used for data integrity verification. Common hashing 
+algorithms include MD5, SHA-1, SHA-256, etc.
+
+
+How Cryptography Works: --------->
+Cryptography operates through algorithms and keys. Encryption converts plaintext
+ into ciphertext using an encryption algorithm and a key. Decryption uses the
+  same or a corresponding  algorithm and key to convert the ciphertext back to plaintext.
+
+
+  Cryptography Tools:::::::::::::::::::::::::::::::::::
+
+OpenSSL:----> A robust open-source toolkit for SSL/TLS protocols and general-purpose
+ cryptography.
+
+GnuPG (GPG): Provides encryption and signing functions via various cryptographic
+ protocols.
+Crypto++: A free C++ class library of cryptographic algorithms and schemes.
+Hashing Tools:
+
+MD5 Hash Generator: Calculates the MD5 hash value of files or text inputs.
+
+SHA-256 Online: Generates SHA-256 hash values for data input.
+
+bcrypt: A password hashing function designed to be slow and resistant to brute-force attacks.
+Encoding Tools:
+
+Base64 Encoder/Decoder: Converts binary data to ASCII text and vice versa.
+URL Encoder/Decoder: Encodes and decodes URLs to ensure safe transmission in web protocols.
+UTF-8 Encoding/Decoding: Handles encoding and decoding of Unicode characters for text representation.
+
+
+
+||||||||||||||||||Crypto Graphy With Code |||||||||||||||||||||||||||||||
+
+///Crypto Encrypt and Decrypt
+
+
+var CryptoJS = require("crypto-js");
+
+// Encrypt
+var ciphertext = CryptoJS.AES.encrypt('my message', 'secret key 123').toString();
+
+// Decrypt
+var bytes  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123');
+var originalText = bytes.toString(CryptoJS.enc.Utf8);
+
+console.log(originalText); // 'my message'
+
+
+|||||||||Hash Convert with Keys |||||||||||||||||||
+Keyed-hash message authentication codes (HMAC) is a mechanism 
+for message authentication using cryptographic hash functions.
+import CryptoJS from 'crypto-js';
+const message = 'Message';
+const key = 'Key';
+const hmac = CryptoJS.HmacSHA1(message, key);
+const hmacString = hmac.toString(CryptoJS.enc.Base64);
+console.log('HMAC-SHA1:', hmacString);
+
+var hash = CryptoJS.HmacMD5("Message", "Secret Passphrase");
+var hash = CryptoJS.HmacSHA1("Message", "Secret Passphrase");
+var hash = CryptoJS.HmacSHA256("Message", "Secret Passphrase");
+var hash = CryptoJS.HmacSHA512("Message", "Secret Passphrase");
+
+
+var hmac = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, "Secret Passphrase");
+hmac.update("Message Part 1");
+hmac.update("Message Part 2");
+hmac.update("Message Part 3");
+​
+var hash = hmac.finalize();
+
+
+
+||||||||||Convert to Hash With 256||||||||||
+
+const message = 'Message to hash';
+
+const hashedMessage = SHA256(message).toString();
+
+console.log('SHA-256 Hash:', hashedMessage);
+
+var sha256 = CryptoJS.algo.SHA256.create();
+sha256.update("Message Part 1");
+sha256.update("Message Part 2");
+sha256.update("Message Part 3");​
+var hash = sha256.finalize();
+
+
+|||||||||||||||PBKDF2 is a password-based key derivation function. In many applications of 
+ cryptography, user security is ultimately dependent on a password, and because a
+password usually can't be used directly as a cryptographic 
+key, some processing is required. |||||||||||||
+
+var salt = CryptoJS.lib.WordArray.random(128 / 8);
+var key128Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, {
+  keySize: 128 / 32
+});
+var key256Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, {
+  keySize: 256 / 32
+});
+var key512Bits = CryptoJS.PBKDF2("Secret Passphrase", salt, {
+  keySize: 512 / 32
+});
+var key512Bits1000Iterations = CryptoJS.PBKDF2("Secret Passphrase", salt, {
+  keySize: 512 / 32,
+  iterations: 1000
+});
+
+
+
+|||||||The Advanced Encryption Standard (AES) is a U.S. Federal Information Processing Standard (FIPS). It was selected after a 5-year
+ process where 15 competing designs were evaluated. ||||||||||
+
+ The Cipher Algorithms::::::
+
+
+ var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+​
+var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+
+const message = 'Message';
+const passphrase = 'Secret Passphrase';
+
+const encrypted = CryptoJS.AES.encrypt(message, passphrase).toString();
+console.log('Encrypted Message:', encrypted);
+
+// Decrypt
+const decrypted = CryptoJS.AES.decrypt(encrypted, passphrase).toString(CryptoJS.enc.Utf8);
+console.log('Decrypted Message:', decrypted);
+
+
+
+
+||||||||||||||||||DES is a previously dominant algorithm for encryption, and was published as an official Federal Information Processing Standard (FIPS). DES is now 
+considered to be insecure due to the small key size.|||||||||||
+
+var encrypted = CryptoJS.DES.encrypt("Message", "Secret Passphrase");
+​
+var decrypted = CryptoJS.DES.decrypt(encrypted, "Secret Passphrase");
+
+var encrypted = CryptoJS.TripleDES.encrypt("Message", "Secret Passphrase");
+​
+var decrypted = CryptoJS.TripleDES.decrypt(encrypted, "Secret Passphrase");
+
+
+
+
+
+|||||||||||||||||||||||Rabbit is a high-performance stream 
+cipher and a finalist in the eSTREAM Portfolio. It is one of 
+the four designs selected after a 3 1/2-year process where
+ 22 designs were evaluated.||||||||||||||||||||||||||||||||||
+
+ var encrypted = CryptoJS.Rabbit.encrypt("Message", "Secret Passphrase");
+​
+var decrypted = CryptoJS.Rabbit.decrypt(encrypted, "Secret Passphrase");
+
+
+
+
+|||||||||||||||RC4, RC4Drop
+RC4 is a widely-used stream cipher. It's used in popular protocols
+ such as SSL and WEP. Although remarkable for its simplicity and speed, the
+ algorithm's history doesn't inspire confidence in its security.
+
+
+ var encrypted = CryptoJS.RC4.encrypt("Message", "Secret Passphrase");
+ var decrypted = CryptoJS.RC4.decrypt(encrypted, "Secret Passphrase");
+
+
+ var encrypted = CryptoJS.RC4Drop.encrypt("Message", "Secret Passphrase");
+ ​
+ var encrypted = CryptoJS.RC4Drop.encrypt("Message", "Secret Passphrase", {
+   drop: 3072 / 4
+ });
+ ​
+ var decrypted = CryptoJS.RC4Drop.decrypt(encrypted, "Secret Passphrase", {
+   drop: 3072 / 4
+ });
+
+
+
+
+
+ ||||||||Custom Key and IV |||||||||||||||||||||||||
+
+ var key = CryptoJS.enc.Hex.parse("000102030405060708090a0b0c0d0e0f");
+
+var iv = CryptoJS.enc.Hex.parse("101112131415161718191a1b1c1d1e1f");
+​
+var encrypted = CryptoJS.AES.encrypt("Message", key, { iv: iv });
+
+
+import React, { useEffect } from 'react';
+import CryptoJS from 'crypto-js';
+
+const MyComponent = () => {
+  useEffect(() => {
+    // Properties from the encrypted object
+    const encryptedData = {
+      key: CryptoJS.enc.Hex.parse("74eb593087a982e2a6f5dded54ecd96d1fd0f3d44a58728cdcd40c55227522223"),
+      iv: CryptoJS.enc.Hex.parse("7781157e2629b094f0e3dd48c4d786115"),
+      salt: CryptoJS.enc.Hex.parse("7a25f9132ec6a8b34"),
+      ciphertext: CryptoJS.enc.Hex.parse("73e54154a15d1beeb509d9e12f1e462a0")
+    };
+    // Passphrase used during encryption
+    const passphrase = "Secret Passphrase";
+
+    // Create an object compatible with decryption
+    const decryptionObject = {
+      ciphertext: encryptedData.ciphertext,
+      key: encryptedData.key,
+      iv: encryptedData.iv,
+      salt: encryptedData.salt
+    };
+
+    // Decrypt the data
+    const decrypted = CryptoJS.AES.decrypt(decryptionObject, passphrase).toString(CryptoJS.enc.Utf8);
+
+    console.log('Decrypted Message:', decrypted);
+  }, []);
+
+  return (
+    <div>
+      {/* Your component JSX */}
+    </div>
+  );
+};
+
+export default MyComponent;
+
+
+
+|||||||||||||||||||Base in CryptoGraphy |||||||||||||||||||||||||||||
+import React, { useEffect } from 'react';
+import CryptoJS from 'crypto-js';
+
+    // Base64 Encoding/Decoding
+    const base64String = "SGVsbG8sIFdvcmxkIQ==";
+    const base64Words = CryptoJS.enc.Base64.parse(base64String);
+    const base64Decoded = CryptoJS.enc.Base64.stringify(base64Words);
+
+    console.log('Base64 Encoded:', base64String);
+    console.log('Base64 Decoded:', base64Decoded);
+
+    // Latin1 Encoding/Decoding
+    const latin1String = "Hello, World!";
+    const latin1Words = CryptoJS.enc.Latin1.parse(latin1String);
+    const latin1Encoded = CryptoJS.enc.Latin1.stringify(latin1Words);
+
+    console.log('Latin1 Encoded:', latin1String);
+    console.log('Latin1 Decoded:', latin1Encoded);
+
+    // Hex Encoding/Decoding
+    const hexString = "48656c6c6f2c20576f726c6421";
+    const hexWords = CryptoJS.enc.Hex.parse(hexString);
+    const hexEncoded = CryptoJS.enc.Hex.stringify(hexWords);
+
+    console.log('Hex Encoded:', hexString);
+    console.log('Hex Decoded:', hexEncoded);
+
+    // UTF-8 Encoding/Decoding
+    const utf8String = "𔭢";
+    const utf8Words = CryptoJS.enc.Utf8.parse(utf8String);
+    const utf8Encoded = CryptoJS.enc.Utf8.stringify(utf8Words);
+
+    console.log('UTF-8 Encoded:', utf8String);
+    console.log('UTF-8 Decoded:', utf8Encoded);
+
+    // UTF-16 Encoding/Decoding
+    const utf16String = "Hello, World!";
+    const utf16Words = CryptoJS.enc.Utf16.parse(utf16String);
+    const utf16Encoded = CryptoJS.enc.Utf16.stringify(utf16Words);
+
+    console.log('UTF-16 Encoded:', utf16String);
+    console.log('UTF-16 Decoded:', utf16Encoded);
+
+    // UTF-16LE Encoding/Decoding
+    const utf16LEString = "Hello, World!";
+    const utf16LEWords = CryptoJS.enc.Utf16LE.parse(utf16LEString);
+    const utf16LEEncoded = CryptoJS.enc.Utf16LE.stringify(utf16LEWords);
+
+    console.log('UTF-16LE Encoded:', utf16LEString);
+    console.log('UTF-16LE Decoded:', utf16LEEncoded);
+
+
+    var words = CryptoJS.enc.Base64.parse("SGVsbG8sIFdvcmxkIQ==");
+​
+var base64 = CryptoJS.enc.Base64.stringify(words);
+​
+var words = CryptoJS.enc.Latin1.parse("Hello, World!");
+​
+var latin1 = CryptoJS.enc.Latin1.stringify(words);
+​
+var words = CryptoJS.enc.Hex.parse("48656c6c6f2c20576f726c6421");
+​
+var hex = CryptoJS.enc.Hex.stringify(words);
+​
+var words = CryptoJS.enc.Utf8.parse("𔭢");
+​
+var utf8 = CryptoJS.enc.Utf8.stringify(words);
+​
+var words = CryptoJS.enc.Utf16.parse("Hello, World!");
+​
+var utf16 = CryptoJS.enc.Utf16.stringify(words);
+​
+var words = CryptoJS.enc.Utf16LE.parse("Hello, World!");
+​
+var utf16 = CryptoJS.enc.Utf16LE.stringify(words);

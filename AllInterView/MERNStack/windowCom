@@ -1,0 +1,104 @@
+
+:: echo.>newfile.txt  --> create a your file
+
+touch newfile.txt --> linux command
+echo.>newfile.txt
+::: dir: Lists the contents of a directory.
+Example: dir
+:::cd: Changes the current directory.
+Example: cd C:\Windows\System32
+::: copy: Copies one or more files from one location to another.
+Example: copy file1.txt destination_folder
+:::move: Moves one or more files from one location to another.
+Example: move file1.txt destination_folder
+:::del: Deletes one or more files.
+Example: del file1.txt
+:::mkdir: Creates a new directory.
+Example: mkdir new_folder
+:::rmdir: Deletes a directory.
+Example: rmdir directory_to_delete
+:::ren: Renames a file or directory.
+Example: ren old_name.txt new_name.txt
+:::type: Displays the contents of a text file.
+Example: type file.txt
+:::xcopy: Copies files and directory trees.
+Example: xcopy source destination /s /e
+
+
+dir: Lists the contents of a directory.
+cd: Changes the current directory.
+copy: Copies one or more files from one location to another.
+move: Moves one or more files from one location to another.
+del: Deletes one or more files.
+mkdir: Creates a new directory.
+rmdir: Deletes a directory.
+tasklist: Displays a list of currently running processes.
+taskkill: Terminates one or more processes.
+ipconfig: Displays the TCP/IP configuration for all network adapters.
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+1::: netsh wlan show profile --> show wifi contect
+2::netsh wlan show profile "JioFiber-KNhbe" key=clear --> show wifi password
+3::systeminfo -->show all os 
+4::color 02  :: convert to green color
+5::color /? 
+6::prompt {hey}$G -->change 
+7::prompt
+8::title himom
+9::curl wttr.in/Dalla --> check temperature
+10::curl wttr.in/Jammu
+11::curl --head --location "https://ntck.co/itprotv" | findstr Loaction -->check any location
+12::curl -Is "https://networkchuck.com"
+13::curl checkip.amazonaws.com -->check Ip
+14::curl qrenco.de/https://networkchuck.coffee -->create a QR codree
+15:: doskey /history --> show all user use command
+
+
+
+||||||||||| All Ip Coomand 
+
+route print
+route add 
+route delete
+
+::netstat
+:::netstat -af
+::netstat -o
+::>netstat -e -t 5 --> important
+::tracert google.com
+::tracert  -d  google.com
+::tracert 
+::ping google.com
+::ping -t google.com -->-t means continu
+::tasklist | findstr script
+::tasklist 
+::taskkill
+
+::DISH /Online /Cleanup-Image /CheckHealth
+::DISM /Online /Cleanup-Image /ScanHealth
+::ISM /Online /Cleanup-Image /RestoreHealth
+
+::sfc /scannow -->system file scanner
+::chkdsk /f
+::assoc --> all file
+::assoc .wm=WMP11.AssocFile.ASF
+:::powercfg  /batteryreport
+Battery life report saved to file path C:\Windows\System32\battery-report.html.
+::getmac /v
+::nslookup google.com
+  > ipconfig                       ... Show information
+    > ipconfig /all                  ... Show detailed information
+    > ipconfig /renew                ... renew all adapters
+    > ipconfig /renew EL*            ... renew any connection that has its
+                                         name starting with EL
+    > ipconfig /release *Con*        ... release all matching connections,
+                                         eg. "Wired Ethernet Connection 1" or
+                                             "Wired Ethernet Connection 2"
+    > ipconfig /allcompartments      ... Show information about all
+                                         compartments
+    > ipconfig /allcompartments /all ... Show detailed information about all
+                                         compartments
+

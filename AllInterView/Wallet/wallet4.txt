@@ -1,0 +1,9 @@
+naka  -54
+
+oria --3.3
+
+itox  --> 546
+
+ranta  -->  110
+
+pyth  -->> 37

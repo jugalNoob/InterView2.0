@@ -1,0 +1,173 @@
+Recursive Approach: ------------------------------------------- ~~~ ::::::::::::::::::::::::
+   function fat(x){
+    if(x  < 3){
+        fat(x+1)
+   }
+   console.log(x)
+}
+let data=0
+fat(data)
+
+let count=0
+function All(){
+    if(count > 3){
+        return 'done'
+    }
+    count++
+    console.log(count)
+  All()
+}
+All()
+
+
+---------------- Array ::::::::::::::::::::::::::::: -------------------------------- 
+unction XX(data) {
+    console.log(data);
+    if (data.length ===0) {
+        XX(data); // Recursively call XX with the updated data
+    }
+}
+let data = ['jugal', 'kanika', 'ridhima', 'anki'];
+XX(data);
+
+
+function recursiveLoop(array, index = 0) {
+    if (index === array.length) {
+        return;
+    }
+    console.log(array[index]);
+    recursiveLoop(array, index + 1);
+}
+// Example usage
+let data = ['jugal', 'kanika', 'ridhima', 'anki'];
+recursiveLoop(data);
+
+
+
+----------------------------------facterical function 5 *4 *3 * 2 * 1  :::::::::::::::::::::::::::::::::::::::: 
+function facterical(x){ 
+    if(x ===2 ){
+        return 2
+    }
+    return  x*facterical(x-1)
+    // 5*facterical(5-1) * facterical(4-1)
+}
+//Maximum call stack size exceeded meing is infinaty looping
+let dat=5
+console.log(factorial(dat))
+
+
+function All(number){
+    let ans=1
+    for(let i=number; i>0; i--){
+        ans=ans*i
+    }
+    console.log(ans)
+}
+All(5)
+
+
+:::::::::::: ---- Loop In javascript -------------
+
+let one=['jugal' , 'karan' , 'anku' , 'kanika']
+::Reverse Looping
+let one = [1 , 2  , 3 , 4];
+
+for(let i=one.length-1; i>=0; i--){
+   console.log(one[i])
+}
+
+::Loop
+for(let i=0; i<one.length; i++){
+   console.log(one[i])
+}
+::: While
+let i = 0;
+while (i < one.length) {
+    console.log(one[i]);
+    i++;
+}
+
+ :::Do while
+let ii = 0;
+do {
+    console.log(one[ii]);
+    ii++;
+} while (ii < one.length);
+
+
+:::setInterval and  clearInterval
+let i=0
+let one =setInterval(()=>{
+   console.log(i)
+   i++
+   if(i >3){
+      clearInterval(i)
+   }
+},3000)
+
+
+:::
+Recursive Approach
+   function fat(x){
+    if(x  < 3){
+        fat(x+1)
+   }
+   console.log(x)
+}
+let data=0
+fat(data)
+:::::::::::::::::::
+function XX(data) {
+    console.log(data);
+    if (data.length ===0) {
+        XX(data); // Recursively call XX with the updated data
+    }
+}
+let data = ['jugal', 'kanika', 'ridhima', 'anki'];
+XX(data);
+
+
+let one = ['jugal', 'karan', 'anku', 'kanika'];
+function iterateArray(index) {
+    if (index >= one.length) {
+        return;
+    }
+    console.log(one[index]);
+    iterateArray(index + 1);
+}
+iterateArray(0);
+
+::: for in or of
+
+let one = ['jugal', 'karan', 'anku', 'kanika'];
+
+for(let two in one){
+console.log(two)
+}
+
+for(let three of one){
+   console.log(three)
+}
+
+let one = [[[1 , 2 , 3] , [4 , 5 , 6]]];
+
+for (let innerArray of one) {
+    let [two, three] = innerArray;
+    console.log(two);
+    console.log(three)
+}
+
+::::: Object LoopIng
+let obj = {
+   'name': 'jugal',
+   'email': 'jugal@example.com'
+};
+
+for (let key in obj) {
+   console.log(obj[key]);
+}
+
+
+
+

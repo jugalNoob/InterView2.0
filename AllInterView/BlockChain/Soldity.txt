@@ -1,0 +1,92 @@
+https://faucets.chain.link/
+https://www.tutorialspoint.com/solidity/solidity_loops.htm
+
+1::state variable
+
+2::local variable
+
+3:function 
+
+
+4:view and pure
+
+
+5::consturtor
+
+6::integers
+
+
+7::overflow
+
+
+
+8:: array
+
+
+9::bytes
+
+
+10::loops
+
+
+11::if else
+
+
+12:bool data
+
+13::structrue
+
+14::enum
+
+15:mapping
+
+16::storage vs memory vs callData
+
+
+17::contract blance
+
+
+18::global variable
+
+19:::visibility  //no
+
+20:::event
+
+
+21::constant
+
+
+22::/string variable start
+
+
+23::::///default variable
+
+
+24|:://////::///inheritance
+
+
+25::/libary
+
+26::modfiar
+
+
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.4.22 <0.9.0;
+
+
+interface base{
+
+function get() external pure returns(uint);
+
+}
+
+contract main is base{
+
+function get() public pure override returns (uint){
+
+
+  return 22;
+}
+
+}

@@ -1,0 +1,30 @@
+|||Server Monitoring with Grafana Prometheus And LoKie  |||||||||||||||||||||
+
+1:::Auto Scalling 
+
+
+2:::check memory full and ram full  with express.js
+
+
+:://::Monitoring 
+
+Q what is metrice ?
+
+Ans::Metrice are a number like and power your metrics and alerting with the leading open-source monitory 
+Prometheus-client  --> use for check memory and CPU and Story 
+
+
+
+Q what is Log collection ?
+And::..Log Collection
+
+
+Q GraFanaLabs Your for Metric graph and visual?
+
+Q what GrafanaLabs  copied The Id?
+
+Ans::
+
+
+QGrafanaLoki  ??
+Ans::Collection collect

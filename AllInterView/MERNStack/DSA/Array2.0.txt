@@ -1,0 +1,214 @@
+
+::::::::-------------->><><> 
+function rotateArray(arr, steps) {
+   for (let i = 0; i < steps; i++) {
+       arr.push(arr.shift());
+   }
+   return arr;
+}
+
+let array = [1, 2, 3, 4, 5];
+let steps = 3;
+console.log(rotateArray(array, steps)); // Output: [3, 4, 5, 1, 2]
+
+
+::::::::: -------><><>
+function rotateMatrix90(matrix) {
+   const n = matrix.length;
+   // Transpose the matrix
+   for (let i = 0; i < n; i++) {
+       for (let j = i; j < n; j++) {
+           [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+       }
+   }
+   // Reverse each row
+   for (let i = 0; i < n; i++) {
+       matrix[i].reverse();
+   }
+   return matrix;
+}
+let matrix = [
+   [1, 2, 3],
+   [4, 5, 6],
+   [7, 8, 9]
+];
+console.log(rotateMatrix90(matrix));
+
+
+:::Filetr in array  ----------------------->
+let data = [10, 20, 30, 40, 50, 60, 80];
+let op = 20;
+for (let i = 0; i < data.length; i++) {
+    if (data[i] > op) {
+        console.log(data[i]);
+    } else {
+        console.log("Number is greater than ",op);
+    }
+}
+
+::: Map Function ---------------------------------<><><><><
+
+let data = ["jugal" , "karan" , "kanika" , "anku"];
+let op = 20;
+for (let i = 0; i < data.length; i++) {
+   console.log(i)
+   console.log(data[i])
+   console.log(data)
+}
+
+
+
+::: ------------------->>>>>>>>>> Reducer ----------------
+let data = [10, 30 , -1];
+let sum = 0;
+for (let i = 0; i < data.length; i++) {
+    let doubledValue = data[i] 
+    sum += doubledValue;
+}
+console.log("Sum of doubled values:", sum);
+
+
+
+:::: Patterns -------------------------------------<><>
+1:sliding windowa
+function maxSumSubarray(arr, windowSize) {
+    if (arr.length < windowSize) {
+        return null;
+    }
+    let maxSum = 0;
+    let currentSum = 0;
+    // Calculate sum of first window
+    for (let i = 0; i < windowSize; i++) {
+        maxSum += arr[i];
+    }
+    currentSum = maxSum;
+    // Slide the window and update the sums
+    for (let i = windowSize; i < arr.length; i++) {
+        currentSum = currentSum - arr[i - windowSize] + arr[i];
+        maxSum = Math.max(maxSum, currentSum);
+    }
+    return maxSum;
+}
+// Example usage
+const arr = [4, 2, 1, 7, 8, 1, 2, 8, 1, 0];
+const windowSize = 3;
+console.log(maxSumSubarray(arr, windowSize)); // Output: 16 (sum of subarray [7, 8, 1])
+
+2:::Two pointer
+function twoSum(arr, target) {
+    // Sort the array (if it's not already sorted)
+    arr.sort((a, b) => a - b);
+
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left < right) {
+        const sum = arr[left] + arr[right];
+        if (sum === target) {
+            return [arr[left], arr[right]];
+        } else if (sum < target) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return null; // No such pair found
+}
+
+// Example usage
+const arr = [2, 7, 11, 15];
+const target = 9;
+console.log(twoSum(arr, target)); // Output: [2, 7]
+
+
+3:::
+// Function to find all subarrays of an array
+function findAllSubarrays(arr) {
+    const subarrays = [];
+    const n = arr.length;
+
+    for (let start = 0; start < n; start++) {
+        for (let end = start; end < n; end++) {
+            const subarray = arr.slice(start, end + 1);
+            subarrays.push(subarray);
+        }
+    }
+    return subarrays;
+}
+// Example usage
+const arr = [1, 2, 3];
+console.log(findAllSubarrays(arr)); 
+// Output: [[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]
+
+// Function to find the maximum sum of a subarray
+function maxSumSubarray(arr) {
+    let maxSum = arr[0];
+    let currentSum = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        currentSum = Math.max(arr[i], currentSum + arr[i]);
+        maxSum = Math.max(maxSum, currentSum);
+    }
+
+    return maxSum;
+}
+// Example usage
+const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+console.log(maxSumSubarray(nums)); // Output: 6 (sum of subarray [4, -1, 2, 1])
+
+
+
+
+
+:::::::::::::: ----------------------------------------------------------------/<>><><><><><>
+class CircularArray {
+    constructor(size) {
+        this.size = size;
+        this.array = new Array(size);
+        this.head = 0; // Points to the first element in the circular array
+    }
+
+    // Helper function to calculate the actual index in the circular array
+    calculateIndex(index) {
+        // Handle negative indices
+        if (index < 0) {
+            index += this.size;
+        }
+        return (this.head + index) % this.size;
+    }
+
+    // Get value at a specific index in the circular array
+    get(index) {
+        const actualIndex = this.calculateIndex(index);
+        return this.array[actualIndex];
+    }
+
+    // Set value at a specific index in the circular array
+    set(index, value) {
+        const actualIndex = this.calculateIndex(index);
+        this.array[actualIndex] = value;
+    }
+
+    // Rotate the circular array by a given offset
+    rotate(offset) {
+        this.head = this.calculateIndex(offset);
+    }
+}
+
+// Example usage:
+const circularArray = new CircularArray(5);
+circularArray.set(0, 'A');
+circularArray.set(1, 'B');
+circularArray.set(2, 'C');
+circularArray.set(3, 'D');
+circularArray.set(4, 'E');
+
+console.log(circularArray.get(0)); // Output: 'A'
+console.log(circularArray.get(-1)); // Output: 'E'
+console.log(circularArray.get(5)); // Output: 'A'
+circularArray.rotate(2);
+console.log(circularArray.get(0)); // Output: 'C' (after rotation)
+console.log(circularArray.get(-1)); // Output: 'B' (after rotation)
+
+

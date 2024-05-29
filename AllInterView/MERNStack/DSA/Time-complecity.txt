@@ -1,0 +1,123 @@
+Q type of Time-complecity
+
+1::Constant Time (O(1)): The algorithm takes the same amount of time to execute, regardless of the size of the input.
+
+2::Logarithmic Time (O(log n)): The algorithm's time complexity increases logarithmically as the size of the input increases.
+
+3::Linear Time (O(n)): The time taken by the algorithm increases linearly with the size of the input.
+
+4::Linearithmic Time (O(n log n)): The algorithm's time complexity increases in proportion to n times the logarithm of n.
+
+5::Quadratic Time (O(n^2)): The time complexity grows with the square of the size of the input.
+
+6::Cubic Time (O(n^3)): The time complexity grows with the cube of the size of the input.
+
+7::Exponential Time (O(2^n)): The time complexity doubles with each addition to the input data set.
+
+8::Factorial Time (O(n!)): The time complexity grows as the factorial of the input size.
+
+
+Q time complexity 
+Ans:the time complexity is mainly calculated by country the number
+of the steps to finish the execution
+///Time complecity  -------------------------------- >
+how manay line works ?
+Ans:: // Date =[] ::data -- line 1
+//elemnet=80 \\ delemnet  -- line 1
+// define a lopp  -- line 4
+//mach  element  -- line  1 
+// if else =mach -- line 1
+//if not match  -- line 1
+//not resdult found  -- line 1 
+
+
+
+https://www.javatpoint.com/javascript-design-patterns  //important
+
+
+https://www.timecomplexity.ai/ // check Your Time 
+
+https://www.bigocalc.com/ //////////
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||  Space  
+
+
+Q what is Sapce Space Complexity ?
+
+1:::Constant Space (O(1)): The algorithm uses a fixed amount of memory space regardless of the size of the input. 
+It means the memory required by the algorithm remains constant, irrespective of the input size.
+
+
+2:::Linear Space (O(n)): The space required by the algorithm increases linearly with the size of the input. 
+Each additional element in the input increases the memory usage by a constant amount.
+
+
+3::Quadratic Space (O(n^2)): The space required by the algorithm grows quadratically with the size of the input. 
+For each element in the input, the memory usage increases exponentially.
+
+4:::Exponential Space (O(2^n)): The space required by the algorithm doubles with each addition to 
+the input data set. This type of space complexity is often associated with algorithms that use recursion extensively.
+
+
+5:::Logarithmic Space (O(log n)): The space required by the algorithm increases logarithmically with
+the size of the input. This type of space complexity is often seen in algorithms that use divide and conquer
+strategies, where the problem size is halved in each step.
+
+
+6:::Polynomial Space (O(n^k)): The space required by the algorithm increases polynomially with the size of the input, 
+where k is a constant. This type of space complexity is common in algorithms that involve nested loops or recursive calls.
+
+
+
+
+|||||||||||||||||||||||||   Advance  Time Complexity: --------------------------->>><><><>
+
+1:::Amortized Time Complexity: This analysis considers the average time taken per operation over a sequence of operations. 
+t's particularly useful for data structures like dynamic arrays, where individual operations may have
+different time complexities, but over time, the average time per operation remains constant.
+
+
+2::Average Case Complexity: While Big O notation typically describes the worst-case scenario, average case
+complexity considers the average time taken by an algorithm over all possible inputs.
+
+
+3::Best Case Complexity: This represents the minimum amount of time an algorithm takes for any input of a given size.
+It's not always the most useful metric for analysis since it may not be representative of typical scenarios,
+
+
+4::Worst Case Complexity: This is the maximum amount of time an algorithm takes for any input of a given size.
+It's the most commonly used metric for analyzing algorithm performance since it gives an upper bound on execution time.
+
+
+5:::Space-Time Tradeoff: Sometimes, you can reduce time complexity by increasing space complexity or vice versa.
+This tradeoff involves choosing between using more memory to speed up computations or using less memory 
+at the expense of slower execution.
+
+
+6:::Cache Complexity: In modern computing architectures, memory access patterns can significantly impact
+performance due to caching effects. Algorithms that exhibit good cache locality tend to perform better in practice.
+
+
+
+7:::I/O Complexity: In algorithms dealing with large datasets or external storage, the number of input/output
+operations can be a crucial factor in performance. Analyzing I/O complexity helps in optimizing algorithms for
+disk or network-bound tasks.
+
+
+8:::Parallel Complexity: With the rise of parallel and distributed computing, analyzing how algorithms behave 
+in parallel environments becomes essential. This involves understanding concepts like parallel speedup,
+efficiency, and scalability.
+
+
+9:::Adaptive Complexity: Some algorithms adapt their behavior based on input characteristics.
+Analyzing adaptive algorithms involves considering how their performance varies depending on 
+the input distribution or other factors.
+
+
+10::Randomized Complexity: Algorithms that use randomization techniques have complexity that depends
+on the probability distributions of random events. Analyzing randomized algorithms involves probabilistic
+analysis to determine their expected performance
+
