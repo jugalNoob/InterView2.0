@@ -24,16 +24,7 @@ console.log("Center elements:", data[centerIndex1], "and", data[centerIndex2]);
 // console.log("Last element:", data[data.length - 1]);
 
 
-
-
-
-
-
-
-
-
-
-::::::::-------------->><><> 
+::::::::-------------->><><> ---------------------------------------
 function rotateArray(arr, steps) {
    for (let i = 0; i < steps; i++) {
        arr.push(arr.shift());
