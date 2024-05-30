@@ -1,3 +1,37 @@
+|||||||||||||||||| Array first last and center element
+let data = [1, 2, 3, 44,55, 66, 8, 9];
+
+let centerIndex = Math.floor(data.length / 2);
+console.log("Center element:", data[centerIndex]);
+
+let centerIndex1 = data.length / 2 - 1;
+let centerIndex2 = data.length / 2;
+console.log("Center elements:", data[centerIndex1], "and", data[centerIndex2]);
+
+
+// console.log("Length of the array:", data.length);
+
+// for(let i = 0; i < data.length; i++){
+//     if(i === 0) {
+//         console.log("First element:", data[i]);
+//     }
+//     if(i === data.length - 1) {
+//         console.log("Last element:", data[i]);
+//     }
+// }
+// console.log("Length of the array:", data.length);
+// console.log("First element:", data[0]);
+// console.log("Last element:", data[data.length - 1]);
+
+
+
+
+
+
+
+
+
+
 
 ::::::::-------------->><><> 
 function rotateArray(arr, steps) {
