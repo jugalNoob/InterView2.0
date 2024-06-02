@@ -1,3 +1,45 @@
+Window Command  wifi check ---<><><><><><>
+
+
+
+
+: Airtel_Rahul_132
+
+0::netsh wlan show profile name="JioFiber-KNhbe_5G" key=clear -->check wifi password
+
+1::netsh wlan show networks
+
+2::netsh wlan show profiles
+
+3::netsh wlan show drivers
+
+4::netsh wlan show filters
+
+5::netsh wlan add filter permission=allow ssid="NetworkName" networktype=infrastructure
+
+6::netsh wlan add filter permission=block ssid="NetworkName" networktype=infrastructure
+
+7::netsh wlan show blockednetworks
+
+8::netsh wlan delete profile name="ProfileName"
+
+9::netsh wlan set hostednetwork mode=allow ssid=YourNetworkName key=YourPassword
+
+10::netsh wlan start hostednetwork
+
+11:netsh wlan stop hostednetwork
+
+12::netsh wlan show hostednetwork
+
+13::netsh wlan show interfaces
+
+
+
+
+
+
+
+
 1::2.5 frequency and  5 frequency 
 
 Q::What is WiFi?
