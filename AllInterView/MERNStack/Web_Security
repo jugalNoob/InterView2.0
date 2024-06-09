@@ -286,7 +286,43 @@ subsequent requests)
 
 403 --> Forbidden --> Indicates that no one is allowed to access the requested resource regardless  of authentication
 
+404 --> Not Found --> Indicates that the Request resource does not exist 
+
+405 --> Methods not Allowed - ->Indicates that the methods used in the request is not supported for the specified URL
+
+413 --> Request Entity Too Large -->>this indicates that the body of your request is too large for the server to handle (buffer overflow)
+
+414 -- > Request URL Too large --> it indicated that the URL used in the request is too larget for the server to handle 
+
+500 --> Internal server error --> indicatees that the server encountered an error fulfilling the request error somewhere within the application 
+processing 
+
+503 --> services Unavailable -->
 
 
+Q what is Https?
+
+Ans: 1 --> Secure HyerText transfer Protocol 
+2:: Application layer protocol
+
+3::User SSL secure socket Layer
+
+4::same as HTTP Port 443 
+
+Encrypted Data
+
+Q what is Http Proxies ?
+
+AnS: Mediator  --> client brower and server -->configure in brower   --> Full control on request and Respones 
+
+
+Q what is HTTP Authentication ?
+HTTP Authentication  --> http protocol for value authentication schemes
+
+Basic --> Send Credentical as Base64- encoded string in header for each request 
+
+NTLM -->Uses Windows NTLM Protocol 
+
+Digest --> uses MD5 checksums of a nonce with the  User's credentials
 
 
