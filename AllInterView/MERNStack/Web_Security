@@ -280,4 +280,13 @@ subsequent requests)
 
 304 -->> Not Modified  -- > instructs the browser to use it cached copy of the requestd resourse . (If-Modified-Since & if-None
 
-400 --> Bad Request --> 
+400 --> Bad Request --> Indicates that the client submitted an invalid HTTP request
+
+401  -->unauthorized -->indicates that the server requires HTTP authentication before the request wiil be granted
+
+403 --> Forbidden --> Indicates that no one is allowed to access the requested resource regardless  of authentication
+
+
+
+
+
