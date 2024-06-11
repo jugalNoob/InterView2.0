@@ -398,6 +398,20 @@ function coumters(data,start , end){
 }
 coumters(data, 0 , data.length -1)
 
+// let start = 10;
+// let end = 20;
+// [start, end] = [end, start];
+// console.log(start, end); // Output: 20 10
+
+// let one=10
+// let two=20
+// let temp=one // temp =10
+// one=two   // one = 20
+// two=temp // two= 10
+// console.log("One:", one, "Two:", two)
+
+
+
 
 2:::: Array Swap :::::::::::::
 // let arra1 = [10, 20];
