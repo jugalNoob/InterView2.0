@@ -1,3 +1,39 @@
+1::Ad-hoc queries for optimized, real-time analytics --------------
+
+When designing the schema of a database, it is impossible to know in advance all the queries that end 
+users will perform. An ad hoc query is a short-lived command whose value depends on a variable.
+Each time an ad hoc query is executed, the result may be different, depending on the variables in question.
+
+2::Indexing appropriately for better query executions
+
+In our experience, the number one issue that many technical support teams fail 
+to address with their users is indexing. Done right, indexes are intended to improve
+search speed and performance. A failure to properly define appropriate indices can and 
+usually will lead to a myriad of accessibility issues, such as problems with query execution and load balancing.
+
+
+
+3::Replication for better data availability and stability
+When your data only resides in a single database, it is exposed to multiple potential points of failure, 
+such as a server crash, service interruptions, or even good old hardware failure. Any of these
+events would make accessing your data nearly impossible.
+
+
+
+4::Sharding
+When dealing with particularly large datasets, sharding—the process of splitting larger datasets across
+multiple distributed collections, or “shards”—helps the database distribute and better execute
+what might otherwise be problematic and cumbersome queries. Without sharding, scaling 
+a growing web application with millions of daily users is nearly impossible.
+
+
+
+5::Load balancing
+At the end of the day, optimal load balancing remains one of the holy grails of 
+large-scale database management for growing enterprise applications. Properly 
+distributing millions of client requests to hundreds or thousands of servers can lead 
+to a noticeable (and much appreciated) difference in performance.
+
 1::Databases: Advanced database topics like 
 database sharding, replication,
  and data modeling for complex applications.
