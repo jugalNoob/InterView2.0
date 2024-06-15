@@ -375,4 +375,31 @@ Ans:: Character encoding
 
 
 
+Q what is HTML Encoding?
+
+1::HTML entities 
+
+specific   &quot; __ ''
+literal   &ap
+charaacters   &amp; __&
+          &lt; __<
+         &gt; ___>
+
+
+
+2::HTML encoded 
+
+ASCII   &#34;___''
+code in  &#39; ___''
+Decimal
+form
+
+
+3::HTML  encoding ?
+
+ASCII  &#x222; __ ''
+code in  &#x27; ___''
+hexadeci
+mal
+
 
