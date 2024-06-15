@@ -317,6 +317,7 @@ AnS: Mediator  --> client brower and server -->configure in brower   --> Full co
 
 
 Q what is HTTP Authentication ?
+
 HTTP Authentication  --> http protocol for value authentication schemes
 
 Basic --> Send Credentical as Base64- encoded string in header for each request 
@@ -324,5 +325,80 @@ Basic --> Send Credentical as Base64- encoded string in header for each request
 NTLM -->Uses Windows NTLM Protocol 
 
 Digest --> uses MD5 checksums of a nonce with the  User's credentials
+
+
+
+Q what is WebEncoding Sechmes?
+
+Ans: Encryption (AES ,RSA , AND BlowFish)
+
+jugal sharma  ---------> AES   ---------> Key ----------> mjhhcyicfvdytfvghhu
+
+
+
+
+
+2:::Encoding (UNICODE,URL encoding,base64)
+
+jugal sharma --------->Base 64 ------------>>kjidudsiushusifshfsifhfhfh
+
+
+
+Q what is URL encoding ?
+Ans: 1 :: Techniques to encode several characters 
+
+2::Having special Meaning in URL scheme & HTTP
+
+3::with prefix % followed by two unit ASCII code 
+
+4::ASCII range 0x20 to 0x7e
+
+5::`n % 3d __ =
+`n % 20 __ space
+`n % Oa ___ New line 
+
+
+Q what is Unicode Encoding?
+
+Ans:: Character encoding 
+
+2::16-bit uncode=URL Encoding 
+
+3::%u prefix  char Unicode hexadecimal  
+
+4::%u2215___/ 
+..%u00e9___e 
+
+5::UTF-8 variable length Encoding %c2%a9 -c
+
+
+
+Q what is HTML Encoding?
+
+1::HTML entities 
+
+specific   &quot; __ ''
+literal   &ap
+charaacters   &amp; __&
+          &lt; __<
+         &gt; ___>
+
+
+
+2::HTML encoded 
+
+ASCII   &#34;___''
+code in  &#39; ___''
+Decimal
+form
+
+
+3::HTML  encoding ?
+
+ASCII  &#x222; __ ''
+code in  &#x27; ___''
+hexadeci
+mal
+
 
 
