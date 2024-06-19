@@ -1,5 +1,9 @@
 https://devdocs.io/express/index#req.baseUrl
 
+Q what is authentication vs authorization 
+
+
+
 
 |||||||||||||||||||||||||||||||||       Express Code 2.0 ||||||||||||||||||||||||||||||||||||||
 2::: Types of Respones ...............
@@ -518,6 +522,10 @@ app.get('/', (req, res) => {
 
   console.log(cookies); // Access the parsed cookies
 });
+
+
+
+
 
 
 
