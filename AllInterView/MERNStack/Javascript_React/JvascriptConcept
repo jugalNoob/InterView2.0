@@ -1,3 +1,69 @@
+Top-Level Await
+// module.js
+const data = await fetchData();
+export default data;
+
+
+4. RegExp Match Indices
+const regex = /(foo)/d;
+const match = regex.exec('foo bar');
+console.log(match.indices); // [[0, 3], [0, 3]]
+
+
+. Array Find from Last
+findLast and findLastIndex Methods: Search arrays from the end.
+
+const array = [1, 2, 3, 4, 5];
+const lastEven = array.findLast(x => x % 2 === 0);
+const lastEvenIndex = array.findLastIndex(x => x % 2 === 0);
+console.log(lastEven); // 4
+console.log(lastEvenIndex); // 3
+
+
+. Array Grouping
+const array = [1, 2, 3, 4, 5];
+const grouped = array.group(x => x % 2 === 0 ? 'even' : 'odd');
+console.log(grouped); // { odd: [1, 3, 5], even: [2, 4] }
+
+const groupedMap = array.groupToMap(x => x % 2 === 0 ? 'even' : 'odd');
+console.log(groupedMap); // Map { 'odd' => [1, 3, 5], 'even' => [2, 4] }
+
+
+3. Hashbang Support
+#!/usr/bin/env node
+console.log('Hello, world!');
+
+
+4. Change Array by Copy
+copyWithin, fill, toSorted, toSpliced, with Methods: Non-destructive methods for modifying arrays.
+
+const array = [1, 2, 3, 4, 5];
+const newArray = array.toSorted((a, b) => b - a);
+console.log(newArray); // [5, 4, 3, 2, 1]
+
+const splicedArray = array.toSpliced(1, 2, 6, 7);
+console.log(splicedArray); // [1, 6, 7, 4, 5]
+
+const replacedArray = array.with(1, 10);
+console.log(replacedArray); // [1, 10, 3, 4, 5]
+
+1. Temporal API
+Date and Time Handling: A modern API for working with dates and times.
+
+const now = Temporal.Now.plainDateTimeISO();
+console.log(now.toString()); // 2023-06-20T10:30:00
+
+. Pattern Matching
+...Match Expressions: A powerful way to destructure and conditionally process data.
+const value = { type: 'circle', radius: 10 };
+match (value) {
+  { type: 'circle', radius } => console.log(`Circle with radius ${radius}`),
+  { type: 'square', side } => console.log(`Square with side ${side}`),
+  _ => console.log('Unknown shape')
+}
+
+
+
 :::::: Important Password Validation Regex -------------------
 
 let are = "jugal1452";
