@@ -26,6 +26,64 @@
 
 
 ||||||||||||||| Top 10 android Apps for penetration  testing 
+
+
+
+
+Aircrack-ng - A suite of tools for assessing Wi-Fi network security.
+
+Wireshark - A network protocol analyzer that lets you capture and interactively browse the traffic running on a computer network.
+
+Nmap - A network scanning tool to discover hosts and services on a computer network.
+
+Burp Suite - An integrated platform for performing security testing of web applications.
+
+John the Ripper - A fast password cracker, currently available for many flavors of Unix, Windows, DOS, BeOS, and OpenVMS.
+
+Hydra - A parallelized login cracker which supports numerous protocols to attack.
+
+APKTool - A tool for reverse engineering Android APK files.
+
+Frida - A dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
+
+Drozer - An Android security assessment framework that allows you to search for security vulnerabilities in apps and devices.
+
+Androguard - A full Python tool to play with Android files.
+
+Xposed Framework - A framework for Android that allows modules to modify the system or app aspects without touching any APKs.
+
+Wifiphisher - A security tool that mounts fast automated phishing attacks against Wi-Fi 
+networks to obtain credentials or infect victim devices.
+
+NetCut - A tool that can help you manage your network by controlling the internet bandwidth
+distribution and cutting off users from the network.
+
+Social-Engineer Toolkit (SET) - An open-source penetration testing framework designed for social engineering.
+
+BeEF (Browser Exploitation Framework) - A penetration testing tool that focuses on the web browser.
+
+Ettercap - A comprehensive suite for man-in-the-middle attacks on LAN.
+
+OWASP ZAP (Zed Attack Proxy) - An open-source web application security scanner.
+
+Hashcat - A powerful password recovery tool.
+
+Snort - An open-source network intrusion detection system (NIDS).
+
+Acunetix - A web vulnerability scanner that finds and reports on a wide array of web application vulnerabilities
+.
+MobSF (Mobile Security Framework) - An automated, all-in-one mobile application (Android/iOS/Windows) 
+pen-testing, malware analysis, and security assessment framework.
+
+Nikto - An open-source web server scanner that performs comprehensive tests against web servers for
+multiple items, including over 6700 potentially dangerous files/CGIs.
+
+Parrot Security OS - A Linux distribution based on Debian, designed for security experts, developers, and privacy-aware people.
+
+BlackArch Linux - An Arch Linux-based distribution for penetration testers and security researchers.
+
+NetStumbler - A tool for Windows that facilitates detecting Wireless Local Area Networks (WLANs) using the 
+802.11b, 802.11a, and 802.11g WLAN standards.
 1::Termux Tool 
 2::
 
