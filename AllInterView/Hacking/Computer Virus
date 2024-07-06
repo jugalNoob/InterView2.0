@@ -57,4 +57,50 @@
 23:: Hybrid Malware
 
 
+Blended Threats - Combining multiple forms of malware and attack vectors.
+
+Logic Bombs - Code intentionally inserted into software that triggers malicious functions when certain conditions are met.
+
+Zero-day Exploits - Attacks that occur on the same day a weakness is discovered in software.
+
+Scareware - Software that uses social engineering to cause shock, anxiety, or the perception of a threat
+to manipulate users into buying unwanted software.
+
+Cryptomining Malware - Malware that hijacks a computer's resources to mine cryptocurrencies.
+
+SQL Injection - Code injection technique that might destroy your database.
+
+Cross-site Scripting (XSS) - A security vulnerability typically found in web applications that allows attackers
+to inject scripts into web pages viewed by others.
+
+Man-in-the-Middle (MitM) Attack - An attack where the attacker secretly relays and possibly
+alters the communication between two parties who believe they are directly communicating with each other.
+
+DNS Tunneling - A method of tunneling data over DNS protocol.
+
+Credential Stuffing - A type of cyberattack where stolen account credentials, typically consisting
+of lists of usernames and/or email addresses and the corresponding passwords, are used to gain unauthorized
+access to user accounts through large-scale automated login requests.
+
+Browser Locker - A type of malware that locks up your browser and demands a ransom to unlock it.
+
+Rogue Antivirus Software - Malware posing as legitimate antivirus software, usually to extort money from victims.
+
+Evil Twin Attack - A fake Wi-Fi access point that appears to be a legitimate one set up to eavesdrop on wireless communications.
+
+Typosquatting (URL Hijacking) - A form of cybersquatting where misspelled domain names are used to deceive users.
+
+Watering Hole Attack - Attacks targeting a specific group by infecting websites they are known to visit.
+
+Social Engineering - Manipulating individuals into divulging confidential or personal information that may be used for fraudulent purposes.
+
+Command and Control (C2) Server - A server used to send commands to infected systems and receive stolen data from them.
+
+Session Hijacking - An attack where a user session is taken over by an attacker.
+
+Pharming - Redirecting users to a bogus website, even if they entered the correct web address.
+
+Formjacking - Injecting malicious code into online forms to steal personal data, such as payment information.
+
+Business Email Compromise (BEC) - A type of scam targeting companies that conduct wire transfers and have suppliers abroad.
 
