@@ -22,6 +22,26 @@ AN:1:builtwith --> Discover  the technology behind any website
 
 11::Have i been pwned check if your email hash been commanded 
 
+VirusTotal - Analyze suspicious files and URLs to detect types of malware.
+
+Censys - A search engine for Internet-connected devices and networks.
+
+Hybrid Analysis - Free malware analysis service for dynamic and static analysis.
+
+Exploit Database - Archive of public exploits and vulnerable software.
+
+SecLists - Collection of multiple types of lists used during security assessments.
+
+Metasploit - The world's most used penetration testing software.
+
+PacketTotal - A free, community driven network packet capture analysis service.
+
+URLscan.io - Service for scanning and analyzing websites.
+
+IPinfo - Detailed information on IP addresses, including geolocation and ASN data.
+
+GreyNoise - Collects and analyzes Internet-wide scan and attack traffic.
+
 
 
 Q Top Phishing Tools In hacking any Time ?
@@ -35,5 +55,32 @@ Q Top Phishing Tools In hacking any Time ?
 6::shellphish
 7::spearPhisher git hub -->Your window into phishing traffic
 8:: 
+8::theHarvester - A tool for gathering email accounts, subdomains, hosts, employee names, open ports, 
+and banners from different public sources such as search engines, PGP key servers, and SHODAN.
 
+9::Recon-ng - A full-featured Web Reconnaissance framework written in Python, complete with independent
+modules, database interaction, built-in convenience functions, interactive help, and command completion.
+
+10::Maltego - An interactive data mining tool that renders directed graphs for link analysis, providing a 
+library of transforms for data mining and information gathering.
+
+11:SpiderFoot - An open-source intelligence (OSINT) automation tool with over 200
+modules for information gathering.
+
+12::Amass - A powerful open-source tool for network mapping of attack surfaces and external asset
+discovery using information gathering and active reconnaissance techniques.
+
+13::FOCA - A tool for analyzing metadata and hidden information in documents, especially
+from Microsoft Office, Open Office, or PDF files.
+
+14::Creepy - A geolocation information aggregator, extracting information from social networking
+platforms to plot on a map the locations of where data has been posted from.
+
+15::OSINT Framework - A web-based interface to collect a wide variety of information from publicly available sources.
+
+16::Datasploit - An OSINT framework to perform various recon techniques, aggregate all the
+raw data, and provide data in multiple formats.
+
+17::Shodan - A search engine that lets you find specific types of computers (webcams, routers, servers, etc.)
+connected to the internet using a variety of filters.
 
