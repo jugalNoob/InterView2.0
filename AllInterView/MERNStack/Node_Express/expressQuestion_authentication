@@ -93,6 +93,84 @@ Typing patterns.
 Mouse movement patterns.
 
 
+
+
+000::::Authorization is the process of determining what a user or system can do after their identity has
+been authenticated. Here are the main types of authorization:
+
+1. Role-Based Access Control (RBAC)
+Description: Access is granted based on the user's role within an organization.
+Examples:
+An employee in the "Manager" role can access management reports, while an employee in the "Staff" role cannot.
+Users assigned to the "Admin" role can manage system settings, while "User" roles can only use the application.
+
+2. Attribute-Based Access Control (ABAC)
+Description: Access decisions are based on attributes (e.g., user attributes, resource attributes, environment conditions).
+Examples:
+Access to sensitive data is granted if the user's department is "Finance" and the time is within business hours.
+A user with the attribute "Project Leader" can modify project files, while others can only view them.
+
+3. Policy-Based Access Control (PBAC)
+Description: Access is governed by policies that define conditions under which access is granted or denied.
+Examples:
+Policies that allow access to a resource only if the user's security clearance is above a certain level.
+Policies that deny access to external users during system maintenance periods.
+
+4. Discretionary Access Control (DAC)
+Description: The owner of a resource controls who can access it.
+Examples:
+File sharing where the file owner can set permissions for who can read, write, or execute the file.
+Database management systems where users can grant access to their own data tables.
+
+5. Mandatory Access Control (MAC)
+Description: Access is based on fixed policies established by a central authority, not the resource owner.
+Examples:
+Military systems where access is based on security clearances and the classification of the information.
+Access to certain systems is determined by policies that cannot be altered by end-users.
+
+6. Rule-Based Access Control
+Description: Access is granted or denied based on a set of rules defined by the system administrator.
+Examples:
+Firewall rules that allow or deny traffic based on IP addresses and port numbers.
+Network access control rules that grant access based on device type and compliance with security policies.
+
+7. Contextual or Risk-Based Access Control
+Description: Access decisions are based on the context or perceived risk of the access request.
+Examples:
+Access is allowed if the user is on a known network and using a trusted device.
+Additional verification is required if the login attempt is from a new location or unusual time.
+
+8. Identity-Based Access Control (IBAC)
+Description: Access is based on the specific identity of the user rather than their role or attributes.
+Examples:
+Specific user accounts are granted access to sensitive areas of a system.
+Individual users are given personalized access permissions based on their unique identity.
+
+9. Time-Based Access Control
+Description: Access is granted or denied based on time constraints.
+Examples:
+Employees can access the office building only during business hours.
+Access to a database is allowed only during a specific maintenance window.
+
+10. Location-Based Access Control
+Description: Access is determined by the geographic location of the user or device.
+Examples:
+Access to corporate resources is restricted to users within the company’s country.
+Sensitive data access is only allowed from on-premises networks.
+
+11. Resource-Based Access Control
+Description: Access is determined by the resource itself, often through tags or labels.
+Examples:
+Documents tagged as "Confidential" can only be accessed by users with the "Confidential" clearance.
+Cloud storage buckets with specific labels that define access policies.
+
+12. Break-Glass Access Control
+Description: Temporary, emergency access is granted to users in critical situations.
+Examples:
+Emergency access to a patient’s medical records during a critical health event.
+Temporary elevated privileges granted to a system administrator to fix an urgent issue.
+Summary
+
 In Express.js, a popular web framework for Node.js, there are several fundamental topics that are
 crucial for understanding how to build and manage web applications. Here are the main topics:
 
