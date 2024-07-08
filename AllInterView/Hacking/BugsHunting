@@ -1,1 +1,216 @@
+Q what is Bug Hunting ?
+Ans:: Bug hunting also know as ethical hacking or vulnerability discovery is the process of actively
+searaching for security vulnearebilites software bugs and weaknesses in computer system , applications , networks 
+and other digital environment
+
+2::Bug hunting, also known as vulnerability hunting or security testing, is the process of actively searching 
+for vulnerabilities in software, websites, applications, or systems. The goal of bug hunting is to identify weaknesses 
+that could be exploited by malicious actors or cause operational issues, 
+thereby compromising the security, functionality, or reliability of the target.
+
+
+3:::
+
+Types of Vulnerabilities: Bug hunters look for a wide range of vulnerabilities, including but not limited to:
+Cross-site scripting (XSS)
+SQL injection
+Authentication and authorization flaws
+Remote code execution
+Denial of service (DoS) vulnerabilities
+Information disclosure issues
+Cross-Site Scripting (XSS):
+Cross-Site Scripting (XSS):
+SQL Injection:
+Authentication and Authorization Flaws:
+Remote Code Execution (RCE):
+Sensitive Data Exposure:
+Denial of Service (DoS):
+Information Disclosure:
+Security Misconfigurations:
+Insecure Cryptography:
+Business Logic Flaws:
+
+
+Q what is Pen testing ?
+Ans:: --> Penetration testing often  abbreviated as pen testing is a controlled and systematic 
+apparoch to evaluating the security of computer system applicvation network or infrasture by simulating real world attacks 
+the primary goal of penetration testing is to identify vulnerabilities , weaknesses and potential ;
+
+1::penetration 
+
+
+Q pen testing  vs BUG Hunter 
+
+Penetration Testing (Pen Testing):
+
+Purpose: Penetration testing, often shortened to "pen testing," is a methodical approach to testing the security
+of a system or network by simulating an attack from a malicious actor.
+
+Methodology: Pen testers follow a structured methodology that typically involves identifying vulnerabilities in systems,
+networks, or applications. They attempt to exploit these vulnerabilities to assess the potential impact and likelihood of
+a successful attack.
+
+Scope: Pen testing can be broad or focused, depending on the goals. It may involve testing specific applications, 
+infrastructure components, or the entire network environment.
+
+Goal: The primary goal of pen testing is to uncover vulnerabilities that could be exploited by real attackers and provide
+recommendations for improving security defenses.
+
+Bug Hunting (or Bug Bounty Hunting):------------------------<><><><><><>
+Purpose: Bug hunting, sometimes referred to as "bug bounty hunting" when done through organized programs, involves actively
+searching for security vulnerabilities in software, websites, or systems.
+
+Methodology: Bug hunters often use a combination of automated tools and manual techniques to discover vulnerabilities. They may 
+explore both known and unknown attack vectors to find weaknesses.
+
+Scope: Bug hunting can be more open-ended than pen testing and often focuses on specific applications or platforms. Bug hunters
+may participate in bug bounty programs where they receive rewards for reporting valid vulnerabilities.
+
+Goal: The main goal of bug hunting is to identify and report vulnerabilities to the organization or developer responsible for the 
+system. Bug hunters can help improve overall security by finding issues that might have been missed during regular security testing.
+
+
+Key Differences:--------------------<><><><><><><>
+Approach: Pen testing follows a structured methodology, while bug hunting can be more flexible and creative.
+
+Incentives: Bug hunters may receive financial rewards through bug bounty programs, whereas pen testers are typically employed
+by organizations or hired for specific engagements.
+
+Focus: Pen testing is about comprehensive security assessment, while bug hunting is focused on finding specific vulnerabilities
+for reporting and sometimes monetary rewards.
+
+
+Q what is Cookies?
+
+Ans: 
+ChatGPT
+Cookies are small pieces of data that websites store on a user's device (typically in the web browser) to remember 
+information about the user or track their activities across different sessions or websites. Here are some key points about cookies:
+
+Purpose: Cookies serve several purposes:
+Authentication: Cookies can store login credentials or session identifiers to keep users logged in as they navigate between pages or revisit a website.
+Personalization: Websites use cookies to remember user preferences, such as language settings or display preferences.
+Tracking: Cookies can be used for tracking user behavior and interests across websites, often for advertising and analytics purposes.
+Shopping Carts: E-commerce websites use cookies to remember items in a user's shopping cart.
+
+
+
+Q  Vulnerability Lab ?    -----------------<><><><><><>
+
+1::Information Disclosure
+2::Broken access Control
+3::Client-side Request Forgery 
+4::OAuth2.0 Vulnearbities
+
+
+1::Information Disclosure  :::::: ---------------------------------------------------------------------<><><><>
+example :: password  , personal data, financial information , confidential information or other data 
+that should not be asscessible to unauthorized user
+1:::Social media: Social media platforms like Facebook, Twitter, and LinkedIn can be a goldmine for 
+attackers looking for personal information, 
+such as email addresses, phone numbers, and birthdates.
+
+
+2::Publicly available databases: There are several publicly available databases that contain sensitive information, such as voter
+registration databases, medical records, and court records.
+
+3:::Developer comments in HTML source code
+
+Tools --->>
+1::Robots.txt 
+exmaple --1 any website enter is /robots.tx
+https://whatismyipaddress.com/robots.txt --> use any website information /robots.txt
+https://whatismyipaddress.com/ wp-admin/ 
+
+2::Feroxbuester and seclists second Tools Joomla or ZapProxy
+example::Information disclosure on debug page
+https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page
+
+
+3::git Version Control use Joomla or ZepProxy
+https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-version-control-history
+exmaple -->  Information disclosure in version control history
+https://0a88002d048f045080a97b7400fd0093.web-security-academy.net/.git
+https://0a88002d048f045080a97b7400fd0093.web-security-academy.net/.git/config
+
+
+4::Verbox error Message
+https://0ab40043046f7f0b80fde96c009b004b.web-security-academy.net/
+exmaple --> Techinal Inromation
+https://0ab40043046f7f0b80fde96c009b004b.web-security-academy.net/prduct?productid=100000000000000000000000000000000
+
+
+2::Broken access Control ::::::::::::::  ----------------------->>
+
+exmaple --> netBank access Control  
+
+-->> Broken access Control Attacks ----:::
+.. Request  Parmeter 
+..URL Exploitation 
+..IDOR
+..Exploiatation useing Burp Repeater
+..Exploitation using Trace
+..Path/Directory Traversal
+
+Q Install Burpsuite?
+
+
+
+
+
+
+
+Q tools and Website --------->>>>>>
+ Shodan: Shodan is a search engine for internet-connected devices, including webcams, routers, servers, and more. 
+
+1..:https://portswigger.net/
+
+2. Vulnerability Lab
+
+4. DNS-Discovery  https://mxtoolbox.com/SuperTool.aspx?action=https%3a%2f%2fportswigger.net%2f&run=toolpage
+
+5. Reverse IP Lookup
+
+6. Wapiti
+
+    Server-side request forgery
+    Reflected and permanent XSS injection
+    ShellShock
+    Includes a buster module that allows for bruteforcing filenames and directories on a target web server
+    POST HTTP and GET attack methods are supported
+    The scan process includes an option to set maximum scan time
+
+
+
+7. INalyzer  --> IOS
+
+8. IronWASP
+    Login sequence recording is supported
+    False-positive and negative-positive detection are supported
+    Reporting is available in both RTF and HTML formats
+    Easy to use and with a simple-to-understand GUI, even an inexperienced information security employee can quickly use it
+If IronWASP has piqued your interest, you can find it here.
+
+
+9. Wfuzz
+
+
+    Default output is in HTML
+    Capability to check multiple injection points
+    Bruteforcing for all parameters
+    Automatic/artificial request time delays
+    Results can be hidden via word numbers, return code, line numbers and regex
+
+
+10. HackBar
+advantages of HackBar include:
+    All HackBar functions work on text that you currently have selected
+    Hashing of MD5/SHA1/SHA256
+    Sandbox-like text area
+    Useful MS SQL Server/MySQL shortcuts
+If you are interested in HackBar, you can find it here.
+
+
+
+
 
