@@ -1,4 +1,82 @@
-Q..InterNet Protocal Important ??
+QPorts
+Definition: A port is a virtual point where network connections start and end. Ports are used by network protocols to
+identify specific processes or services on a device.
+
+Port Numbers: Ports are identified by numbers ranging from 0 to 65535. They are divided into three categories:
+
+Well-Known Ports (0-1023): These ports are reserved for common services and protocols. Examples include:
+HTTP: Port 80
+HTTPS: Port 443
+FTP: Port 21
+SSH: Port 22
+SMTP: Port 25
+
+Well-Known Ports --------------<><><><><><><>
+Range: 0-1023
+Usage: Reserved for commonly used services and protocols.
+Examples:
+HTTP (80): Used for web traffic.
+HTTPS (443): Used for secure web traffic.
+FTP (21): Used for file transfer.
+SSH (22): Used for secure remote login.
+SMTP (25): Used for sending emails.
+DNS (53): Domain Name System.
+
+
+Registered Ports  ----------------------<><><><><>
+Range: 1024-49151
+Usage: Assigned by IANA for specific services and applications upon request.
+Examples:
+Microsoft SQL Server (1433): Database services.
+MySQL (3306): Database services.
+PostgreSQL (5432): Database services.
+Docker (2375, 2376): Docker API.
+Plex Media Server (32400): Media streaming.
+
+
+Dynamic or Private Ports  ----------------<><><><<>
+Range: 49152-65535
+Usage: Used for temporary or private connections. Not assigned to any specific service and can be used by applications dynamically.
+Examples:
+These ports are often used for client-side connections in web browsing, where a browser may use a dynamic port to communicate with a web server.
+
+Port Use Cases -----------------------<><><><><>
+HTTP and HTTPS: Web browsers use HTTP (port 80) and HTTPS (port 443) to access web pages.
+FTP: File transfer applications use FTP (port 21) to transfer files between systems.
+SSH: Remote login applications use SSH (port 22) to securely connect to remote servers.
+SMTP: Email clients and servers use SMTP (port 25) to send emails.
+
+
+
+Registered Ports (1024-49151): These ports are assigned by the Internet Assigned Numbers Authority (IANA)
+for specific services upon request.
+
+Dynamic or Private Ports (49152-65535): These ports are not assigned and can be used
+dynamically by applications to establish temporary connections.
+
+
+Common Protocols: ---------------<><><><><><>
+1::TCP (Transmission Control Protocol): Ensures reliable, ordered, and error-checked delivery of data. Used 
+by protocols like HTTP, HTTPS, FTP, and SMTP.
+
+2::UDP (User Datagram Protocol): Provides a faster, connectionless service with no guarantee of delivery, order, or error checking.
+Used by protocols like DNS, DHCP, and video streaming.
+
+3::HTTP (Hypertext Transfer Protocol): Used for transferring web pages on the internet.
+
+4::HTTPS (HTTP Secure): An extension of HTTP that uses SSL/TLS to encrypt data for secure communication.
+
+5::FTP (File Transfer Protocol): Used for transferring files between a client and a server.
+
+6::SSH (Secure Shell): Provides a secure channel over an unsecured network, often used for remote login.
+
+7::SMTP (Simple Mail Transfer Protocol): Used for sending emails.
+
+8::IMAP (Internet Message Access Protocol) and POP3 (Post Office Protocol 3): Used for retrieving emails from a server.
+
+
+
+..InterNet Protocal Important ??
 
 Ans 1:: HTTP
 
@@ -144,33 +222,145 @@ LAN stands for Local Area Network.  --->
 
 
 
+Common Well-Known Ports
+Port 20: FTP (File Transfer Protocol) Data Transfer
+Port 21: FTP (File Transfer Protocol) Command Control
+Port 22: SSH (Secure Shell)
+Port 23: Telnet - Unencrypted text communications
+Port 25: SMTP (Simple Mail Transfer Protocol) - Email routing
+Port 53: DNS (Domain Name System) - Domain name resolution
+Port 67: DHCP (Dynamic Host Configuration Protocol) - Server
+Port 68: DHCP (Dynamic Host Configuration Protocol) - Client
+Port 69: TFTP (Trivial File Transfer Protocol)
+Port 80: HTTP (Hypertext Transfer Protocol) - Web traffic
+Port 110: POP3 (Post Office Protocol 3) - Email retrieval
+Port 119: NNTP (Network News Transfer Protocol) - Usenet
+Port 123: NTP (Network Time Protocol)
+Port 143: IMAP (Internet Message Access Protocol) - Email retrieval
+Port 161: SNMP (Simple Network Management Protocol)
+Port 194: IRC (Internet Relay Chat)
+Port 220: IMAP3 (Internet Message Access Protocol 3)
+Port 389: LDAP (Lightweight Directory Access Protocol)
+Port 443: HTTPS (HTTP Secure) - Secure web traffic
+Port 445: SMB (Server Message Block) over IP - File sharing
+Port 465: SMTPS (Simple Mail Transfer Protocol Secure) - Email routing with SSL/TLS
+Port 514: Syslog - System logging
+Port 636: LDAPS (Lightweight Directory Access Protocol over SSL)
+Port 873: Rsync - File synchronization and transfer
+Port 990: FTPS (File Transfer Protocol Secure) - Data transfer over SSL/TLS
+Port 993: IMAPS (Internet Message Access Protocol Secure) - Email retrieval over SSL/TLS
+Port 995: POP3S (Post Office Protocol 3 Secure) - Email retrieval over SSL/TLS
+
+Less Common Well-Known Ports    -----------------------------<><><><><><><>
+
+Port 17: QOTD (Quote of the Day)
+Port 37: Time Protocol
+Port 49: TACACS (Terminal Access Controller Access-Control System)
+Port 70: Gopher
+Port 79: Finger
+Port 109: POP2 (Post Office Protocol 2)
+Port 113: Ident (Authentication Service)
+Port 177: XDMCP (X Display Manager Control Protocol)
+Port 201: AppleTalk Routing Maintenance
+Port 264: BGMP (Border Gateway Multicast Protocol)
+Port 318: TSP (Time Stamp Protocol)
+Port 381: HP OpenView Network Node Manager (NNM) (Trap Daemon)
+Port 383: HP OpenView Network Node Manager (NNM) (Data Pipe)
+Port 407: Timbuktu
+Port 512: rexec (Remote Process Execution)
+Port 513: rlogin (Remote Login)
+Port 514: rsh (Remote Shell)
+Port 515: LPD (Line Printer Daemon)
+Port 526: tempo (new date)
+Port 530: Courier Remote Procedure Call
+Port 531: Conference (chat)
+Port 532: netnews
+Port 540: UUCP (Unix-to-Unix Copy Protocol)
+Port 548: AFP (Apple Filing Protocol)
+Port 554: RTSP (Real Time Streaming Protocol)
+Port 556: Remotefs
+Port 563: NNTPS (Network News Transfer Protocol Secure)
+Port 587: SMTP (Submission)
+Port 591: FileMaker 6.0 Web Publishing
+Port 631: IPP (Internet Printing Protocol)
+Port 636: LDAPS (Lightweight Directory Access Protocol over TLS/SSL)
+Port 646: LDP (Label Distribution Protocol)
+Port 873: rsync
+Port 953: BIND (Domain Name System Control)
+Port 981: SofaWare Management Console
+Port 987: Microsoft SharePoint
+Port 992: Telnet (over TLS/SSL)
+Port 993: IMAP (over TLS/SSL)
+Port 994: IRC (over TLS/SSL)
+Port 995: POP3 (over TLS/SSL)
 
 
+IP (Internet Protocol) and ports are fundamental concepts in computer networking, but they serve different purposes and functions. Here's a detailed comparison between the two:
 
+Internet Protocol (IP):
+1. Definition:
 
+IP is a set of rules for routing and addressing packets of data so they can travel across networks and arrive at the correct destination. It defines how data is sent from one computer to another over the internet.
+2. Function:
 
-|||||||||||||||| --------------------------------- }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+Addressing: IP assigns unique addresses to each device on a network, known as IP addresses (e.g., 192.168.1.1 for IPv4 or 2001:0db8:85a3:0000:0000:8a2e:0370:7334 for IPv6).
+Routing: IP determines the best path for data to travel across interconnected networks to reach its destination.
+3. Types of IP:
 
+IPv4: Uses 32-bit addresses, allowing for about 4.3 billion unique addresses.
+IPv6: Uses 128-bit addresses, allowing for a virtually unlimited number of unique addresses.
+4. Layer:
 
-IPv4 Address: This is the most widely used type of IP address. It consists of 32 bits and is expressed in the form
-of four decimal numbers separated by periods (e.g., 192.168.1.1).
+IP operates at the Network Layer (Layer 3) of the OSI model.
+5. Examples:
 
-IPv6 Address: With the exhaustion of IPv4 addresses, IPv6 was introduced to provide a much larger address space.
-IPv6 addresses are 128 bits in length and are represented as eight groups of four hexadecimal digits separated by colons
-(e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+IPv4 Address: 192.168.0.1
+IPv6 Address: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+Ports:
+1. Definition:
 
-Public IP Address: A public IP address is assigned to a device by the Internet Service Provider (ISP) and is accessible over the
-internet. It uniquely identifies the device on the internet.
+Ports are logical endpoints for network communications, used to identify specific processes or services on a device. Each port is associated with a specific IP address, and together they form a unique connection point.
+2. Function:
 
-Private IP Address: Private IP addresses are used within a private network, such as a home or office network. These addresses 
-are not directly accessible from the internet. They are used for communication within the local network and are typically
-assigned by a router using DHCP (Dynamic Host Configuration Protocol).
+Service Differentiation: Ports allow a single IP address to support multiple types of network services. For example, a web server and an email server can run on the same IP address but use different ports.
+Communication: Ports help manage multiple simultaneous connections and direct the data to the correct application or process.
+3. Types of Ports:
 
+Well-Known Ports (0-1023): Reserved for common services (e.g., HTTP on port 80, HTTPS on port 443).
+Registered Ports (1024-49151): Assigned to specific services upon request (e.g., Microsoft SQL Server on port 1433).
+Dynamic/Private Ports (49152-65535): Used for temporary or private connections, often dynamically assigned by the operating system.
+4. Layer:
 
-Static IP Address: A static IP address is assigned to a device and remains constant over time. It does not change unless manually
-reconfigured. Static IP addresses are often used for servers or network devices that require consistent accessibility.
+Ports operate at the Transport Layer (Layer 4) of the OSI model.
+5. Examples:
 
+HTTP: Uses port 80
+HTTPS: Uses port 443
+SSH: Uses port 22
+Key Differences:
+1. Purpose:
 
-Dynamic IP Address: A dynamic IP address is assigned to a device by a DHCP server and may change over time. Each time
-the device connects to the network, it may be assigned a different IP address from the available pool of addresses. 
-This is common in home networks and is more cost-effective for ISPs since they can allocate IP addresses dynamically as needed.
+IP: Identifies devices on a network and routes data between them.
+Ports: Identify specific services or processes on a device and direct network traffic to the appropriate application.
+2. Scope:
+
+IP: Addresses entire devices or interfaces.
+Ports: Addresses specific applications or services on a device.
+3. Uniqueness:
+
+IP: Each device or interface on a network must have a unique IP address.
+Ports: Ports are used in conjunction with IP addresses. A device can have many ports, and the combination of an IP address and port number forms a unique endpoint.
+4. Representation:
+
+IP: Represented as a series of numbers (IPv4) or hexadecimal characters (IPv6).
+Ports: Represented as a 16-bit number (e.g., 80, 443, 8080).
+5. Layer in OSI Model:
+
+IP: Operates at the Network Layer (Layer 3).
+Ports: Operate at the Transport Layer (Layer 4).
+Example Scenario:
+When you visit a website (e.g., http://example.com), your computer:
+
+Uses IP: Your computer sends a request to the IP address of the web server hosting the website.
+Uses Ports: The request is sent to port 80 on the web server (default port for HTTP). If it's a secure connection (https://example.com), the request is sent to port 443.
+
