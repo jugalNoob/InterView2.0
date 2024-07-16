@@ -10,3 +10,155 @@ Ans 1:: Aircrack-ng-the OG WIFI cracker
 8::Cowpatty -- the Roque access point master
 9::wireshark =- The network Traffic
 10::Wifiphisher - the Phishing Matermind 
+11::Wifite
+`
+
+
+||||||||| Airl Plan Hacking ---------------::::::::::::::::::
+
+:: Track down any Staellite using Osint 
+1::A2YO.com
+2::orbital Mechanics
+3::Gpredict
+4::https:://ang13t/satlntel
+5::Angelinatsuboi.net
+6::https://retia.io
+7::https://github.com/ANG13T/SatIntel.git
+
+
+::: GPS Tracking  jamming with Sigint 
+.1 kepler.gl/demo --> sniffing and 
+.2 GPSJam : gpsjam.com
+.3 ADSBExchange.com
+.4 cddis.nasa.gov
+.5globe.ADSBExchange.com
+
+
+::: Tracking drones with Drxtract+demo   -----------------------------><><><>
+
+::Real-world case of plan spoofing 
+
+::Airplan tracking and spoofing
+
+:: what is sniffing 
+
+:: What is Packing sniffing
+
+::::::::::: Byass  this intercept 2fa and OTP   Tools  -------------------<><><><>
+
+
+
+
+Let's start with some Network Scanning Tools        ------------------------<><><><>
+Nmap: https://nmap.org/  
+Angry IP Scanner: https://angryip.org/  
+Netcat: https://nc110.sourceforge.io/  
+Nessus: https://www.tenable.com/products/nessus  
+
+Next, let's cover Vulnerability Scanning Tools    ----------------------<><><><>
+OpenVAS: https://www.openvas.org/  
+Nikto: https://cirt.net/Nikto2  
+
+Next up we have Password Cracking Tools    ------------------------------------<><><><><>
+John the Ripper: https://www.openwall.com/john/  
+Hashcat: https://hashcat.net/hashcat/  
+Cain and Abel: https://sectools.org/tool/cain/  
+RainbowCrack: http://project-rainbowcrack.com/  
+Aircrack-ng: https://www.aircrack-ng.org/  
+Hydra: https://github.com/vanhauser-thc/thc-...  
+THC Hydra: https://github.com/vanhauser-thc/thc-...  
+Medusa: https://github.com/jmk-foofus/medusa  
+
+Now let's talk about Exploitation Tools   ------------------------------------<><><><><>
+Metasploit: https://www.metasploit.com/  
+Burp Suite: https://portswigger.net/burp  
+Social-Engineer Toolkit (SET): https://github.com/trustedsec/social-...  
+BeEF: https://beefproject.com/  
+PowerSploit: https://github.com/PowerShellMafia/Po...  
+SQLMap: https://sqlmap.org/  
+Armitage: https://www.fastandeasyhacking.com/  
+Zed Attack Proxy (ZAP): https://www.zaproxy.org/  
+
+Some other useful tools are tools for Packet Sniffing and Spoofing   --------------------------<><><><>
+Wireshark: https://www.wireshark.org/  
+tcpdump: https://www.tcpdump.org/  
+Ettercap: https://www.ettercap-project.org/  
+Bettercap: https://www.bettercap.org/  
+Snort: https://www.snort.org/  
+Ngrep: https://github.com/jpr5/ngrep  
+NetworkMiner: https://www.netresec.com/?page=Networ...  
+Hping3: http://www.hping.org/  
+Nemesis: https://github.com/libnet/nemesis  
+
+Then we have Wireless Hacking Tools  ---------------------------------<>><><>< 
+Wifite: https://github.com/derv82/wifite  
+Kismet: https://kismetwireless.net/  
+Reaver: https://github.com/t6x/reaver-wps-for...  
+Fern Wi-Fi Cracker: https://github.com/savio-code/fern-wi...  
+Bully: https://github.com/aanarchyy/bully  
+CoWPAtty: https://github.com/OpenSecurityResear...  
+InSSIDer: https://www.metageek.com/products/ins...  
+
+Next up is Web Application Hacking Tools  ---------------------------------<><><
+Skipfish: https://code.google.com/archive/p/ski...  
+Grendel-Scan: https://github.com/grendel-scan/grend...  
+Vega: https://subgraph.com/vega/  
+WebScarab: https://www.owasp.org/index.php/Categ...  
+IronWASP: https://ironwasp.org/  
+
+Next up we have Social Engineering Tools   ------------------------------<><><><>
+King Phisher: https://github.com/rsmusllp/king-phisher  
+Maltego: https://www.maltego.com/
+
+
+. Machine Learning and AI for Security -----------------------<>><><>
+Malware Detection with ML: Leveraging machine learning techniques to develop custom models for malware detection
+and anomaly detection.
+
+AI for Threat Hunting: Using AI-based tools and platforms to enhance threat hunting capabilities.
+
+Red Teaming and Adversary Simulation Tools ---------------<><><><>
+BloodHound: A tool to analyze Active Directory trust relationships and visualize attack paths.
+
+MITRE ATT&CK Navigator: A tool to help visualize and work with the MITRE ATT&CK® matrix for strategic planning of red
+teaming engagements.
+
+Advanced Forensics and Incident Response Tools  ----------------------<><><><><>
+Volatility: An advanced memory forensics framework for analyzing RAM dumps.
+Sleuth Kit: A collection of command-line tools and a library for analyzing disk images and recovering files from them.
+
+
+
+ Container and Kubernetes Security Tools -----------------------------------<><><><><>
+kube-hunter: A tool to hunt for security weaknesses in Kubernetes clusters.
+kube-bench: A tool that checks whether Kubernetes is deployed securely by running the checks documented in the CIS Kubernetes Benchmark.
+
+
+
+. Cloud Security Tools ------------------------<><><><><>
+Pacu: An open-source AWS exploitation framework designed for security testing of Amazon Web Services (AWS) environments.
+ScoutSuite: An open-source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments.\
+
+
+Post-Exploitation Tools     ------------------------------<><><><>
+Empire: A post-exploitation framework that offers a variety of modules for maintaining control over compromised hosts.
+PowerSploit: A collection of PowerShell scripts that can be used for post-exploitation tasks.
+
+
+
+Reverse Engineering Tools     ---------------------------<><><><>
+Ghidra: A software reverse engineering (SRE) framework created and maintained by the NSA, useful for analyzing binaries.
+IDA Pro: A powerful disassembler and debugger for reverse engineering binary applications.
+Radare2: An open-source framework for reverse engineering and analyzing binaries.
+
+
+
+3. Vulnerability Scanners  ---------------------<><><><><>
+Nessus: A widely used vulnerability scanner capable of identifying vulnerabilities, misconfigurations, and malware.
+OpenVAS: An open-source vulnerability scanning tool for comprehensive assessment and management of vulnerabilities.
+
+
+Reconnaissance and Scanning Tools     -------------------<><><><><><>
+Shodan: A search engine for discovering internet-connected devices and systems.
+Recon-ng: A full-featured web reconnaissance framework written in Python, ideal for gathering open-source intelligence.
+theHarvester: An effective tool for gathering emails, subdomains, hosts, employee names, open ports, banners, and more.
