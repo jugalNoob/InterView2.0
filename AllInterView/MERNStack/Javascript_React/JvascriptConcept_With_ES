@@ -1,3 +1,63 @@
+Javascript  BOM Very Important  -------------------------------------------------------<><><>
+
+4. screen Object  
+
+// Example: Get Screen Information
+console.log("Screen Width:", window.screen.width);
+console.log("Screen Height:", window.screen.height);
+console.log("Color Depth:", window.screen.colorDepth);
+
+
+
+5. history Object
+// Example: Go Back and Forward in History
+window.history.back(); // Goes back one step in the browser history
+window.history.forward(); // Goes forward one step in the browser history
+
+// Example: Push and Replace State
+window.history.pushState({ page: 1 }, "Title", "?page=1");
+window.history.replaceState({ page: 2 }, "Title", "?page=2");
+
+
+window
+console.log("Current URL:", window.location.href);
+console.log("User Agent:", window.navigator.userAgent);
+console.log("Screen Width:", window.screen.width);
+console.log("Screen Height:", window.screen.height);
+
+
+navigator Object
+// Example: Get Browser Information
+console.log("User Agent:", window.navigator.userAgent);
+console.log("Browser Language:", window.navigator.language);
+console.log("Online Status:", window.navigator.onLine);
+
+
+// Navigator object
+console.log("User Agent:", navigator.userAgent); // Information about the browser and operating system
+console.log("Browser Language:", navigator.language); // Language set in the browser
+console.log("Online Status:", navigator.onLine ? "Online" : "Offline"); // Whether the browser is online
+
+// Screen object
+console.log("Screen Width:", screen.width); // Width of the screen
+console.log("Screen Height:", screen.height); // Height of the screen
+console.log("Available Screen Width:", screen.availWidth); // Width of the screen available for use
+console.log("Available Screen Height:", screen.availHeight); // Height of the screen available for use
+console.log("Color Depth:", screen.colorDepth); // Color depth of the screen (in bits)
+
+// Location object
+console.log("Current URL:", location.href); // Full URL of the current page
+console.log("Host:", location.host); // Hostname and port number
+console.log("Hostname:", location.hostname); // Hostname of the URL
+console.log("Pathname:", location.pathname); // Path of the URL
+console.log("Protocol:", location.protocol); // Protocol used (e.g., http:, https:)
+console.log("Port:", location.port); // Port number of the URL
+
+
+
+
+
+
 https://www.w3schools.com/js/js_es6.asp
 
 Top-Level Await
