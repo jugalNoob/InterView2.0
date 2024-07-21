@@ -43,4 +43,27 @@ console.log(shuffledStr);
 
 
 
+::::::::::::::: Object with index number -----------------------<><><><>
+
+const objArray = [
+   {
+       index: 0,
+       details: {
+           name: "jugal",
+           rollno: 45
+       }
+   },
+   {
+       index: 1,
+       details: {
+           name: "karan",
+           rollno: 20
+       }
+   }
+];
+
+console.log(objArray[0])
+
+
+
 
