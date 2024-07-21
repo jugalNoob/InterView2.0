@@ -65,5 +65,22 @@ const objArray = [
 console.log(objArray[0])
 
 
+const obj = {
+    0: {
+        name: "jugal",
+        rollno: 45
+    },
+    1: {
+        name: "karan",
+        rollno: 20
+    }
+};
+
+
+
+
+
+
+
 
 
