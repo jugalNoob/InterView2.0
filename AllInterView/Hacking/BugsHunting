@@ -191,6 +191,34 @@ Ans:: -- > trace refers to an Http method that is used for diagnostic purpose
 
 1:: the Trace methods allow a client (typical a web browser ) to send a request to server and receive back the same request in the respone
 
+2:: this can be helpful for debugging troubleshooting and understanding how a server process request and handles various header
+
+
+
+Resquest  ---- > respones  
+
+3:: header manuliped
+
+Q what is headers ?
+
+ASn:: a header refers to a block of data at the begining of a data packet or message that contains 
+important information about the packet contect format and how it should be processed
+
+for example :: in networking and web communication http header are used to convey 
+information about the request or resones being sent between a client (such as a web browser )
+and a server these header include details such as the content type length caching instructions and authentication information
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
