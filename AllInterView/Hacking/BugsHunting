@@ -158,7 +158,9 @@ exmaple --> netBank access Control
 ..Exploitation using Trace
 ..Path/Directory Traversal
 
-Q Install Burpsuite?
+https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter --> use  link 
+
+1::burp suit toola :: proxy intercepts 
 
 
 
@@ -166,7 +168,9 @@ Q Install Burpsuite?
 
 
 
-Q tools and Website --------->>>>>>
+
+
+Q tools and Website --------->>>>>>                -------------------------------------------------------<<<><><<<>
  Shodan: Shodan is a search engine for internet-connected devices, including webcams, routers, servers, and more. 
 
 1..:https://portswigger.net/
