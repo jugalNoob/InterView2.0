@@ -209,6 +209,12 @@ information about the request or resones being sent between a client (such as a 
 and a server these header include details such as the content type length caching instructions and authentication information
 
 
+Q what is coustom Ip authorization ?
+Ans::  --> the header X-CUSTOM-IP-Authorization" is not a stander HTTP header it appers to
+be a custom header that you've included in your network request custom header are additional 
+piece of infoprmation that can be added 
+..--> the  name of the custom header X-custom-Ip-Authorization , "Implies that is related to authorization based on IP address
+
 
 
 
