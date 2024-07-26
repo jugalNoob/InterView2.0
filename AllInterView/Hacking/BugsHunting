@@ -148,6 +148,18 @@ https://0ab40043046f7f0b80fde96c009b004b.web-security-academy.net/prduct?product
 
 2::Broken access Control ::::::::::::::  ----------------------->>
 
+.. request Parmeter 
+.. URL Exploitation
+..IDOR
+..Exploiation using Burp REpeater 
+..Exploiation using trace
+..path.directory traversal 
+
+
+
+
+
+
 exmaple --> netBank access Control  
 
 -->> Broken access Control Attacks ----:::
@@ -215,6 +227,15 @@ be a custom header that you've included in your network request custom header ar
 piece of infoprmation that can be added 
 ..--> the  name of the custom header X-custom-Ip-Authorization , "Implies that is related to authorization based on IP address
 
+
+
+
+::::::::::::::::::::::::::::::: ---------------------------->>>>
+
+Q what is Client side forqery (CSRF)?
+Ans:: in a CSRF attack an attacker trick a user into a user into unkowinly making an unintended and 
+potentially malicious action on a web application where the user is authenticated this can
+lead to action being performed without the user consset or knowledge ?
 
 
 
