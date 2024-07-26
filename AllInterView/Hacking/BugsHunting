@@ -185,6 +185,14 @@ exmaple --> copy user instergram link and use   another  browser and  check your
 
 
 
+Q what is trace ?
+
+Ans:: -- > trace refers to an Http method that is used for diagnostic purpose
+
+1:: the Trace methods allow a client (typical a web browser ) to send a request to server and receive back the same request in the respone
+
+
+
 
 
 Q tools and Website --------->>>>>>                -------------------------------------------------------<<<><><<<>
