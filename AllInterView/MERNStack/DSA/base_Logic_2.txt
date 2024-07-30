@@ -1,5 +1,35 @@
 
 
+//////////// -------------------->>> shuffering array  
+
+function shuffleArray(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+    
+    const colors = shuffleArray(['red', 'blue', 'green', 'yellow', 'orange', 'purple']);
+    console.log(colors);
+
+
+
+/// string dynamic string 
+redirect to new  URL after a deplay  -------------------------->>
+  setTimeout(() => {
+        window.location.href = "https://www.youtube.com/";
+    }, 5000);
+    
+
+
+
+
+//merge object ------------------------->
+
+const person={name:"jan"}
+
+const  details={age:30}
+
+const full={...person , ...details}
+
+
 ////////////////////////  ---> number all change variable and  value
 
  let ran = 100;
