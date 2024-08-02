@@ -24,15 +24,47 @@ Ans: 1:: password guessing attack
 7::de authentication attack 
 8::evil twin  attack 
 
-Q Tips for secure wifi ?
+Q Tips for secure wifi ? ------------------------------------------------------<><><><><><>
 
-Ans::password should Unique and strong 
-::WPS Disable
-::Keep Wifi firmware Update
-::use latest Technology
-::Moniter Devices  and Wifi Network
+....Use a Unique and Strong Password: Create a strong password for your WiFi network, combining uppercase and lowercase letters,
+numbers, and special characters. Avoid using easily guessable information like birthdays or common words.
+
+...Disable WPS (Wi-Fi Protected Setup): WPS is a feature that simplifies the connection process but can be a security risk.
+It's better to disable it to prevent unauthorized access.
+
+....Keep WiFi Firmware Updated: Regularly update your router’s firmware to ensure you have the latest security patches and improvements.
+
+....Use the Latest Technology: Ensure you’re using WPA3 for WiFi security if your router supports it. If not, use WPA2
+as it is more secure than WEP or WPA.
+
+.....Monitor Devices and WiFi Network: Regularly check the devices connected to your network. Remove any
+unauthorized devices and ensure all connected devices are secure.
 
 
+.....Change Default Router Settings: Change the default username and password of your router's admin panel.
+These defaults are widely known and can be exploited.
+
+......Enable Network Encryption: Ensure your network is encrypted. WPA3 is the latest and most secure option.
+If your router doesn’t support WPA3, use WPA2.
+
+......Disable SSID Broadcasting: If your network doesn’t need to be publicly visible, disable the SSID broadcasting. 
+This makes your network invisible to casual users.
+
+....Use a Guest Network: Set up a separate guest network for visitors. This keeps your primary network secure and isolated from guests.
+
+.......Limit DHCP Leases: Restrict the number of IP addresses your router can assign. This limits the number 
+of devices that can connect to your network.
+
+......Implement MAC Address Filtering: Only allow specific devices to connect to your network by enabling 
+MAC address filtering. This can be more time-consuming to manage but adds an extra layer of security.
+
+......Disable Remote Management: Turn off remote management features unless you specifically need them. 
+This reduces the risk of external attacks.
+
+.......Use a VPN: Use a Virtual Private Network (VPN) to encrypt all traffic coming from your network,
+providing an additional layer of security.
+
+.........Regularly Check for Rogue Access Points: Scan for unauthorized access points that might be trying to mimic your network.
 
 
 
