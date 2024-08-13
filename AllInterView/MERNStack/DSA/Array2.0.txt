@@ -1,3 +1,27 @@
+//Random javscript  ----------------------->>>
+console.log(Math.random().toString().length)
+console.log(Math.random()<0.5)
+const coinFlip = Math.random() < 0.5 ? 'Heads' : 'Tails';
+console.log(coinFlip);
+
+
+Generating a Random Date within a Range ----------------->>> //////////////////
+
+function getRandomDate(start, end) {
+   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}
+
+const startDate = new Date(2000, 0, 1); // January 1, 2020
+const endDate = new Date(2023, 11, 31); // December 31, 2023
+console.log(getRandomDate(startDate, endDate));
+
+
+
+
+
+
+
+
 |||||||||||||||||| Array first last and center element
 let data = [1, 2, 3, 44,55, 66, 8, 9];
 
@@ -235,5 +259,71 @@ console.log(circularArray.get(5)); // Output: 'A'
 circularArray.rotate(2);
 console.log(circularArray.get(0)); // Output: 'C' (after rotation)
 console.log(circularArray.get(-1)); // Output: 'B' (after rotation)
+
+
+
+/// all Types of console in javascript  ------------------>>>  ----------------
+console.time("Timer 2");
+// some code...
+console.timeLog("Timer 2");//console.timeLog(): Logs the current value of a timer that was started with 
+// some more code...
+console.timeEnd("Timer 2");
+
+
+console.assert(1 === 2, "This will log because 1 is not equal to 2.");
+
+
+console.error("This is an error message.");
+
+console.warn("This is a warning message.");
+
+console.warn("This is a warning message.");
+
+
+console.groupCollapsed("Collapsed Group");
+console.log("This message is in a collapsed group.");
+console.groupEnd();
+
+
+console.group("Group 1");
+console.log("Message in Group 1");
+console.groupEnd();
+
+
+
+
+
+console.time("Timer 1");
+console.timeEnd("Timer 1");
+
+
+// console.debug("This is a debug message.");
+// console.dirxml(document.body);
+// console.dir(document.body);
+// console.log("%cHello, World!", "color: blue; font-size: 20px;");
+// console.clear();
+// function a() { b(); }
+// function b() { c(); }
+// function c() { console.trace("Trace message"); }
+// a();
+// const users = [
+//    { name: "Alice", age: 25 },
+//    { name: "Bob", age: 30 }
+//  ];
+//  console.table(users);
+//  console.countReset("Count label");
+// console.count("Count label");
+// console.count("Count label");
+// console.count("Count label");
+// console.count("Count label");
+
+
+
+
+
+
+
+
+
 
 
