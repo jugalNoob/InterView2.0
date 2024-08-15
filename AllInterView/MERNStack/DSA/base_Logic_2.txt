@@ -1,4 +1,19 @@
 
+
+// Coin FLip Game start 
+
+const coinFlip = Math.random() < 0.5 ? 'Heads' : 'Tails';
+console.log(coinFlip)
+if(coinFlip === 'Heads'){
+   console.log(coinFlip + " you win ")
+}else{
+   console.log(coinFlip + " you loose ")
+}
+
+
+
+
+
 /// --- >>>>>>>>>>>>>>> 
 check even and add  Number 
 
