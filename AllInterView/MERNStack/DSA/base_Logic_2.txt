@@ -5,7 +5,7 @@
 let clickCount = 0;
 const maxClicks = 5;
 let one=0
-
+let two=0;
 function flipButton() {
     if (clickCount < maxClicks) {
         clickCount++;
@@ -17,14 +17,19 @@ function flipButton() {
             console.log(one++)
         } else {
             console.log(coinFlip + " you lose ");
+            console.log(two++)
         }
     } else {
         console.log("No more flips allowed, you've reached the limit of 10.");
+
+        console.log(one > two ? "You wine as a head" : "You  lose as a tail" )
     }
+
+
 }
 flipButton()
 
- ::: Without click random coin Flip ;;;
+ ::: Without click random coin Flip ;;;  --------------------------------
 const coinFlip = Math.random() < 0.5 ? 'Heads' : 'Tails';
 console.log(coinFlip)
 if(coinFlip === 'Heads'){
