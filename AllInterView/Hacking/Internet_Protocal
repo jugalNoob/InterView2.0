@@ -1,3 +1,23 @@
+Internet Protocol (IP):
+
+IPv4 (Internet Protocol version 4): The fourth version of the Internet Protocol, which uses a 32-bit address scheme allowing for 4.3 billion unique addresses.
+IPv6 (Internet Protocol version 6): The successor to IPv4, which uses a 128-bit address scheme allowing for a vastly larger number of unique IP addresses.
+ICMP (Internet Control Message Protocol):
+
+Used for diagnostic and error-reporting purposes. It is commonly associated with the "ping" utility, which checks the reachability of a host.
+ARP (Address Resolution Protocol):
+
+Resolves IP addresses to MAC (Media Access Control) addresses within a local network. This is essential for network devices to communicate on the same local network segment.
+RARP (Reverse Address Resolution Protocol):
+
+Used by a host to discover its IP address if it only knows its MAC address. It's less common today and has been largely replaced by DHCP.
+IPsec (Internet Protocol Security):
+
+A suite of protocols used to secure IP communications by authenticating and encrypting each IP packet in a communication session.
+
+
+
+
 QPorts
 Definition: A port is a virtual point where network connections start and end. Ports are used by network protocols to
 identify specific processes or services on a device.
