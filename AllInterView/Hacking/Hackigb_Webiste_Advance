@@ -1,3 +1,31 @@
+Tor-Based Search Engines
+Ahmia: A search engine for Tor hidden services (.onion sites). Ahmia also indexes content from the I2P network.
+DuckDuckGo (Tor version): While DuckDuckGo is a regular search engine, it has a Tor version that allows users to search the surface web while maintaining anonymity.
+NotEvil: A Tor search engine that mimics the look and feel of Google, but indexes only .onion sites.
+
+
+2. I2P-Based Search Engines
+eepSites Search: Designed specifically for searching content on the Invisible Internet Project (I2P) network, which is another layer of anonymization like Tor.
+AnonSearch: An I2P-based search engine that helps users find content within the I2P network.
+
+
+3. Distributed Search Engines
+Yacy: An open-source, decentralized search engine that uses a peer-to-peer network to index and search the web. While it
+can be used for regular web content, it’s also employed by users looking to access content outside of traditional search engine reach.
+
+4. Meta Search Engines
+OnionLand Search: A meta-search engine that queries multiple dark web search engines and aggregates the results.
+It helps in discovering more obscure content across the dark web.
+
+5. Custom Engines for Specific Content
+Grams: Known as the "Google of the Dark Web," Grams was designed specifically to search dark web marketplaces and other related 
+content. Note that some of these search engines may no longer be operational due to law enforcement crackdowns.
+
+
+
+
+
+
 Q types of search darkest search  engines?
 Ams: 1::duckduckGo 
 2::onionscanner
@@ -8,7 +36,9 @@ Ams: 1::duckduckGo
 7::tor66
 8::excavator
 9::search Demon
-
+10:: Not Evil
+11:: Haystak
+12::Candle
 
 
 
