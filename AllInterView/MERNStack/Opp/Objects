@@ -118,3 +118,28 @@ console.log(objt["names"] ?? null);  //show only  undefind or null
 console.log(objt["nametyhus"] ?? undefined);
 // console.log(objt["nametyhus"] ||  "unknow"); // show 
 console.log(objt.name || "kio")
+
+
+????:::::::::::::::: ---------------->>> 
+
+
+[
+    {
+    "name":"jugal",
+    "age":11,
+    "hobbies":["walking" , "Reading"],
+    "identity":{hashPanCard:false , hashAdhaarCard:true},
+    "bio":"I am a youtuber and actor"
+    },
+    {
+        "name":"karan",
+        "age":20,
+        "hobbies":["cricket" , "Reading"],
+        "identity":{hashPanCard:false , hashAdhaarCard:true},
+        "bio":"I am a youtuber and actor"
+    },
+
+
+
+
+
