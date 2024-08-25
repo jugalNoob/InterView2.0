@@ -141,5 +141,38 @@ console.log(objt.name || "kio")
 
 
 
+::::::::::::::: Object with index number -----------------------<><><><>
+
+const objArray = [
+   {
+       index: 0,
+       details: {
+           name: "jugal",
+           rollno: 45
+       }
+   },
+   {
+       index: 1,
+       details: {
+           name: "karan",
+           rollno: 20
+       }
+   }
+];
+
+console.log(objArray[0])
+
+
+const obj = {
+    0: {
+        name: "jugal",
+        rollno: 45
+    },
+    1: {
+        name: "karan",
+        rollno: 20
+    }
+};
+
 
 
