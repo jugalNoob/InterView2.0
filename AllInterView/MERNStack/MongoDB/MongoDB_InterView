@@ -81,8 +81,17 @@ BSON is a binary format derived from JSON, optimized for storage and speed, main
 
 GSON is a Java library for serializing and deserializing Java objects to and from JSON.
 
+JSON, BSON, and GSON serve different purposes in the data serialization world, with JSON being text-based, 
+BSON being a binary format optimized for databases, and GSON being a library for Java.
 
- JSON (JavaScript Object Notation):
+YAML and XML are also popular text-based formats, often used for configuration files and data exchange.
+
+Protobuf and Avro are binary formats designed for efficiency in both storage and processing, often used in systems
+where performance is critical.
+
+
+
+ JSON (JavaScript Object Notation): :::::::: -----------------
 
 What is it?
 
@@ -142,6 +151,10 @@ String json = gson.toJson(new User("John", 30)); // Java object to JSON
 User user = gson.fromJson(json, User.class); // JSON to Java object
 
 
+
+
+
+Q what is different between Json.parse()  and Json.stringify methods in javascript?
 
 
 
