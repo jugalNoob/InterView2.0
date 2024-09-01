@@ -39,14 +39,27 @@ if(coinFlip === 'Heads'){
 }
 
 
+////////////////// -------------------------- >> Start And end  Time Importan
+let startTime = performance.now();
+console.log(startTime.toString() , "startTime")
+
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+let endTime = performance.now();
+console.log(endTime.toString() , "endTime")
+console.log(`Execution time: ${endTime - startTime} milliseconds`);
+
+
+
 
 
 
 /// --- >>>>>>>>>>>>>>> 
 check even and add  Number 
-
-
-
     let cons =4
 
     if(cons % 2 ===0){
