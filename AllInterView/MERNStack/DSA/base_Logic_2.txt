@@ -53,12 +53,19 @@ let endTime = performance.now();
 console.log(endTime.toString() , "endTime")
 console.log(`Execution time: ${endTime - startTime} milliseconds`);
 
+performance.now(): This method returns the current time in milliseconds, with fractional precision, relative to the time origin (typically the time the page was loaded).
+
+startTime: Captures the time just before the loop starts.
+
+endTime: Captures the time right after the loop ends.
+
+Execution time calculation: By subtracting startTime from endTime, you get the total time taken to execute the loop, which is then logged to the console.
 
 
 
 
 
-/// --- >>>>>>>>>>>>>>> 
+/// --- >>>>>>>>>>>>>>>  ------------------------------------->
 check even and add  Number 
     let cons =4
 
