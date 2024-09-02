@@ -44,29 +44,24 @@ console.log(getRandomDate(startDate, endDate));
 
 
 |||||||||||||||||| Array first last and center element
-let data = [1, 2, 3, 44,55, 66, 8, 9];
+let data = [10, 20, 30, 40, 50, 60, 70];
+
+console.log(data.length, "length index"); // full length (7)
 
 let centerIndex = Math.floor(data.length / 2);
-console.log("Center element:", data[centerIndex]);
+console.log(centerIndex, "center index, element:", data[centerIndex]); // center element index (3) and element (40)
 
-let centerIndex1 = data.length / 2 - 1;
-let centerIndex2 = data.length / 2;
-console.log("Center elements:", data[centerIndex1], "and", data[centerIndex2]);
+let endIndex = data.length - 1;
+console.log(endIndex, "end index, element:", data[endIndex]); // last index (6) and element (70)
 
 
-// console.log("Length of the array:", data.length);
+let firstElement = data[0];
+console.log(0, "first element index,", firstElement, "first element"); // index 0 and element 10
 
-// for(let i = 0; i < data.length; i++){
-//     if(i === 0) {
-//         console.log("First element:", data[i]);
-//     }
-//     if(i === data.length - 1) {
-//         console.log("Last element:", data[i]);
-//     }
-// }
-// console.log("Length of the array:", data.length);
-// console.log("First element:", data[0]);
-// console.log("Last element:", data[data.length - 1]);
+
+
+
+
 
 
 ::::::::-------------->><><> ---------------------------------------
