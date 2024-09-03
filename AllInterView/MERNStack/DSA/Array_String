@@ -546,6 +546,43 @@ console.log(firstOccurrence("JavaScript is fun", "Java")); // Output will be -1 
 ::::::::::::::::
 |||||||||| Remove duplicates array||||||||
 function removeDuplicatesNew(nums) {
+   // Handle the edge case where the array is empty
+   if (nums.length === 0) return 0;
+ 
+   // Initialize the pointer for the last unique element
+   let i = 0;
+ 
+   // Loop through the array starting from the second element
+   for (let j = 1; j < nums.length; j++) {
+     // If a new unique element is found, update the array
+     if (nums[i] !== nums[j]) {
+       i++;
+       nums[i] = nums[j];
+     }
+   }
+ 
+   // The length of the array with unique elements is i + 1
+   const length = i + 1;
+ 
+   console.log(length)
+
+   // Return the length and the modified array up to the new length
+   return {
+     length,
+     uniqueArray: nums.slice(0, length), // Only return the unique part of the array
+     fullArray: nums // Return the full modified array
+   };
+ }
+ 
+ // Test the function with an example array
+ const result = removeDuplicatesNew([0, 0, 1, 1, 1, 2, 2, 3, 3, 4 , 5 , 5]);
+ console.log(`Length of unique elements: ${result.length}`);
+ console.log(`Array with unique elements: ${result.uniqueArray}`);
+ console.log(`Full array after removing duplicates: ${result.fullArray}`);
+ 
+
+
+function removeDuplicatesNew(nums) {
   if (nums.length === 0) return 0;
   let i = 0;
 
