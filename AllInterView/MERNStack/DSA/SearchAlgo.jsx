@@ -11,6 +11,8 @@ for (let i = 0; i < data.length; i++) {
 
 
 
+////  ------------------>> Filter with a letter  ////////////  ------------->
+
 function filter(str, letter) {
    let filteredStr = [];
    for (let i = 0; i < str.length; i++) {
@@ -21,15 +23,11 @@ function filter(str, letter) {
            console.log("The first letter is not", letter);
        }
    }
-
    return filteredStr;
 }
-
 let str = ['jugal', 'aki', 'boy', 'cart', 'aus', 'arabic', 'body'];
 let letter = "c";
-
 let result = filter(str, letter);
-
 console.log("Filtered array:", result);
 
 
