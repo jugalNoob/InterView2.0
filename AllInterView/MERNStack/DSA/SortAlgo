@@ -33,19 +33,7 @@ sleepSort();
 
 |||||||||||||--------------------------------------Inserting///
 
-let data=[ 9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 1,0,100 ]
-console.log(data.length)
-let add=69;
-let post=0;
-for(let i=data.length-1; i>=0; i--){
-    if(i>=post){
-        data[i+1]=data[i]
-    }if(i==post){
 
-        data[i]=add;
-    }
-
-}
 console.log(data)
 
 
