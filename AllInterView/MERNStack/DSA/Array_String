@@ -367,6 +367,13 @@ let str="hello"
 console.log(pali(str))
 
 
+const reversedStr = str.split('').reverse().join('');
+console.log("Reversed:", reversedStr);
+const isPalindrome = str === reversedStr;
+console.log(isPalindrome ? "Palindrome" : "Not a palindrome");
+
+
+
 ///////////Resvers array //////////////////////!SECTION
       let data = [10, 20, 30, 40, 50];
 let start = 0;
