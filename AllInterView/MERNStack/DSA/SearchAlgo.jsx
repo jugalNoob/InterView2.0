@@ -11,6 +11,30 @@ for (let i = 0; i < data.length; i++) {
 
 
 
+function filter(str, letter) {
+   let filteredStr = [];
+   for (let i = 0; i < str.length; i++) {
+       if (str[i][0].toLowerCase() !== letter.toLowerCase()) {  // !==  ====
+           console.log(str[i]);
+           filteredStr.push(str[i]);  // Add the element to filteredStr if it meets the condition
+       } else {
+           console.log("The first letter is not", letter);
+       }
+   }
+
+   return filteredStr;
+}
+
+let str = ['jugal', 'aki', 'boy', 'cart', 'aus', 'arabic', 'body'];
+let letter = "c";
+
+let result = filter(str, letter);
+
+console.log("Filtered array:", result);
+
+
+
+
 
 
 // object serach with index number  ----> ----------------------
