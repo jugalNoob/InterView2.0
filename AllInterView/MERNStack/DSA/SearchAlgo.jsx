@@ -13,6 +13,39 @@ for (let i = 0; i < data.length; i++) {
 
 
 
+// object serach with index number  ----> ----------------------
+const objs = {
+   0: {
+       name: "Jugal",
+       rollno: 45,
+       identity: { hashPanCard: false, hashAdhaarCard: true },
+   },
+   1: {
+       name: "Karan",
+       rollno: 20,
+       identity: { hashPanCard: false, hashAdhaarCard: true },
+   }
+};
+
+console.log(objs)
+let search = 1;
+let post = undefined;
+
+for (let i in objs) { // Looping through keys of the object
+   if (i == search) { // Checking if the key matches `search`
+       post = objs[i]; // Assigning the matching object to `post`
+       break; // Exit loop once found
+   }
+}
+
+console.log(post);
+
+
+
+
+
+
+
 
 let obj = {
    name: "Jugal",
