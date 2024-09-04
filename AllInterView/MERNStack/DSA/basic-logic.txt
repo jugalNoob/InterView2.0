@@ -8,10 +8,19 @@
 //     }
 // }
 
+// 5. Reverse the string
+const reversedStr = str.split('').reverse().join('');
+console.log("Reversed:", reversedStr);
+
+const isPalindrome = str === reversedStr;
+console.log(isPalindrome ? "Palindrome" : "Not a palindrome");
+
 // // Example usage:
 // console.log(checkStringOrNumber("Hello")); // Output: String
 // console.log(checkStringOrNumber(42)); // Output: Number
 // console.log(checkStringOrNumber(true)); // Output: Neither a String nor a Number
+
+
 
 
 
