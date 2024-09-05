@@ -161,6 +161,18 @@ const apisear = async () => {
    }
 
 
+    /// search with your name  ----------------------------->
+
+    let sears = 'Leanne Graham'; // User id to search for
+for (let user of use) {
+  if (user.name === sears) {
+  
+    console.log(user); // Logs the user object with the id of 3
+    break; // Exit the loop once the user is found
+  }
+}
+
+
 
 }
 apisear();
