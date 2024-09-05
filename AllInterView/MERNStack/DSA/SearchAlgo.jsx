@@ -125,8 +125,50 @@ const objs = {
     }
 };
 
-
-
-
-
 console.log(objs)
+
+
+
+
+/// Api search Very Important code ----------------->>
+const apisear = async () => {
+   // Await the fetch call to get the response
+   let data = await fetch("https://jsonplaceholder.typicode.com/users");
+   let apis = await data.json();
+ //  console.log(apis); // This will log the actual data
+
+
+   // // Search index in api  --------------------->><><>
+   let sear=3
+   for(let i  in apis){
+      if(i == sear){
+         console.log(apis[i]);
+
+         break;
+      }
+   }
+
+
+   //user id Index use 
+
+
+   let sears = 3; // User id to search for
+   for (let user of apis) {
+     if (user.id === sears) {
+       console.log(user); // Logs the user object with the id of 3
+       break; // Exit the loop once the user is found
+     }
+   }
+
+
+
+}
+apisear();
+
+
+
+
+
+
+
+
