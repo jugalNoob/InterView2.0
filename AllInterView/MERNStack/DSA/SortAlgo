@@ -1,3 +1,17 @@
+/// -----------------> Sort Function 
+
+let yu=[15 ,5 , 3 , 2 , 1]
+
+console.log(yu.sort())
+
+console.log(yu.sort((a, b) => a - b))  // [1, 2, 3, 5, 10]
+
+// console.log(yu.sort((a, b) => b - a))  // [5, 3, 2, 1]
+
+
+
+
+
 Sort Bubble |||||||||||||||||||||||||||||||||||||||||||||||
 let data=[9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 1];
 for(let i=0; i<data.length; i++){
