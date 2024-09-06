@@ -373,6 +373,12 @@ const isPalindrome = str === reversedStr;
 console.log(isPalindrome ? "Palindrome" : "Not a palindrome");
 
 
+let data="level"
+console.log(data , "not reverse")
+let pal=data.split("").reverse().join("")  
+console.log(data  == pal ? 'reverse' : 'reverse not')
+//console.log(data.split("").reverse().join("").split("").sort().join("")  , "reverse and sort")
+
 
 ///////////Resvers array //////////////////////!SECTION
       let data = [10, 20, 30, 40, 50];
