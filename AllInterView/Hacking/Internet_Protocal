@@ -279,6 +279,43 @@ LAN stands for Local Area Network.  --->
 
 
 
+
+
+When discussing types of internet connections similar to cable, there are several technologies that provide internet access through different mediums. Here are common types of internet connections:
+
+1. Cable Internet
+Delivered via coaxial cables that also carry television signals.
+Often used in homes and offers high-speed internet depending on the service plan.
+
+2. DSL (Digital Subscriber Line)
+Uses telephone lines to deliver internet.
+Speed is generally lower than cable, but it's widely available.
+
+3. Fiber-Optic Internet
+Delivered via fiber-optic cables that transmit data using light.
+Offers very high speeds and reliability, but availability is limited in some regions.
+
+4. Satellite Internet
+Uses satellite dishes to provide internet, mainly for rural or remote areas.
+Generally slower and can be affected by weather.
+
+5. Fixed Wireless
+Delivered via radio signals from a local tower to a receiver installed at the user’s location.
+Often used in rural areas where wired options aren’t available.
+
+6. Mobile Broadband (4G/5G)
+Provides internet via cellular networks.
+Can be used through smartphones, hotspots, or USB dongles. 5G offers much higher speeds than 4G.
+
+7. Dial-Up
+The oldest form of internet, connecting via telephone lines.
+Very slow by today’s standards but still available in some remote areas.
+
+8. Ethernet
+Wired LAN connection using Ethernet cables, often found in homes or offices for stable, high-speed internet access.
+
+
+
  ------------------------------------------>>> ----------------------------------------------------------
 
 Internet Protocol (IP):
