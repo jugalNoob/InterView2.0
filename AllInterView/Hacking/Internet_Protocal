@@ -10,17 +10,41 @@ https://www.techopedia.com/definition/2510/internet-service-provider-isp  ---> I
 
 Q what is HTTP?
 
+HTTP (Hypertext Transfer Protocol) is the protocol used for transmitting hypertext (webpages) over the internet.
+It defines how messages are formatted and transmitted between a client (e.g., browser) and a server, allowing the 
+client to request webpages and the server to respond with the content.
+
+Example: When you type a URL in your browser, an HTTP request is sent to the server, and the server responds with the webpage data.
+
+
 Q what is SMPT?
+
+SMTP (Simple Mail Transfer Protocol) is the protocol used for sending email messages across networks. It defines the rules 
+for sending and routing email messages from the sender's email server to the recipient's email server.
+
+Example: When you send an email, SMTP handles the process of transferring that email from your mail client (e.g., Gmail, Outlook) 
+to the recipient's server
+
+
 
 Q what is FTP?
 
+FTP (File Transfer Protocol) is used for transferring files between computers on a network. FTP 
+allows users to upload, download, or manage files on a remote server.
+
+Example: Web developers often use FTP to upload files (such as HTML, CSS, images) to a web server when building a website.
+
+
 Q what is HTTPS?
 
+HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that adds a layer of security by encrypting the data
+transmitted between the client and server using SSL/TLS. It ensures that the information (like passwords or credit card details)
+remains secure while being transmitted over the internet.
+
+Example: Websites dealing with sensitive data (e.g., online banking, e-commerce sites) use HTTPS to secure transactions
+and protect user data.
 
 Q what is Different between Web 1 vs Web2 vs Web3?
-
-
-
 
 
 
