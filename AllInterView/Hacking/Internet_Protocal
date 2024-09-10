@@ -105,34 +105,56 @@ Q what is isp?
 Ans::https://www.techopedia.com/definition/2510/internet-service-provider-isp ?
 
 
-Q what is subnet?
-Ans::
+1. What is Subnet?
+Ans: A subnet (short for subnetwork) is a segment of a larger network, created to organize and manage network traffic.
+It divides an IP network into smaller, more manageable sections, improving routing efficiency and security. Subnets 
+help isolate different segments of a network to reduce traffic congestion and enhance performance.
 
 
+2. What is the OSI Model?
+Ans: The OSI (Open Systems Interconnection) model is a conceptual framework used to understand and standardize
+the functions of a networking system. It divides the communication process into seven layers:
+
+Physical Layer: Transmission of raw data over a physical medium.
+
+Data Link Layer: Manages data frames between two directly connected nodes.
+
+Network Layer: Handles routing and forwarding of data.
+
+Transport Layer: Ensures reliable data transfer.
+
+Session Layer: Manages sessions between applications.
+
+Presentation Layer: Translates data formats and encryption.
+
+Application Layer: Interface for user applications (e.g., HTTP, FTP).
+
+3. What is URL?
+Ans: URL (Uniform Resource Locator) is the address used to access resources on the web. It specifies 
+the location of a resource (such as a webpage) and the protocol to retrieve it. A typical URL consists of the 
+protocol (e.g., HTTP/HTTPS), domain (e.g., www.example.com), and the path to the resource (e.g., /page1.html).
+
+4. What is HTTP?
+Ans: HTTP (Hypertext Transfer Protocol) is the protocol used for transferring hypertext (webpages) on the web.
+It defines how messages are exchanged between clients (such as web browsers) and servers, enabling the retrieval
+of resources like HTML pages.
+
+5. What is DNS?
+Ans: DNS (Domain Name System) is the system that translates human-readable domain names (e.g., www.google.com)
+into IP addresses (e.g., 172.217.6.110) that computers use to identify each other on the network. It acts
+like a phonebook for the internet, mapping domain names to their corresponding IP addresses.
+
+6. What is TCP?
+Ans: TCP (Transmission Control Protocol) is a core protocol of the internet that ensures reliable, ordered,
+and error-checked data transmission between computers. It breaks data into packets, sends them, and ensures
+that all packets arrive intact and in the correct order.
+
+7. What is UDP?
+Ans: UDP (User Datagram Protocol) is a communication protocol that sends data packets without establishing 
+a connection. Unlike TCP, it doesn’t guarantee the reliability or order of packets, making it faster but less 
+reliable. It’s used for applications where speed is more important than reliability, like online gaming, streaming, or VoIP.
 
 
-Q what OSI Model ?
-Ans::
-
-
-Q what is URL?
-Ans::
-
-
-
-Q what is HTTP?
-Ans::
-
-
-Q what is DNS?
-Ans::
-
-Q what is TCP?
-Ans::
-
-
-Q what is UPD?
-Ans::
 
 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -------------------------
