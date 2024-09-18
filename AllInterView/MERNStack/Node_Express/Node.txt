@@ -1,3 +1,36 @@
+1|::Web Server
+Use Case: Website hosting, application hosting, email services.
+Purpose: Delivers web pages to clients and handles requests via HTTP/HTTPS.
+
+
+2::Mail Server
+Use Case: Outgoing email, email relay, email marketing, authentication & security.
+Purpose: Sends and receives emails using SMTP, IMAP, and POP protocols.
+
+
+3::DNS Server
+Use Case: Web Application Firewall (WAF), VoIP, CDN routing, Dynamic DNS, Dynamic IP assignment, IoT.
+Purpose: Translates domain names into IP addresses, allowing browsers to load internet resources.
+
+4::Proxy Server
+Use Case: SSL inspection, geo-filtering, anonymous surfing, SSH tunneling, anonymous FTP, caching.
+Purpose: Acts as an intermediary between client requests and the internet, often used for security, caching, or anonymization.
+
+
+5::FTP Server
+Use Case: File sharing, data backup, e-commerce, media distribution, data synchronization, remote access.
+Purpose: Transfers files between a client and server over a network, using FTP protocol.
+
+6::Origin Server
+Use Case: Streaming services, data replication, game server, archiving & backup, cloud services.
+Purpose: Hosts the original source of data for distributed systems, serving content to edge servers or clients. Often used for media streaming and large-scale data services.
+
+
+
+
+
+
+
 Q what is Node Architecture?
 
 Ans::  Client  ------------->Request ------> node mean server
