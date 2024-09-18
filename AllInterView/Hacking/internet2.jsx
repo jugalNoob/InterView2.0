@@ -1,3 +1,66 @@
+ 
+Q what OSI models?
+
+  
+  
+1::Physical Layer (Layer 1): 
+
+Deals with the physical connection between devices and the transmission of raw binary data (bits) over a
+physical medium like cables, switches, and hubs.
+  
+Examples: Ethernet cables, fiber optics, electrical signals.
+
+
+2::Data Link Layer (Layer 2):
+
+Handles node-to-node data transfer, error detection, and correction from the physical layer.
+It organizes bits into frames and manages access to the physical medium.
+  
+Examples: MAC addresses, switches, bridges, Ethernet.
+
+
+3;:Network Layer (Layer 3):
+
+Responsible for routing, addressing, and forwarding data packets across multiple networks.
+It determines the best path for data transmission.
+  
+Examples: IP (Internet Protocol), routers.
+
+4::Transport Layer (Layer 4):
+
+Ensures reliable data transfer between devices, including error recovery and flow control. 
+It breaks down data into segments for transmission and reassembles them at the destination.
+  
+Examples: TCP (Transmission Control Protocol), UDP (User Datagram Protocol).
+
+
+5::Session Layer (Layer 5):
+
+Manages sessions or connections between applications. It establishes, maintains, 
+  and terminates communication sessions.
+  
+Examples: Remote Procedure Call (RPC), NetBIOS.
+
+6::Presentation Layer (Layer 6):
+
+Transforms data into a format understandable by the application layer. This includes data encryption, compression, and translation.
+Examples: Encryption protocols (SSL/TLS), character encoding (ASCII, Unicode).
+
+
+7::Application Layer (Layer 7):
+
+The closest layer to the end user, interacting with software applications that require network communication. It provides various services like email, file transfer, and web browsing.
+Examples: HTTP, FTP, SMTP, DNS.
+
+
+
+
+
+
+
+
+
+
 Internet protocols are essential for the functioning of the internet. They define rules and conventions for communication between devices on a network. Below are some of the most important topics related to Internet Protocols:
 
 1. TCP/IP (Transmission Control Protocol/Internet Protocol)
