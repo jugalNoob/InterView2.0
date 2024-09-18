@@ -1,4 +1,21 @@
- 
+Differences Between TCP and UDP:
+TCP (Transmission Control Protocol):
+
+Connection-oriented
+Reliable with error-checking, retransmissions, and acknowledgments
+Ensures in-order delivery
+Slower due to overhead (handshaking, flow control)
+Use Case: Web browsing (HTTP/HTTPS), email (SMTP), file transfers (FTP)
+UDP (User Datagram Protocol):
+
+Connectionless
+Faster but less reliable (no error-checking or acknowledgment)
+Does not guarantee in-order delivery
+Use Case: Streaming video/audio, online gaming, VoIP
+
+
+
+
 Q what OSI models?
 
   
@@ -16,7 +33,7 @@ Examples: Ethernet cables, fiber optics, electrical signals.
 Handles node-to-node data transfer, error detection, and correction from the physical layer.
 It organizes bits into frames and manages access to the physical medium.
   
-Examples: MAC addresses, switches, bridges, Ethernet.
+Examples: MAC addresses, switches, bridges, Ethernet , TCP header, IP header , HTTP header
 
 
 3;:Network Layer (Layer 3):
@@ -24,14 +41,32 @@ Examples: MAC addresses, switches, bridges, Ethernet.
 Responsible for routing, addressing, and forwarding data packets across multiple networks.
 It determines the best path for data transmission.
   
-Examples: IP (Internet Protocol), routers.
+Examples: IP (Internet Protocol), routers.  IPv4 , IPVv6 ,
+ ICMP (Internet Control Message Protocol) , IGMP (Internet Group Management Protocol) ,OSPF (Open Shortest Path First) ,
+BGP (Border Gateway Protocol)  , NAT (Network Address Translation) ,ARP (Address Resolution Protocol) ,  VRRP (Virtual Router Redundancy Protocol)
+EIGRP (Enhanced Interior Gateway Routing Protocol) ,IS-IS (Intermediate System to Intermediate System)
 
+ 
+
+ 
 4::Transport Layer (Layer 4):
 
 Ensures reliable data transfer between devices, including error recovery and flow control. 
 It breaks down data into segments for transmission and reassembles them at the destination.
   
 Examples: TCP (Transmission Control Protocol), UDP (User Datagram Protocol).
+SCTP (Stream Control Transmission Protocol)
+DCCP (Datagram Congestion Control Protocol)
+RTP (Real-time Transport Protocol)
+RTCP (Real-time Transport Control Protocol)
+SPX (Sequenced Packet Exchange)
+QUIC (Quick UDP Internet Connections)
+ATP (AppleTalk Transaction Protocol)
+
+
+
+
+
 
 
 5::Session Layer (Layer 5):
@@ -50,7 +85,7 @@ Examples: Encryption protocols (SSL/TLS), character encoding (ASCII, Unicode).
 7::Application Layer (Layer 7):
 
 The closest layer to the end user, interacting with software applications that require network communication. It provides various services like email, file transfer, and web browsing.
-Examples: HTTP, FTP, SMTP, DNS.
+Examples: HTTP, FTP, SMTP, DNS  ,FTP, HHTPS ,DNS , P2P
 
 
 
