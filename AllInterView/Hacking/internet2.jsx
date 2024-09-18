@@ -11,6 +11,24 @@ Deals with the physical connection between devices and the transmission of raw b
 physical medium like cables, switches, and hubs.
   
 Examples: Ethernet cables, fiber optics, electrical signals.
+  Common Physical Layer Examples and Technologies:
+Ethernet Cables (Copper Wires, CAT5/CAT6) – Physical cables used for wired data transmission in local area networks (LANs).
+Fiber Optic Cables – High-speed transmission using light pulses over long distances, commonly used for internet backbones and high-speed networks.
+Coaxial Cables – Used in older Ethernet networks and for cable television transmission.
+Wireless Transmission (Radio Waves, Wi-Fi) – The transmission of data through wireless signals, including technologies like Wi-Fi (IEEE 802.11) and Bluetooth.
+Infrared Signals – Used in remote control devices and some short-range communication systems.
+Hubs – Network devices that connect multiple Ethernet devices, repeating and broadcasting signals to all connected devices.
+Network Interface Cards (NICs) – Hardware components that allow computers to connect to a network.
+Modulation Techniques – Techniques like Amplitude Modulation (AM), Frequency Modulation (FM), and Phase Modulation (PM) for transmitting analog signals.
+Connectors (RJ45, SC, LC) – Physical connectors used to attach cables to network devices (e.g., RJ45 connectors for Ethernet cables, SC/LC connectors for fiber optics).
+Repeaters – Devices that regenerate signals to extend the range of communication over long distances.
+Electrical Signals – The use of voltage levels to represent binary data over copper wires.
+Bluetooth – A short-range wireless technology used for connecting devices like phones, headphones, and computers.
+Radio Frequency (RF) Signals – Transmission via radio frequencies, often used in mobile phones and wireless communication.
+Satellite Communication – The use of satellites to transmit signals over vast distances for television, internet, and telecommunication services.
+DSL (Digital Subscriber Line) – A technology for transmitting high-speed data over telephone lines.
+
+
 
 
 2::Data Link Layer (Layer 2):
