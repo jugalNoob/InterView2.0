@@ -1,3 +1,12 @@
+https://www.javascripttutorial.net/javascript-variable-scopes/  -->Important 
+
+https://www.javascripttutorial.net/  --> Important 
+
+https://www.javascripttutorial.net/javascript-return-multiple-values/  --> Important 
+https://www.javascripttutorial.net/javascript-nullish-coalescing-operator/
+
+
+
 ||||||||||||||||||||||||||||||||||||||||||||||||https://devdocs.io/javascript/ ----------------->><><><><>
 
 :::::::: Fetch Data All Code -------------------
@@ -203,6 +212,34 @@ Type Operators
 
 
 :::::::All Function In Jvaascript
+
+function getNames() {  /// Returning multiple values from a function using an array
+    // get names from the database or API
+    let firstName = 'John',
+        lastName = 'Doe';
+
+    // return as an array
+    return [firstName, lastName];
+}
+
+let names = getNames();
+const [firstName, lastName] = getNames();
+
+
+function getNames() {//Returning multiple values from an function using an object
+  // get names from the database or API
+  let firstName = 'John',
+      lastName = 'Doe';
+
+  // return values
+  return {
+    'firstName': firstName,
+    'lastName': lastName
+  };
+
+// return { firstName, lastName };
+}
+let { firstName, lastName } = getNames()
 
 00::function CallBack
 function one(a, b) {
