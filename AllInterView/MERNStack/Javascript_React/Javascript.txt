@@ -37,8 +37,69 @@ if (true) {
 
 
 
+:::::::::::::::::::::::  Important  ----------------------->>
+
+Section 10. Iterators & Generators
+Iterators – introduce you to the iteration and iterator protocols.
+Generators – develop functions that can pause midway and then continue from where they paused.
+yield – dive into how to use the yield keyword in generators.
+for…of – learn how to use the for...of loop to iterate over elements of an iterable object.
+Asynchronous iterators – learn how to use async iterators to access asynchronous data sources sequentially.
+Async generators – show you how to create an async generator.
 
 
+:::::::::::::::::::::::  Important  ----------------------->>
+Section 11. Modules
+Modules – learn how to write modular JavaScript code.
+Export – explain in detail how to export variables, functions, and classes from a module.
+Import – guide you on how to import default exports and named exports from another module.
+Dynamic import – show you how to import a module dynamically via the function-like object import().
+Top-level await – explain the top-level await module and its use cases.
+
+
+:::::::::::::::::::::::  Important  ----------------------->>
+Section 14. Error handling
+try…catch – show you how to handle exceptions gracefully.
+try…catch…finally – learn how to catch exceptions and execute a block whether the exceptions occur or not.
+throw – show you how to throw an exception.
+Optional catch binding – omit the exception variable in the catch block.
+
+
+:::::::::::::::::::::::  Important  ----------------------->>
+Section 15. JavaScript var, let, and const
+let – declare block-scoped variables using the let keyword.
+let vs. var – understand the differences between let and var.
+const – define constants using the const keyword.
+
+
+:::::::::::::::::::::::  Important  ----------------------->>
+Section 4. Control flow Statements
+if – show you how to use the if statement to execute a block if a condition is true.
+if…else – learn how to execute a block of code based on a specified condition.
+if…else…if – check multiple conditions and execute a block.
+Ternary operators – show you how to make a shortcut for the if statement ( ?:).
+switch – show you how to replace multiple if statements when comparing a value with multiple variants by using the switch statement.
+while – learn how to perform a pre-test loop that repeatedly executes a block of code as long as a specified condition is true.
+do…while – show you how to carry a post-test loop that executes a block of code repeatedly until a specified condition is false.
+for loop – learn how to repeatedly execute a block of code based on various options.
+break – learn how to prematurely terminate a loop.
+continue – show you how to skip the current iteration of a loop and jump to the next one.
+Comma operator – guide you on how to use the comma operator in a for loop to update multiple variables at once.
+
+
+:::::::::::::::::::::::  Important  ----------------------->>
+Section 8. Advanced Functions
+Function type – introduce you to the Function type and its properties and methods.
+call()– understand the call() method and learn how to use it effectively.
+apply() – learn how to use the apply() method effectively.
+bind() – understand the bind() method and how to apply it effectively.
+Closure – understand the closures in JavaScript.
+Immediately Invoked Function Expression (IIFE) – learn about immediately invoked function expressions (IIFE).
+Returning multiple values – guide you on how to return multiple values from a function.
+Arrow functions – introduce you to the arrow functions ( =>)
+Arrow functions: when you should not use – learn when not to use arrow functions.
+Rest parameter – introduce you to the rest parameters and how to use them effectively.
+Callback functions – introduce you to the callback functions and learn how to use the callbacks to handle asynchronous operations.
 
 
 
