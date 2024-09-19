@@ -2,11 +2,37 @@ Q what Section 17. JavaScript Runtime
 
 
 Execution Contexts – understand execution contexts including global and function execution contexts.
-Call Stack – understand the call stack. function
-Event Loop – show you how JavaScript handles asynchronous operations using the event loop.
-Hoisting – learn how hoisting works in JavaScript.
-Variable scopes – introduce you to the variable scopes.
 
+
+Call Stack – understand the call stack. function
+
+
+Event Loop – show you how JavaScript handles asynchronous operations using the event loop.
+
+
+00::Hoisting – learn how hoisting works in JavaScript. :::::: -------------<><><
+
+This means variables and functions can be used before they are declared.
+
+Hoisting is JavaScript’s behavior of moving declarations to the top of their scope (global or function) during the compilation phase.
+
+// console.log(x); // undefined
+// var x = 5;
+
+
+
+00::Variable scopes – introduce you to the variable scopes. ::::::::-------------<><><>
+
+Global Scope: Variables declared outside functions are available globally.
+
+Local/Function Scope: Variables declared within a function are only accessible within that function.
+
+Block Scope (introduced with ES6): Variables declared using let or const are only available within the block ({}) they are declared in.
+if (true) {
+   let x = 10;
+ 
+ }
+ console.log(x); // ReferenceError: x is not defined
 
 
 
