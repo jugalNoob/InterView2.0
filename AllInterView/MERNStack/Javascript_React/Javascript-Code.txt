@@ -3,9 +3,15 @@ https://www.javascripttutorial.net/javascript-variable-scopes/  -->Important
 https://www.javascripttutorial.net/  --> Important 
 
 https://www.javascripttutorial.net/javascript-return-multiple-values/  --> Important 
+
 https://www.javascripttutorial.net/javascript-nullish-coalescing-operator/
 
 https://www.javascripttutorial.net/javascript-stack/
+
+https://www.jsv9000.app/ --> visualizer 
+
+https://onecompiler.com/html  -->Compiler
+
 
 ||||||||||||||||||||||||||||||||||||||||||||||||https://devdocs.io/javascript/ ----------------->><><><><>
 
@@ -154,6 +160,9 @@ Logical Operators
 !	not	!(x == y) is true
 
 
+
+
+
 let age = 18;
   let age1 = 18;
   
@@ -207,11 +216,47 @@ let name = null;
     let result = name ?? text;
 
 
-Type Operators
+let result = undefined ?? console.log('Hi');
+
+const result = null || undefined ?? 'OK'; // SyntaxError
+
+const result = (null || undefined) ?? 'OK'; 
+console.log(result); // 'OK'
+
+const name = null ?? 'John';
+console.log(name); // 'John'
+
+
+JavaScript Comma Operator  ........
+// let result = (10, 10 + 20);
+// console.log(result);
+
+// let x = 10;
+// let y = (x++, x + 1);
+// console.log(x, y);
+
+let x = 10;
+x++;
+let y = x + 1;
+
+console.log(x, y);
+
 
 
 
 :::::::All Function In Jvaascript
+
+let person1 = {  //;JavaScript Factory Functions
+  firstName: 'John',
+  lastName: 'Doe',
+  getFullName() {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+console.log(person1.getFullName())
+
+
 
 function getNames() {  /// Returning multiple values from a function using an array
     // get names from the database or API
@@ -1057,50 +1102,84 @@ console.log("Pixel depth: " + screen.pixelDepth);
 
 
 
-|||||||||||||||||Javascript Objects ||||||||||
+|||||||||||||||||Javascript Objects Scope  Important  ||||||||||
 
 
-let str="jugal"
-  let count={}
-  count["name"]=str
-  console.log(count)
-  ///////
-  //changes
-  a.name="kanran"
-  //deletes
-  delete a.ineer
-  //add values
-  a.city="mimam"
-  a['pin code']=181123
-  console.log(a.name)
-  console.log(a)
-  console.log("city" in a)
-  console.log(a.getData())
-  // console.log(a.ineer.names)
-  
-  for(item in a){
-      console.warn(item)
-      console.log("key" + a[item])
-  }
-  
-  let data = {
-      name: ["jugal", "sharma"],
-      class: "10th"
-  };
-  
-  let str = "jua";
-  
-  console.log(data.name.includes("jugal")); // Check if "jugal" is in the array
-  console.log(str.includes("j")); // Check if "j" is in the string "jua"
+Q What is variable scope ? 
+Scope determines the visibility and accessibility of a variable. JavaScript has three scopes:
 
-  
-  let objs=Object.freeze(obj) //freeze not update
-    obj.name="jugal sharma" // freeze not update
-    delete objs.name; //your freeze name delete
-    console.log(obj)
+The global scope
+Local scope
+Block scope (started from ES6)
 
-    console.log("object1" , Object.entries(obj)) //convert to array 
 
-    console.log("object1" , Object.values(obj)) //convert to array show  values 
+1::The global scope
+When the JavaScript engine executes a script, it creates a global execution context.
 
-    console.log("object1" , Object.keys(obj)) //convert to keys
+var message = 'Hi';
+
+function say() {
+    var message = 'Hello';
+    console.log(message);
+}
+
+say();
+console.log(message);
+
+
+2::Scope chain
+Consider the following example:
+
+
+var message = 'Hi';
+
+function say() {
+    console.log(message);
+}
+
+say();
+
+More scope chain example
+Consider the following example:
+
+
+var y = 20;
+
+function bar() {
+    var y = 200;
+
+    function baz() {  
+        console.log(y);
+    }
+
+    baz();
+}
+
+bar();
+
+
+3::Global variable leaks: the weird part of JavaScript
+'use strict'
+function getCounter() {
+    counter = 10;
+    return counter;
+}
+
+console.log(getCounter());
+
+
+4::Block scope
+ES6 provides the let and const keywords that allow you to declare variables in block scope.
+
+function say(message) {
+    if(!message) {
+        let greeting = 'Hello'; // block scope
+        console.log(greeting);
+    }
+    // say it again ?
+    console.log(greeting); // ReferenceError
+}
+
+say();
+
+
