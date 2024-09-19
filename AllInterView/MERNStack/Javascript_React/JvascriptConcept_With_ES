@@ -1,3 +1,66 @@
+Es6 Important ----------->{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}
+
+let – declare block-scoped variables using the let keyword.
+let vs. var – understand the differences between let and var.
+const – define constants using the const keyword.
+Default function parameters – learn how to set the default value for parameters of a function.
+Rest parameter – introduce you to the rest parameter and how to use them effectively.
+Spread operator – learn how to use the spread operator effectively.
+Object literal syntax extensions – provide a new way to define object literal.
+for…of – learn how to use the for...of loop to iterate over elements of an iterable object.
+Octal and binary literals –  provide support for binary literals and change the way to represent octal literals.
+Template literals – learn how to substitute variables in a string.
+
+
+Array Destructuring – show you how to assign elements of an array to variables.
+Object Destructuring – learn how to assign properties of an object to variables.
+
+
+Section 10. Array extensions
+Array.of() – improve array creation.
+Array.from() – create arrays from array-like or iterable objects.
+Array find() – find an element in an array
+Array findIndex() – find the index of an element in an array.
+
+
+Section 11. Object extensions
+Object.assign() – copy an object or merge objects.
+
+
+
+Rest parameter – introduce you to the rest parameter and how to use them effectively.
+Spread operator – learn how to use the spread operator effectively. 
+
+
+00::Rest Parameter
+The rest parameter syntax allows a function to accept an indefinite number of arguments as an array. 
+It's useful when you don't know how many arguments will be passed into the function.
+
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // Output: 10
+]
+
+00::The spread operator ... allows an iterable (like an array or a string) to be expanded in places where multiple
+elements are expected. 
+
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+// Merging two arrays
+const mergedArray = [...arr1, ...arr2];
+console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+// Spreading an array into function arguments
+function multiply(a, b, c) {
+  return a * b * c;
+}
+console.log(multiply(...arr1)); // Output: 6 (1 * 2 * 3)
+
+
 Javascript  BOM Very Important  -------------------------------------------------------<><><>
 
 4. screen Object  
