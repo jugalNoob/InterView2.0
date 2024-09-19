@@ -1,3 +1,20 @@
+Q what Section 17. JavaScript Runtime
+
+
+Execution Contexts – understand execution contexts including global and function execution contexts.
+Call Stack – understand the call stack. function
+Event Loop – show you how JavaScript handles asynchronous operations using the event loop.
+Hoisting – learn how hoisting works in JavaScript.
+Variable scopes – introduce you to the variable scopes.
+
+
+
+
+
+
+
+
+
 
 Q what is Node Architecture?
 
