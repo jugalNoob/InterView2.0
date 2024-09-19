@@ -12,6 +12,13 @@ https://www.jsv9000.app/ --> visualizer
 
 https://onecompiler.com/html  -->Compiler
 
+https://www.javascripttutorial.net/  ------->>
+
+
+
+
+
+
 
 ||||||||||||||||||||||||||||||||||||||||||||||||https://devdocs.io/javascript/ ----------------->><><><><>
 
@@ -362,6 +369,8 @@ const person1 = {
 }
 
 person.fullName.apply(person1, ["Oslo", "Norway"]);
+
+
 |||||||||
 6::Function closure
 function outerFunction() {
@@ -375,10 +384,12 @@ const closureExample = outerFunction();
 closureExample(); // This will log: "I am from the outer function"
 
 
+
 7::Function prototype
+
 8::Function thisKeyword
-9::Function bindCallApply
-::Function generator
+
+
 ::Arrow Function
 Arrow Functions Return Value by Default: ::hello = () => "Hello World!";
 
