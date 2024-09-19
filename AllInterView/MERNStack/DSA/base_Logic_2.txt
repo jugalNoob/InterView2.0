@@ -1,3 +1,59 @@
+////  ---------->  Time date  
+
+
+function update() {
+   let currentDate = new Date(); // Create a Date object
+   // Options to format the time with AM/PM in Indian Standard Time (IST)
+   let options = {
+       timeZone: 'Asia/Kolkata', // Set to Indian Standard Time
+       hour12: true, // 12-hour format
+       hour: 'numeric',
+       minute: 'numeric',
+       second: 'numeric',
+   };
+   // Format date and time with locale options for IST
+   let formattedDateTime = currentDate.toLocaleString('en-IN', options);
+   console.log(formattedDateTime); // Prints the date and time with AM/PM in IST
+}
+setInterval(() => {
+   update();
+}, 1000);
+
+
+
+// function update(){
+//    let data= new Date().toUTCString();
+//    console.log(data)
+// }
+// setInterval(()=>{
+//    update()
+// },1000)
+
+
+
+
+
+
+// function update()
+// {
+//    let date = new Date();
+
+//    console.log(
+//        date.getFullYear(),  // Get the full year (e.g., 2024)
+//        date.getMonth(),     // Get the month (0-11, where 0 is January and 11 is December)
+//        date.getDate(),      // Get the day of the month (1-31)
+//        date.getHours(),     // Get the hours (0-23)
+//        date.getMinutes(),   // Get the minutes (0-59)
+//        date.getSeconds()    // Get the seconds (0-59)
+//    );
+   
+
+// }
+// setInterval(() => {
+//    update();
+// }, 1000);
+
+
 
 /// Wait Time Out  --------------------->
 function Set() {
