@@ -1,3 +1,20 @@
+"Bit" is a basic unit of information in computing, representing a binary digit, either 0 or 1. Here’s a quick breakdown of how bits scale up into larger units of data:
+
+1:::1 bit (binary digit) = smallest unit of data (0 or 1)
+2:::8 bits = 1 byte (B)
+3:::1024 bytes = 1 kilobyte (KB)
+4::1024 kilobytes = 1 megabyte (MB)
+5::1024 megabytes = 1 gigabyte (GB)
+6::1024 gigabytes = 1 terabyte (TB)
+7:::1024 terabytes = 1 petabyte (PB)
+8::1024 petabytes = 1 exabyte (EB)
+9::1024 exabytes = 1 zettabyte (ZB)
+10:::1024 zettabytes = 1 yottabyte (YB)
+
+
+
+
+
 https://www.jstoolset.com/base64-decode   ---> Jugal sharma
 
 
