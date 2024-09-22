@@ -166,6 +166,14 @@ Execution time calculation: By subtracting startTime from endTime, you get the t
 
 
 
+let data=["data" , "karan" , "jugal" , "sharma" , "solar"]  /// single array randomh ;;
+let random=Math.floor(Math.random()*data.length)
+console.log(data[random])
+
+
+
+
+
 /// --- >>>>>>>>>>>>>>>  ------------------------------------->
 check even and add  Number 
     let cons =4
