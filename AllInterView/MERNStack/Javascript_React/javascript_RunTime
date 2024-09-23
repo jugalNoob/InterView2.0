@@ -1,1 +1,132 @@
+Q what Section 17. JavaScript Runtime
+
+
+Execution Contexts – understand execution contexts including global and function execution contexts.
+
+
+Call Stack – understand the call stack. function
+
+
+Event Loop – show you how JavaScript handles asynchronous operations using the event loop.
+
+
+00::Hoisting – learn how hoisting works in JavaScript. :::::: -------------<><><
+
+This means variables and functions can be used before they are declared.
+
+Hoisting is JavaScript’s behavior of moving declarations to the top of their scope (global or function) during the compilation phase.
+
+// console.log(x); // undefined
+// var x = 5;
+
+
+
+00::Variable scopes – introduce you to the variable scopes. ::::::::-------------<><><>
+
+Global Scope: Variables declared outside functions are available globally.
+
+Local/Function Scope: Variables declared within a function are only accessible within that function.
+
+Block Scope (introduced with ES6): Variables declared using let or const are only available within the block ({}) they are declared in.
+if (true) {
+   let x = 10;-
+ 
+ }
+ console.log(x); // ReferenceError: x is not defined
+
+
+Hosting :::::::::::: ---------------------------------->>
+
+//Function Declaration Example (Hoisted)
+one();  // Works because 'one' is hoisted
+function one() {
+    console.log("Jugal Sharma");
+}
+
+
+//Function Expression Example (Not Hoisted
+two();  // Error: Cannot access 'two' before initialization
+const two = () => {
+    console.log("Karan Sharma");
+};
+
+
+//Example 1: Variable Hoisting with var
+console.log(a);  // Output: undefined (declaration is hoisted but not the value)
+var a = 5;
+
+//Example 2: Hoisting with let and const
+console.log(b);  // Error: Cannot access 'b' before initialization
+let b = 10;
+
+//: Function Expression Hoisting
+greet();  // Error: greet is not a function
+var greet = function() {
+    console.log("Hi!");
+};
+
+
+Call Stack – understand the call stack. function ::::::::: ---------------------------<><><<><><><>
+function one(){
+   four()
+   console.log("one function ")
+}
+
+
+function two(){
+
+   three()
+   console.log("two function ")
+
+}
+
+
+function three(){
+
+   console.log("three function ")
+   one()
+
+}
+
+function four(){
+console.log("four  function")
+two()
+
+}
+
+function five(){
+   console.log("five function")
+}
+five()
+
+// next exmaple  ---------------->>
+
+function one(){
+   four();
+   console.log("one function ");
+}
+
+function two(){
+   three();
+   console.log("two function ");
+}
+
+function three(){
+   console.log("three function ");
+   one();
+}
+
+function four(){
+   console.log("four function");
+   two();
+}
+
+function five(){
+   console.log("five function");
+   one(); // Added call to one()
+}
+
+five();
+
+
 
