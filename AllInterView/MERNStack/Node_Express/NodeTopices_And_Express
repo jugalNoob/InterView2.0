@@ -6,11 +6,15 @@ What is Node.js?
 Features of Node.js (Asynchronous, Event-Driven, Single-Threaded)
 V8 JavaScript Engine
 Node.js vs. Browser JavaScript
+
+
 2. Node.js Architecture
 Event-Driven Architecture
 Single-Threaded with Event Loop
 Blocking vs. Non-Blocking I/O
 How Node.js handles concurrency
+
+
 3. Modules and Packages
 Core Modules (e.g., http, fs, path, os)
 Creating Custom Modules
@@ -18,23 +22,31 @@ Importing and Exporting Modules (require and module.exports)
 NPM (Node Package Manager)
 Package.json
 Global vs. Local Packages
+
+
 4. Asynchronous Programming in Node.js
 Callback Functions
 Promises and .then()
 async and await
 Handling Errors in Asynchronous Code (try/catch in async functions)
+
+
 5. File System (fs) Module
 Reading and Writing Files
 Working with Directories
 File and Directory Permissions
 File Streams
 Handling File I/O asynchronously
+
+
 6. HTTP and Web Servers
 Creating an HTTP Server
 Handling Incoming Requests (GET, POST, etc.)
 Sending Responses
 URL Routing
 Working with Query Parameters
+
+
 7. Express.js Framework
 Introduction to Express.js
 Creating RESTful APIs
@@ -43,11 +55,15 @@ Routing in Express
 Handling Form Data & JSON
 Error Handling in Express
 Static Files in Express
+
+
 8. Event-Driven Programming
 The events Module
 Event Emitter Pattern
 Creating and Listening for Custom Events
 Using Event Emitters in Node.js
+
+
 9. Streams and Buffers
 What are Streams? (Readable, Writable, Duplex, Transform Streams)
 Working with Streams for Large Data
@@ -60,51 +76,71 @@ Connecting to Databases (MongoDB, MySQL, PostgreSQL)
 Using ORM/ODM libraries (Sequelize for SQL databases, Mongoose for MongoDB)
 Performing CRUD operations
 Handling Transactions
+
+
 11. Authentication and Authorization
 Handling User Authentication
 JSON Web Tokens (JWT) for Authentication
 OAuth and Passport.js
 Session and Cookie Management
+
+
 12. Error Handling in Node.js
 Try-Catch Blocks
 Centralized Error Handling in Express
 Handling Errors in Asynchronous Code
 Graceful Error Handling and Process Termination
+
+
 13. Security in Node.js Applications
 Common Security Best Practices
 Preventing SQL Injection and XSS
 Securing APIs
 Data Encryption and Hashing (e.g., bcrypt for passwords)
 Using helmet for HTTP headers security
+
+
 14. Testing in Node.js
 Unit Testing with Mocha, Jest
 Integration Testing
 API Testing with Supertest
 Test-Driven Development (TDD) in Node.js
 Mocking in Node.js Tests
+
+
 15. Working with Websockets
 Real-Time Communication with WebSocket
 Socket.IO for WebSocket integration
 Building Real-Time Applications (Chat apps, live notifications)
+
+
 16. File Uploads and Multer
 Handling File Uploads with Multer in Express
 Storing Files on the Server
 Uploading Files to Cloud Storage (e.g., AWS S3, Google Cloud)
+
+
 17. Working with APIs
 Consuming REST APIs with Node.js
 Creating APIs using Express.js
 API Versioning
 REST vs. GraphQL APIs
+
+
 18. Middleware in Node.js
 Built-in Middleware in Express
 Third-party Middleware (e.g., morgan, helmet, cors)
 Writing Custom Middleware Functions
 Middleware Chaining
+
+
 19. Deploying Node.js Applications
 Deploying Node.js on Heroku, AWS, DigitalOcean, Vercel, etc.
 Process Management with PM2
 Scaling Node.js Applications (Clustering, Load Balancing)
 CI/CD Pipelines for Node.js
+
+
 20. Environment Variables and Configuration
 Managing Environment Variables with .env Files
 Configuration Management (e.g., config package)
@@ -116,42 +152,60 @@ Node.js Cluster Module for Scaling Applications
 Forking Child Processes in Node.js
 Managing Multiple Processes in a Single Application
 Communication between Child Processes
+
+
 22. Streams and Event Emitters
 What are Streams?
 Event-Driven Streams (using EventEmitter)
 Stream Piping
 Handling Large Files with Streams
+
+
 23. Working with CORS
 Enabling Cross-Origin Requests
 Configuring CORS Middleware in Express.js
 Dealing with CORS Issues
+
+
 24. Caching in Node.js
 Redis for Caching in Node.js
 In-Memory Caching
 Using memory-cache or node-cache packages
 Optimizing Application Performance with Caching
+
+
 25. Socket.IO for Real-Time Communication
 Setting up WebSockets
 Building Real-Time Applications with Socket.IO
 Broadcasting Messages to Multiple Clients
 Handling Disconnections and Reconnections
+
+
 26. Performance Optimization
 Profiling Node.js Applications
 Memory Leaks and Garbage Collection
 Performance Tips for Express.js
 Using cluster to Scale Applications
+
+
 27. Worker Threads
 Parallel Processing with Worker Threads
 Using worker_threads Module
 Offloading CPU-intensive Tasks to Worker Threads
+
+
 28. Build Tools and Task Runners
 Using Build Tools like Webpack, Gulp with Node.js
 Automating Tasks (Compiling, Minifying, Linting)
 Writing Build Scripts in package.json
+
+
 29. Server-Side Rendering (SSR) with Node.js
 Introduction to SSR
 Building SSR Applications with Node.js and React.js
 SSR Frameworks like Next.js
+
+
 30. Logging in Node.js
 Basic Logging with console.log
 Using Winston or Morgan for Advanced Logging
