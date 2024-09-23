@@ -129,4 +129,54 @@ function five(){
 five();
 
 
+JavaScript has three types of variable scopes: ::::::::::::::::::: ------------------------->>>>
+
+Global Scope: Variables declared outside any function or block are available globally.
+Local/Function Scope: Variables declared within a function are only accessible within that function.
+Block Scope (introduced with let and const in ES6): Variables declared inside a block (like within {}) are only available inside that block.
+
+
+//A global variable is accessible anywhere in the code: 
+
+let globalVar = "I'm a global variable";
+
+function showGlobalVar() {
+    console.log(globalVar);  // Accessible inside the function
+}
+
+showGlobalVar();  // Output: "I'm a global variable"
+console.log(globalVar);  // Accessible outside the function, same output
+
+
+
+Local/Function Scope Example
+
+function localScopeExample() {
+    var localVar = "I'm a local variable";
+    console.log(localVar);  // Accessible inside the function
+}
+
+localScopeExample();
+console.log(localVar);  // ReferenceError: localVar is not defined (not accessible outside)
+
+
+
+Block Scope Example (with let and const) -------------------->>>
+if (true) {
+    let blockVar = "I'm a block-scoped variable";
+    console.log(blockVar);  // Accessible inside the block
+}
+
+console.log(blockVar);  // ReferenceError: blockVar is not defined (not accessible outside the block)
+
+if (true) {
+    var noBlockScopeVar = "I'm not block-scoped";
+    console.log(noBlockScopeVar);  // Accessible inside the block
+}
+
+console.log(noBlockScopeVar);  // Accessible outside the block too (no error)
+
+
+
+
 
