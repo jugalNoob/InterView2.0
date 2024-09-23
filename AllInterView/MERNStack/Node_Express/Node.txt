@@ -1,3 +1,9 @@
+
+
+
+
+
+
 1|::Web Server
 Use Case: Website hosting, application hosting, email services.
 Purpose: Delivers web pages to clients and handles requests via HTTP/HTTPS.
