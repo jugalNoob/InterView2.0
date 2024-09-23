@@ -5,6 +5,11 @@ console.log(
   arr.map((element, index) => [element, index]) // Map each element with its index
 );
 
+let data=[10 , 20 , 30 , 40 , 50 , 60 ]
+
+console.log(data.filter((elem)=>elem > 40))
+
+
 
 u///Random array  ----------------------------------------------------------------------------
 let two=14565
