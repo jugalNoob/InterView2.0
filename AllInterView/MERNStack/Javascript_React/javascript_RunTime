@@ -178,5 +178,66 @@ console.log(noBlockScopeVar);  // Accessible outside the block too (no error)
 
 
 
+:::::::::::::: Event Loop start row class Line  ------------------------>>>>
+
+How the Event Loop Works
+Call Stack: This is where the current code execution happens. It processes one function at a time (LIFO: Last In, First Out).
+
+Web APIs: These are browser-provided APIs (like setTimeout, fetch, etc.) that handle asynchronous tasks.
+
+Callback Queue: When asynchronous tasks are completed, their callbacks are placed in the queue.
+
+Event Loop: The event loop checks if the call stack is empty. If it is, it takes the first function from the callback queue and puts it in the call stack for execution.
+
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000);
+
+console.log("End");
+
+ Multiple setTimeout Calls....
+console.log("Start");
+
+setTimeout(() => {
+  console.log("First setTimeout");
+}, 3000);
+
+setTimeout(() => {
+  console.log("Second setTimeout");
+}, 1000);
+
+console.log("End");
+
+Example 3: Using Promise.......
+console.log("Start");
+
+setTimeout(() => {
+  console.log("setTimeout");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise resolved");
+});
+
+console.log("End");
+
+await function start ......................
+
+async function one() {
+   console.log("A")  // first 
+
+await console.log("B")  //second  await
+
+   console.log("C")  // five 
+}
+
+one();
+console.log("D")  // three 
+console.log("E")  //four
+
+
 
 
