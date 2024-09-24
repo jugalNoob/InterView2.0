@@ -1,1 +1,150 @@
+21. Cluster and Child Processes
+Node.js Cluster Module for Scaling Applications
+Forking Child Processes in Node.js
+Managing Multiple Processes in a Single Application
+Communication between Child Processes
+
+
+
+18. Middleware in Node.js
+Built-in Middleware in Express
+Third-party Middleware (e.g., morgan, helmet, cors)
+Writing Custom Middleware Functions
+Middleware Chaining
+
+
+
+
+
+
+
+
+
+
+
+
+1:::5. File System (fs) Module .............>>>>>>>>>>>>>>>>>>>>
+0::Creata file system 
+
+....fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
+  if (err) throw err;
+  console.log('File Renamed!');
+});
+----------------------------------------------------------
+fs.open('mynewfile2.txt', 'w', function (err, file) {
+  if (err) throw err;
+  console.log('Saved!');
+});
+
+---
+....fs.readFile('file.txt', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(data);
+  });
+
+---
+....fs.writeFile('file.txt', content, 'utf8', (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('File written successfully.');
+});
+
+----
+...fs.appendFile('file.txt', "fuck YOU all", 'utf8', (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log('Data appended to file successfully.');
+  });
+
+
+
+0::File and Directory Permissions 
+
+1. Creating a Directory 
+
+
+const fs = require('fs');
+
+// Asynchronous
+fs.mkdir('path/to/newDir', { recursive: true }, (err) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('Directory created');
+  }
+});
+
+// Using Promises
+fs.promises.mkdir('path/to/newDir', { recursive: true })
+  .then(() => console.log('Directory created'))
+  .catch(console.error);
+
+2. Reading a Directory
+
+const fs = require('fs');
+
+// Asynchronous
+fs.readdir('path/to/directory', (err, files) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('Directory contents:', files);
+  }
+});
+
+// Using Promises
+fs.promises.readdir('path/to/directory')
+  .then(files => console.log('Directory contents:', files))
+  .catch(console.error);
+
+
+3. Checking if a Directory Exists
+const fs = require('fs');
+
+// Synchronous check
+if (fs.existsSync('path/to/directory')) {
+  console.log('Directory exists');
+} else {
+  console.log('Directory does not exist');
+}
+
+// Asynchronous check using fs.stat
+fs.stat('path/to/directory', (err, stats) => {
+  if (err) {
+    console.error(err);
+  } else if (stats.isDirectory()) {
+    console.log('This is a directory');
+  } else {
+    console.log('This is not a directory');
+  }
+});
+
+4. Deleting a Directory
+
+const fs = require('fs');
+
+// Removing a directory (for non-empty directories use recursive option)
+fs.rm('path/to/directory', { recursive: true }, (err) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('Directory removed');
+  }
+});
+
+// Using Promises
+fs.promises.rm('path/to/directory', { recursive: true })
+  .then(() => console.log('Directory removed'))
+  .catch(console.error);
+
+
+
+
 
