@@ -24,6 +24,12 @@ Middleware Chaining
 
 
 1:::5. File System (fs) Module .............>>>>>>>>>>>>>>>>>>>>
+2. File System (fs) Module
+Reading/Writing Files: fs.readFile, fs.writeFile, fs.promises.
+Streams: Readable and writable streams for large files.
+File System Watchers: fs.watch and fs.watchFile for monitoring file changes.
+Working with Directories: fs.mkdir, fs.readdir, fs.rmdir.
+
 0::Creata file system 
 
 ....fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
@@ -145,6 +151,53 @@ fs.promises.rm('path/to/directory', { recursive: true })
   .catch(console.error);
 
 
+00::File System Watchers: fs.watch and fs.watchFile  
+
+const fs = require('fs');
+
+fs.watch('path/to/fileOrDir', (eventType, filename) => {
+  if (filename) {
+    console.log(`${filename} has been ${eventType}`);
+  } else {
+    console.log('filename not provided, but an event occurred');
+  }
+});
+
+
+
+fs.watchFile(filename, [options], (curr, prev) => { ... });
+
+filename: The file to watch.
+
+options: Optional settings:
+
+persistent: Whether the process should continue to run as long as files are being watched. Default is true.
+interval: Time in milliseconds for polling. Default is 5007.
+Callback Parameters:
+
+curr: The current fs.Stats object representing the file.
+prev: The previous fs.Stats object.
+
+const fs = require('fs');
+
+// Watch a specific file
+fs.watchFile('path/to/file', { interval: 1000 }, (curr, prev) => {
+  if (curr.mtime !== prev.mtime) {
+    console.log('File has been modified');
+  }
+});
+
+Common Use Cases:
+When precise time-based polling is needed.
+Watching a file that requires consistent updates (e.g., databases, large files that change incrementally).
+
+Key Differences Between fs.watch() and fs.watchFile():
+Feature	fs.watch()	fs.watchFile()
+Efficiency	Native OS events (more efficient)	Polling-based (less efficient)
+Real-time Events	Responds instantly to changes	Detects changes on polling
+Recursive Support	Supports recursive watching	No recursive support
+Reliability	Depends on OS features	Reliable, but resource-heavy
+Cross-platform	May behave differently on different OS	Consistent across platforms
 
 
 
