@@ -24,6 +24,14 @@ Middleware Chaining
 
 
 1:::5. File System (fs) Module .............>>>>>>>>>>>>>>>>>>>>
+
+5. File System (fs) Module
+Reading and Writing Files
+Working with Directories
+File and Directory Permissions
+File Streams
+Handling File I/O asynchronously
+
 2. File System (fs) Module
 Reading/Writing Files: fs.readFile, fs.writeFile, fs.promises.
 Streams: Readable and writable streams for large files.
