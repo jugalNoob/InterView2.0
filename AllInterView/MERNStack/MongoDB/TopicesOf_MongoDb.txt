@@ -467,6 +467,16 @@ description:"must be a numeber and required"
 )}
 
 
+Q write concern in Mongodb  ?  ----- >Important 
+
+db.ststudent.insertOne({name:"B" ,price:2}  , writeConcren:{w:0}}) // w:1 true or w:0 False
+
+db.ststudent.insertOne({name:"B" ,price:2}  , writeConcren:{w:0 , j:true}}) // j:true deafulte
+
+db.ststudent.insertOne({name:"B" ,price:2}  , writeConcren:{w:0 , j:true , wtimeout:1000}}) //
+
+
+Q Atomicity in MongoDB ? 
 
 
 
