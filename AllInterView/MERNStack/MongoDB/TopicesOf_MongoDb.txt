@@ -280,6 +280,12 @@ db.clloectyy.insertMany([{_id:"A" , name:"jugal"},{_id:"b" , name:"kinka"}] , {o
 
 ]);
 
+Q order Option in Insert command in Mongodb ?
+
+db.clloectyy.insertMany([{_id:"A" , name:"jugal"},{_id:"b" , name:"kinka"}] , {ordered:false}) ///!SECTION
+
+
+
 
 3::::::: UpdateOne and UpdateMany .....................
 
@@ -405,6 +411,65 @@ db.newUser.remove({ name: "John" })
 
 
 mongodb+srv://jugal786:jugal786@cluster0.sgg8t.mongodb.net/ones?retryWrites=true&w=majority
+
+
+9::: Schema Validation in Mongodb ? .....................................
+
+db.createCollection("newUser" , {
+validator:{
+
+$jsonSechema:{
+
+required:['name', 'price'],  ///name and price is required and you add more info
+properties:{
+
+name:{
+bsonTypes:"string",
+description:"must be a string and required"
+},
+
+price:{
+bsonTypes:"number",
+description:"must be a numeber and required"
+}
+}
+}
+},validationAction :"error"
+})
+
+db.stsudent.insert({name:"way of man" , price:300.10")}
+
+// remove validation mean change .......
+
+db.runcommand({
+
+colMod:"student", // collection name
+
+validator:{
+
+$jsonSechema:{
+
+required:['name', 'price'],  ///name and price is required and you add more info
+properties:{
+
+name:{
+bsonTypes:"string",
+description:"must be a string and required"
+},
+
+price:{
+bsonTypes:"number",
+description:"must be a numeber and required"
+}
+}
+}
+},
+)}
+
+
+
+
+
 
 
 
