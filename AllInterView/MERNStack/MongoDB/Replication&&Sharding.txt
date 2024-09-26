@@ -1,6 +1,0 @@
-Replication -->
-
-Duplication of data in database  is called Replication use ASYNc
-
-Sharding --> 
-
