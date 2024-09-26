@@ -239,5 +239,45 @@ console.log("D")  // three
 console.log("E")  //four
 
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+stack and Heap Memory in a javscript  ------------------>>
+
+1::stack (Primitive)  
+
+The stack is a region of memory where primitive values (such as numbers, booleans, null, undefined, etc.) and references
+to objects in the heap are stored. It's a fixed-size memory structure, and data 
+is added or removed in a Last In, First Out (LIFO) manner.
+
+....Primitive Data Types: Data types like numbers, strings, booleans, null, and undefined are stored directly in the stack.
+
+....Execution Context: When a function is called, its execution context (local variables, function arguments, etc.) is pushed onto the stack
+When the function completes, the context is popped off the stack.
+
+
+Characteristics:
+
+Fast access: Since the stack is a small, fixed-size structure, accessing data is fast.
+
+Limited size: Stack memory is limited, so it's used for data that can be stored efficiently, like primitive values and references.
+
+let x = 10; // 'x' is a primitive value, stored in the stack
+let y = x;  // 'y' is also a primitive, stored in the stack
+
+
+2::Heap (Non-Primitive)::::------------------>>
+
+2. Heap Memory
+
+The heap is where objects (and by extension arrays and functions) are stored. The heap is larger and is designed for dynamic
+allocation, meaning that objects can be created, resized, and destroyed during program execution.
+
+Object References: When you create an object, array, or function, it's stored in the heap, and a reference to
+that object is stored in the stack.
+
+Characteristics:
+
+Dynamic memory allocation: Objects can grow in size, and JavaScript’s memory manager handles allocation and garbage collection.
+
+Slower access: Accessing data from the heap is slower than from the stack because references are used to access objects.
 
