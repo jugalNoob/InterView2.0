@@ -281,3 +281,22 @@ Dynamic memory allocation: Objects can grow in size, and JavaScript’s memory m
 
 Slower access: Accessing data from the heap is slower than from the stack because references are used to access objects.
 
+
+Key Differences:
+Stack	Heap      	Heap
+Fixed size	 ..Dynamic size
+Fast access	  ..Slower access
+Stores primitive values  	 ..Stores objects
+Memory managed in a LIFO way	  ..Memory is allocated dynamically
+
+
+
+
+3::V8 Memory management: Garbage collection 
+https://deepu.tech/memory-management-in-v8/
+https://deepu.tech/memory-management-in-jvm/
+https://pythontutor.com/visualize.html#mode=edit
+https://ui.dev/javascript-visualizer
+https://dev.to/bipinrajbhar/how-javascript-works-under-the-hood-an-overview-of-javascript-engine-heap-and-call-stack-1j5o
+
+
