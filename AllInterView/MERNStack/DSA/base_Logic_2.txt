@@ -1,4 +1,34 @@
 
+if else and multi if else .........................Important ------>>
+
+Here's how the code you provided will execute:
+ The first if(18 == 19) condition is false, so it moves to the else if(18 > 19).
+ The else if(18 > 19) condition is also false, so the program will go to the else block.
+ In the else block, the final message "The first and second conditions are false" will be printed.
+
+
+if(18 == 19){
+
+   console.log("The condition is true");
+}else if(18  < 19){
+   
+   if(18==18){
+
+      console.log("18==18 is true")
+   }else{
+console.log("18==18 is false")
+   }
+
+
+   console.log("The first condition is false, but the second is true");
+}else{
+   console.log("The first and second conditions are false");
+}
+
+
+
+
+
 
 /// two Link open two webiste ----------------------------------->
 
@@ -313,45 +343,6 @@ let str = "jugal sharma";
 let shuffledStr = shuffleString(str);
 
 console.log(shuffledStr);
-
-
-
-::::::::::::::: Object with index number -----------------------<><><><>
-
-const objArray = [
-   {
-       index: 0,
-       details: {
-           name: "jugal",
-           rollno: 45
-       }
-   },
-   {
-       index: 1,
-       details: {
-           name: "karan",
-           rollno: 20
-       }
-   }
-];
-
-console.log(objArray[0])
-
-
-const obj = {
-    0: {
-        name: "jugal",
-        rollno: 45
-    },
-    1: {
-        name: "karan",
-        rollno: 20
-    }
-};
-
-
-
-
 
 
 :::::::::::::::: Key Logger -------------------------->>> Important ::::::::::::::  """"""""""""""""""""""""""""
