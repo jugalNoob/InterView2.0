@@ -1,3 +1,20 @@
+:::::::: Very Important in Jvacript ::::::::::::::::::::::::::::::::::::
+
+///Create a custom create  a ProTotype |||||||||||||||||||||||||||||||||||
+const one = [10, 20, 30, 40];
+console.log(Object.getPrototypeOf(one)); 
+
+
+Date.prototype.getLastYear = function() {
+    return this.getFullYear() - 1; // Get the current year and subtract 1
+  };
+  
+  let date = new Date();
+  console.log(date.getLastYear()); // Output: Previous year
+
+
+
+
 WordList Rand Hashes and random OTP and Random Email ......................................>>
 
 let word = "wordlist";  :::::::: --> random  string number 
