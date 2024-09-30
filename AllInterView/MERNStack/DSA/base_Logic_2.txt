@@ -19,6 +19,30 @@ console.log(objt.name || "kio")
 
 
 
+/////////////////////Binary Number ////////////////////////////
+
+let one = 15;
+let binaryString = one.toString(2);
+console.log(binaryString); // Output: "1111"
+let convert=parseInt(binaryString,2)
+console.log(`The decimal value of ${convert} is :${convert}`);
+
+
+
+////Javascript interView ::::::::::::::::::::::::
+
+console.log(undefined == null)
+console.log(undefined === null)
+console.log(18 == "18")
+console.log(18 === 18)
+console.log(isNaN(18))
+console.log(!isNaN(18))
+console.log(18 == 18 || 18 == 17  , " i ma ||")
+console.log(18 == 18 && 18 == 18, "i am &&")
+console.log(Math.floor(Math.random()*1000))
+let hex = `XYZ${Math.random().toString(15).slice(2).padEnd(24, '@gmail.com')}`;
+console.log(hex)
+
 
 
 :::::::: Very Important in Jvacript ::::::::::::::::::::::::::::::::::::
@@ -39,6 +63,9 @@ Date.prototype.getLastYear = function() {
 
 
 WordList Rand Hashes and random OTP and Random Email ......................................>>
+
+
+
 
 let word = "wordlist";  :::::::: --> random  string number 
 let randomIndex = Math.floor(Math.random() * word.length);
@@ -124,6 +151,40 @@ console.log("18==18 is false")
 
 
 ////  ---------->  Time date  
+let one=Date.now()
+
+console.log(one) // this timeStamp
+
+let currentDate = new Date();
+console.log(currentDate); // this current data-
+
+setInterval(function() { ::::::::::::::::::::::::::::::::::
+    const times = new Date();
+    const hours = times.getHours().toString().padStart(2, "0");
+    const minutes = times.getMinutes().toString().padStart(2, "0");
+    const seconds = times.getSeconds().toString().padStart(2, "0");
+    
+    const alltime = `${hours} hours ${minutes} minutes ${seconds} seconds`;
+    
+    console.log(alltime);
+}, 1000);
+
+// setInterval(function() { :::::::::::::::::::::::::::::::::::::::::::::
+//     const times = new Date();
+//     const hours24 = times.getHours(); // 24-hour format
+//     const minutes = times.getMinutes();
+//     const seconds = times.getSeconds();
+    
+//     // Convert hours to 12-hour format
+//     const ampm = hours24 >= 12 ? 'PM' : 'AM';
+//     const hours12 = (hours24 % 12) || 12; // Handle midnight (0) as 12
+
+//     const alltime = `${hours12} hours ${minutes} minutes ${seconds} seconds ${ampm}`;
+    
+//     console.log(alltime);
+// }, 1000);
+
+
 
 
 function update() {
@@ -204,6 +265,37 @@ function Set(){
 Set()
 
 
+
+
+Shallow copy and deep copy with code||||||||||||||||||||||||||||||
+
+
+const originalObject = { name: 'John', age: 30, address: { city: 'New York', state: 'NY' } };
+const shallowCopy = { ...originalObject };
+
+console.log(shallowCopy); // { name: 'John', age: 30, address: { city: 'New York', state: 'NY' } }
+
+shallowCopy.name = 'Mary';
+shallowCopy.address.city = 'Los Angeles';
+
+console.log(originalObject); // { name: 'John', age: 30, address: { city: 'Los Angeles', state: 'NY' } }
+console.log(shallowCopy); // { name: 'Mary', age: 30, address: { city: 'Los Angeles', state: 'NY' } }
+
+
+//Called Shallow Copy
+let obj={
+    name:"peter",
+    age:{
+        city:"LA",
+        state:"Link"
+    }
+}
+console.log(obj)
+let user={...obj}
+// let user=obj
+user.name="Jugal sharma"
+user.age.city="USA"
+console.log(user)
 
 
 
@@ -297,6 +389,7 @@ console.log(data[random])
 
 
 ///:::::::::::::_______________>>>>>>>>> Import and export  
+
 import { add, io, subtract } from "./Imp.js"; // Import the module
 
 const sum = add(10, 5);
