@@ -87,6 +87,38 @@ console.log(data)
       console.warn(items)
 
 
+
+::::::::::::: Merge Sirt Important >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+function mergesort(arr) {
+  if (arr.length < 2) {
+    return arr
+  }
+  const mid = Math.floor(arr.length / 2)
+  const leftArr = arr.slice(0, mid)
+  const rightArr = arr.slice(mid)
+  return merge(mergesort(leftArr), mergesort(rightArr))
+}
+
+function merge(leftArr, rightArr) {
+  const sortedArr = []
+  while (leftArr.length && rightArr.length) {
+    if (leftArr[0] <= rightArr[0]) {
+      sortedArr.push(leftArr.shift())
+    } else {
+      sortedArr.push(rightArr.shift())
+    }
+  }
+  const resultArr = [...sortedArr, ...leftArr, ...rightArr]
+  return resultArr
+}
+
+const arr = [8, 20, -2, 4, -6]
+console.log(mergesort(arr)) // [-6, -2, 4, 8, 20]
+
+
+
+
+
 ||||||||qucik sort ||||||||||||||||| --------------------------------------------
 function quickSort(arr) {
   if (arr.length < 2) return arr
@@ -105,4 +137,37 @@ function quickSort(arr) {
 const arr = [8, 20, -2, 4, -6]
 console.log(quickSort(arr)) // [-6, -2, 4, 8, 20]
 
+
+
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    const pivot = partition(arr, left, right)
+    quickSort(arr, left, pivot - 1)
+    quickSort(arr, pivot + 1, right)
+  }
+  return arr
+}
+
+function partition(arr, left, right) {
+  const pivot = arr[right]
+  let i = left
+  for (let j = left; j < right; j++) {
+    if (arr[j] < pivot) {
+      swap(arr, i, j)
+      i++
+    }
+  }
+  swap(arr, i, right)
+  return i
+}
+
+function swap(arr, i, j) {
+  const temp = arr[i]
+  arr[i] = arr[j]
+  arr[j] = temp
+}
+
+const arr = [8, 20, -2, 4, -6]
+quickSort(arr)
+console.log(arr) // [-6, -2, 4, 8, 20]
 
