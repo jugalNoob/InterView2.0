@@ -1,3 +1,26 @@
+::::::::: Nullish ...................................... 
+
+
+
+///Nullish Coalescing Operation 
+
+let objt={
+    name:"jugal",
+    class:"10th",
+    roll:12,
+    gender:"male",
+    names:""
+}
+console.log(objt["names"] ?? null);  //show only  undefind or null
+console.log(objt["nametyhus"] ?? undefined);
+// console.log(objt["nametyhus"] ||  "unknow"); // show 
+console.log(objt.name || "kio")
+
+
+
+
+
+
 :::::::: Very Important in Jvacript ::::::::::::::::::::::::::::::::::::
 
 ///Create a custom create  a ProTotype |||||||||||||||||||||||||||||||||||
