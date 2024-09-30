@@ -61,6 +61,15 @@ if (data.length % 2 === 1) {
 console.log(centerElements); // Output the center element(s)
 
 
+::::::::::::::::: Number add In Array :::::::::::::::::::::::::::
+
+const dummy = [2, 5, 1, 6];
+dummy.fill(2, 2); // This fills the array with 2 starting from index 2
+
+console.log(dummy); // Use 'dummy' instead of 'fill' to log the array
+
+
+
 
 :::::::::::::::::::Sum of array elemnt ||||||||||||||||||||||||||||| 
 
@@ -401,6 +410,21 @@ while (start < end) {
 console.log(data);
 
 
+// Optimised Approach
+function rotateArrayOptimised(nums, k) {
+  let size = nums.length;
+
+  if (size > k) {
+    k = k % size;
+  }
+  reverse(nums, 0, nums.length - 1); // O(n)
+  reverse(nums, 0, k - 1); // O(k)
+  reverse(nums, k, nums.length - 1); // O(n-k)
+  return nums;
+}
+
+// Time Complexity -> O(n)
+// Space Complexity -> O(1)
 
 1:::let data=[10 , 20 , 30 , 40 , 50 , 60]
 let temp;
