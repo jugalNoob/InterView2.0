@@ -597,10 +597,26 @@ function removeDuplicatesNew(nums) {
  console.log(`Length of unique elements: ${result.length}`);
  console.log(`Array with unique elements: ${result.uniqueArray}`);
  console.log(`Full array after removing duplicates: ${result.fullArray}`);
- 
 
 
-function removeDuplicatesNew(nums) {
+function removeDuplicates(nums) { ///RemoveDuplication Simple 
+  for (let i = 0; i < nums.length - 1; i++) {
+    // O(n)
+    if (nums[i] === nums[i + 1]) {
+      nums.splice(i + 1, 1); // O(1)
+      i--;
+    }
+  }
+
+  return nums.length;
+}
+
+// Time Complexity - O(n)
+// Space Complexity - O(1)
+// console.log(removeDuplicates([1, 1, 2]));
+
+
+function removeDuplicatesNew(nums) {  /// second remove deUplication 
   if (nums.length === 0) return 0;
   let i = 0;
 
