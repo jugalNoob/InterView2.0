@@ -49,16 +49,6 @@ for(let i=0; i<data.length; i++){
 }
 console.log(max)
 
-let data = [1, 2, 3, 4];
-let centerIndex = Math.floor(data.length / 2);
-console.log(centerIndex)
-let centerElements = [];
-if (data.length % 2 === 1) {
-    centerElements.push(data[centerIndex]);
-} else {
-    centerElements.push(data[centerIndex - 1], data[centerIndex]);
-}
-console.log(centerElements); // Output the center element(s)
 
 
 ::::::::::::::::: Number add In Array :::::::::::::::::::::::::::
