@@ -1,4 +1,5 @@
 https://pythontutor.com/visualize.html#mode=edit
+https://www.freecodecamp.org/news/how-javascript-works-behind-the-scenes/
 
 https://www.javascripttutorial.net/javascript-variable-scopes/  -->Important 
 
