@@ -631,6 +631,22 @@ function removeDuplicatesNew(nums) {
  console.log(`Full array after removing duplicates: ${result.fullArray}`);
 
 
+let data = [10, 20, 30, 20, 50, 10];  ///check duplest value 
+let frequency = {};
+
+for (let i = 0; i < data.length; i++) {
+    if (frequency[data[i]]) {
+        frequency[data[i]]++;
+    } else {
+        frequency[data[i]] = 1;
+    }
+}
+
+console.log("Frequency of elements:", frequency); 
+// Output: {10: 2, 20: 2, 30: 1, 50: 1}
+
+
+
 function removeDuplicates(nums) { ///RemoveDuplication Simple 
   for (let i = 0; i < nums.length - 1; i++) {
     // O(n)
